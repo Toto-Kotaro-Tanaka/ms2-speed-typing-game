@@ -1,3 +1,5 @@
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.pdf)
+
 # SPEED TYPING
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2, Full Stack Software Development in Code Institute**.  
 

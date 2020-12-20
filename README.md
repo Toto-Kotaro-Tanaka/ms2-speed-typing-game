@@ -76,8 +76,8 @@ The website consists of 2 pages.
 ## Skeleton Plane
 Desktop first design, though it is also responsive website. Game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Country Courses, Accommodation and Register for mobile, tablet and desktop sizes.
 
-* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/framework-index-html.png)
-* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/framework-countries-html.png)
+* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/wireframe-index-html.png)
+* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/wireframe-countries-html.png)
 
 ## Surface Plane
 **--- Colour ---**

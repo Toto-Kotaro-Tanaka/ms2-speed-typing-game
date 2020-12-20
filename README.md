@@ -75,7 +75,7 @@ The website consists of 2 pages.
 Desktop first design, though it is also responsive website. Game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Country Courses, Accommodation and Register for mobile, tablet and desktop sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/wireframe-index-html.pdf)
-* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/countries-index-html.pdf)
+* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/wireframe-countries-html.pdf)
 
 ## Surface Plane
 **--- Colour ---**

@@ -43,11 +43,6 @@ All the functions on the tables below are minimum functions that must be impleme
 | The Highest Score Board                                |     4      |            5            |
 | Fancy Opening When The Page Loads                      |     3      |            4            |
 | Responsiveness                                         |     3      |            4            |
-| Different Levels                                       |     3      |            2            |
-| Keeping The Highest Score Even Game Disconnected       |     3      |            2            |
-| User Name Input                                        |     2      |            3            |
-| Highlighting Letters When Correct / Incorrect          |     2      |            2            |
-| Counting Down Last 10 Seconds                          |     2      |            2            |
 
 These are the additional functions that can improve the website however not mandatory to achieve user's and owner's goals currently set up. Some aren't implemented due to a lack of my current skills and knowledges and some due to lack of time. 
 
@@ -69,7 +64,7 @@ Features to be included on this project are;
 - Displaying customised / interactive message (e.g. The results of the game, details of the countries)
 - Google maps with API
 - Country information with API
-- Caution message in modal when the size goes below 960 as the game is available on desktop only
+- Caution message in modal when the size goes below 960px as the game is available on desktop only
 
 ## Structure Plane
 The website consists of 2 pages.
@@ -77,3 +72,7 @@ The website consists of 2 pages.
 - Second Page is (countries.html) is **“Learn About The Countries In The World”** page. The same header as the first page applies and 26 alphabest with a list of countries for country information and location on google maps.
 
 ## Skeleton Plane
+Desktop first design, though it is also responsive website. Game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Country Courses, Accommodation and Register for mobile, tablet and desktop sizes.
+
+* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/wireframe-index-html.pdf)
+* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/countries-index-html.pdfg)

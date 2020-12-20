@@ -75,4 +75,16 @@ The website consists of 2 pages.
 Desktop first design, though it is also responsive website. Game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Country Courses, Accommodation and Register for mobile, tablet and desktop sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/wireframe-index-html.pdf)
-* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/countries-index-html.pdfg)
+* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframes/countries-index-html.pdf)
+
+## Surface Plane
+**--- Colour ---**
+On "Speed Typing" page (index.html), a page which looks similar to Visual Studio Code is sonsidered because main purpose of the website is for typing. Nero (#1e1e1e) is used for the back ground colour and Navy Blue (#007acc) is used for the logo and menu.
+Main text colour is Light Gray (#d4d4d4) so that it doesn't give users too much contrast between the text and back ground colours. 
+Pale Canary(#ffff98) is used for score to stands out the score and slightly lighter colour than Pale Canary - name unknown - (#fdf838)  is used for the highest score.
+Bittersweet (#ff6565) is used for timer because it is important information and must be very clear during the game 
+
+On "Learn About The Countries" page (countries.html), Navy Blue (#007acc) is used for back ground as it links to an image of the earth. Main test colour is Nero (#1e1e1e) so the page looks like the reversible version of index.html.
+
+**--- Typography ---**
+Courgette, which is similar type of font of the logo, is used for menu to show the image of "Speed". Bebas is used for headings to stand out the headings and Montserrat is used for main contents to make the fonts very clear, easy to read so that users don't have issue of reading it and typing it.

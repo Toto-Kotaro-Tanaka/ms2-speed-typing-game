@@ -18,7 +18,7 @@ I am the owner of the website. My goals of this website are to provide a speed t
 ### Strategy Plane
 
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (My note: 60s / 30s - TBC) and score, that increments by 10 rather than 1 so that they feel they achieved better (e.g. When you get 20 correct typings, it shows 200 instead of 20), users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
-The highest score remains during the game so that users can try to achieve more points and give them a motivation to continue the game more times. A name of countires is used as a text, that they type, and it comes up randomly so that differnt combination of texts appear on each game. There are 195 countries in the world*. Users know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Learn About The Countries In The World”** on a different page that provides basic information of each country, such as a location on the google maps, capital city, population, language and a flag, as an addition function to the speed typing game. 
+The highest score remains during the game so that users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text, that they type, and it comes up randomly so that different combination of texts appear on each game. There are 195 countries in the world*. Users know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Learn About The Countries In The World”** on a different page that provides basic information of each country, such as a location on the google maps, capital city, population, language and a flag, as an addition function to the speed typing game. 
 
 *As of 20 Dec 2020 and referenced by **[worldometers](https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/)**
 
@@ -71,10 +71,10 @@ Features to be included on this project are;
 ## Structure Plane
 The website consists of 2 pages.
 - First page (index.html) is **Speed Typing** game page with a logo, title, navbar, timer, letter display, input, , score, the highest score and instruction.
-- Second Page is (countries.html) is **“Learn About The Countries In The World”** page. The same header as the first page applies and 26 alphabest with a list of countries for country information and location on google maps.
+- Second Page is (countries.html) is **“Learn About The Countries In The World”** page. The same header as the first page applies and 26 alphabets with a list of countries for country information and location on google maps.
 
 ## Skeleton Plane
-Desktop first design, though it is also responsive website. Game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Country Courses, Accommodation and Register for mobile, tablet and desktop sizes.
+Desktop first design, though it is also responsive website. The Speed Typing game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Countries page(countries.html) for desktop and mobile sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-index-html.png)
 * ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-countries-html.png)~

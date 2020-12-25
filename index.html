@@ -12,11 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;800&display=swap" rel="stylesheet" />
 
-  <!-- Styles CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
 
   <!-- JQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <title>Speed Typing</title>
 </head>
@@ -25,16 +28,16 @@
   <header>
     <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.png" alt="Logo of the website" /></a>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo of the website" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active menu-active">
+          <li class="nav-item active menu-home">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item menu-instructions">
             <a class="nav-link" href="#">Instructions</a>
           </li>
           <li class="nav-item">
@@ -47,16 +50,49 @@
   </header>
 
   <section>
-    <h1>Hello World</h1>
+    <h1>Welcome to the speed typing game!</h1>
+    <p>
+      This game gives you an opportunity to practice speed typing! The texts being used are names of the countries in the world so in case you got interested in some of them, go to “Countries” section and learn about them <i class="fas fa-globe"></i>
+    </p>
+    <hr>
+    <button>Game Instructions</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h4><i class="fas fa-stopwatch"></i> Time: <span>60</span> <span>sec.</span></h4>
+          <button>Learn About The Countries</button>
+        </div>
+        <div class="col-sm">
+          <p>
+            Type the word below <i class="far fa-arrow-alt-circle-down"></i> as fast as you can
+          </p>
+          <h2>Ireland</h2>
+          <form action="">
+            <input type="text" name="" id="">
+          </form>
+          <p>
+            To play the game again, simply type the word in the input box <i class="far fa-arrow-alt-circle-up"></i>
+          </p>
+        </div>
+        <div class="col-sm">
+          <h4><i class="fas fa-trophy"></i> Score: <span>0</span> <span>pt.</span></h4>
+          <h4><i class="fas fa-medal"></i> STARS here</h4>
+          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span>0</span> <span>pt.</span></h4>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer></footer>
+  <footer>
+    <p>&copy; Toto Tanaka 2021<p>
+  </footer>
 
   <!-- Bootstrap JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
   <!-- Main JavaScript -->
-  <script src="./assets/javascript/main.js"></script>
+  <script src="assets/javascript/main.js"></script>
 </body>
 
 </html>

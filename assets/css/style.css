@@ -13,9 +13,12 @@ body {
   background-color: #1e1e1e;
   color: #d4d4d4;
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  width: 90%;
 }
 
-h1 {
+h1, h4 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.2rem;
 }
@@ -34,16 +37,17 @@ nav img {
   font-family: "Courgette", cursive;
   font-size: 1.2rem;
   font-weight: bolder;
-  margin-right: 1rem;
 }
 
-.menu-active a {
+.menu-home, .menu-instructions {
+  padding-right: 1.8rem;
+}
+
+/* .menu-active a {
   color: #d4d4d4 !important;
-}
-
+} */
 
 /* Credit: Stackoverflow @ https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4 and @ https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
-
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -56,14 +60,14 @@ nav img {
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,122,172, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
-
 /* /End of Credit */
 
 @media only screen and (min-width: 62rem) {
+
   #navbarNav {
     padding-right: 1rem;
     position: absolute;
     right: 0;
   }
+
 }

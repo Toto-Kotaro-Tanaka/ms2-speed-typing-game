@@ -8,24 +8,24 @@ It is a mobile responsive website however the speed typing game can be played on
 ----- Mockup goes in here when the website is completed -----
 
 ## TABLE OF CONTENTS
-* ### WHO'S THIS WEBSITE FOR?
-* ### WHO IS THE OWNER?
-* ### UX 5 PLANES
-  * #### Strategy Plane
-  * #### Scope Plane
-  * #### Structure Plane
-  * #### Skeleton Plane
-  * #### Surface Plane
-* ### FEATURES
-* ### TECHNOLOGIES USED
-* ### RESOURCES
-* ### TESTING
-* ### PROJECT BARRIERS & SOLUTIONS
-* ### VERSION CONTROL
-* ### DEPLOYMENT
-* ### CREDITS
-* ### MEDIA
-* ### ACKNOWLEDGEMENTS
+* #### WHO'S THIS WEBSITE FOR?
+* #### WHO IS THE OWNER?
+* #### UX 5 PLANES
+  * ##### Strategy Plane
+  * ##### Scope Plane
+  * ##### Structure Plane
+  * ##### Skeleton Plane
+  * ##### Surface Plane
+* #### FEATURES
+* #### TECHNOLOGIES USED
+* #### RESOURCES
+* #### TESTING
+* #### PROJECT BARRIERS & SOLUTIONS
+* #### VERSION CONTROL
+* #### DEPLOYMENT
+* #### CREDITS
+* #### MEDIA
+* #### ACKNOWLEDGEMENTS
 
 ## WHO'S THIS WEBSITE FOR?
 People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Learn About The Countries In The World”** section to provide basic information of each country, such as a location on the google maps, capital city, population, language and a flag.

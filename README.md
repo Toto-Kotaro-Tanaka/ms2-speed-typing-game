@@ -7,6 +7,26 @@ It is a mobile responsive website however the speed typing game can be played on
 
 ----- Mockup goes in here when the website is completed -----
 
+## TABLE OF CONTENTS
+* ### WHO'S THIS WEBSITE FOR?
+* ### WHO IS THE OWNER?
+* ### UX 5 PLANES
+  * #### Strategy Plane
+  * #### Scope Plane
+  * #### Structure Plane
+  * #### Skeleton Plane
+  * #### Surface Plane
+* ### FEATURES
+* ### TECHNOLOGIES USED
+* ### RESOURCES
+* ### TESTING
+* ### PROJECT BARRIERS & SOLUTIONS
+* ### VERSION CONTROL
+* ### DEPLOYMENT
+* ### CREDITS
+* ### MEDIA
+* ### ACKNOWLEDGEMENTS
+
 ## WHO'S THIS WEBSITE FOR?
 People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Learn About The Countries In The World”** section to provide basic information of each country, such as a location on the google maps, capital city, population, language and a flag.
 
@@ -56,7 +76,7 @@ These are the additional functions that can improve the website however not mand
 | Highlighting Letters When Correct / Incorrect          |     2      |            2            |
 | Counting Down Last 10 Seconds                          |     2      |            1            |
 
-## Scope Plane
+### Scope Plane
 Features to be included on this project are;
 - Game instructions on modal (to keep the number of pages minimum)
 - Timer 
@@ -68,12 +88,12 @@ Features to be included on this project are;
 - Country information with API
 - Caution message in modal when the size goes below 960px as the game is available on desktop only
 
-## Structure Plane
+### Structure Plane
 The website consists of 2 pages.
 - First page (index.html) is **Speed Typing** game page with a logo, title, navbar, timer, letter display, input, , score, the highest score and instruction.
 - Second Page is (countries.html) is **“Learn About The Countries In The World”** page. The same header as the first page applies and 26 alphabets with a list of countries for country information and location on google maps.
 
-## Skeleton Plane
+### Skeleton Plane
 Desktop first design, though it is also responsive website. The Speed Typing game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Countries page(countries.html) for desktop and mobile sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-index-html.png)
@@ -81,7 +101,7 @@ Desktop first design, though it is also responsive website. The Speed Typing gam
 * [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-countries-html-2.png) *This is the revised version after looking for some better ideas showing the country details
 
 
-## Surface Plane
+### Surface Plane
 **--- Colour ---**
 On "Speed Typing" page (index.html), a page which looks similar to Visual Studio Code is sonsidered because main purpose of the website is for typing. Eerie Black (#1e1e1e) is used for the back ground colour and Bright Navy Blue (#007acc) is used for the logo and menu.
 Main text colour is Light Gray (#d4d4d4) so that it doesn't give users too much contrast between the text and back ground colours. 
@@ -96,4 +116,35 @@ On "Learn About The Countries" page (countries.html), Bright Navy Blue (#007acc)
 Courgette, which is similar type of font of the logo, is used for menu to show the image of "Speed". Bebas Neue is used for headings to stand out the headings and Montserrat is used for main contents to make the fonts visibility and readability maximum so that users don't have any issue of reading it and typing it.
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/fonts.png)
+
+## FEATURES
+
+## TECHNOLOGIES USED
+* [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
+* [CSS3](https://en.wikipedia.org/wiki/CSS) for style
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for interaction
+* [Google Fonts](https://fonts.google.com/) for fonts
+* [Bootstrap](https://getbootstrap.com/), css framework, for main frame of the website
+* [jQuery](https://jquery.com/), javaScript library, for more efficient coding
+* [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)
+* [Git](https://git-scm.com/) for version control
+* [GitHub](https://github.com/) for keeping the files, documents and deploy the website
+
+## RESOURCES
+
+## TESTING
+
+## PROJECT BARRIERS & SOLUTIONS
+
+## VERSION CONTROL
+
+## DEPLOYMENT
+
+## CREDITS
+
+## MEDIA
+
+## ACKNOWLEDGEMENTS
+
+
 

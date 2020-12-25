@@ -124,7 +124,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 * [CSS3](https://en.wikipedia.org/wiki/CSS) for style
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for interaction
 * [Google Fonts](https://fonts.google.com/) for fonts
-* [Bootstrap](https://getbootstrap.com/), css framework, for main frame of the website
+* [Bootstrap4](https://getbootstrap.com/), css framework, for main frame of the website
 * [jQuery](https://jquery.com/), javaScript library, for more efficient coding
 * [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)
 * [Git](https://git-scm.com/) for version control

@@ -25,6 +25,7 @@ h2 {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: .2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -34,7 +35,6 @@ h4 {
 }
 
 /* ---------- Header */
-
 .navbar {
   background-color: #1e1e1e !important;
 }
@@ -44,7 +44,7 @@ h4 {
 }
 
 nav img {
-  width: 15rem;
+  width: 13rem;
 }
 
 #navbarNav li a {
@@ -53,6 +53,11 @@ nav img {
   font-family: "Courgette", cursive;
   font-size: 1.2rem;
   font-weight: bolder;
+  letter-spacing: .1rem;
+}
+
+#navbarNav li a:hover {
+  color: #d4d4d4;
 }
 
 /* Credit: Stackoverflow @ https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4 and @ https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
@@ -70,10 +75,12 @@ nav img {
 }
 /* /End of Credit */
 
+/* ---------- Section (index.html) */
 section p {
   font-size: 1.2rem;
   letter-spacing: .1rem;
   padding: 1.5rem 2rem ;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -82,7 +89,7 @@ section p span {
 }
 
 hr {
-  background-color: #007acc;
+  background-color: rgba(0, 122, 204, .5);
   border: none;
   border-radius: 2rem;
   height: .3rem;
@@ -92,89 +99,111 @@ hr {
 
 /* Credit: codepen @ https://codepen.io/techshiva/pen/JVbKLM */
 @-webkit-keyframes buzz-out-on-hover {
+
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
+
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
+
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
+
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
+
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
+
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
+
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
+
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
+
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
+
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
+
 @keyframes buzz-out-on-hover {
+
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
+
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
+
   30% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
+
   40% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
+
   50% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
+
   60% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
+
   70% {
     -webkit-transform: translateX(2px) rotate(1deg);
     transform: translateX(2px) rotate(1deg);
   }
+
   80% {
     -webkit-transform: translateX(-2px) rotate(-1deg);
     transform: translateX(-2px) rotate(-1deg);
   }
+
   90% {
     -webkit-transform: translateX(1px) rotate(0);
     transform: translateX(1px) rotate(0);
   }
+
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
 }
+
 .buzz-out-on-hover {
   display: inline-block;
   vertical-align: middle;
@@ -182,6 +211,7 @@ hr {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
   -webkit-animation-name: buzz-out-on-hover;
   animation-name: buzz-out-on-hover;
@@ -200,6 +230,7 @@ hr {
   border-radius: 2rem;
   display:block;
   font-size: 1.2rem;
+  letter-spacing: .1rem;
   margin: 2.2rem auto;
   padding: .5rem 1rem;
   width: 15rem;
@@ -214,14 +245,41 @@ hr {
   box-shadow: none !important;
 }
 
+.btn-countries {
+  background-color: #007acc;
+  border: none;
+  border-radius: 2rem;
+  display:block;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  margin: 1rem 0 0 0;
+  padding: .5rem 1rem;
+  width: 13rem;
+}
+
+.btn-countries:hover,
+.btn-countries:active,
+.btn-countries:focus,
+.btn-countries:active:focus {
+  background-color: #007acc !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .timer, .text-input, .score {
-  border: 1px solid #d4d4d4;
+  border: 0.0625rem solid #d4d4d4;
   margin: 0 auto;
   width: 90%;
 }
 
 .time {
   color: #ff6565;
+}
+
+.learn-countries p {
+  font-size: 1rem;
+  padding: 2rem 0 0 0;
+  text-align: left;
 }
 
 form {
@@ -268,13 +326,19 @@ input:focus {
   font-size: 2rem;
 }
 
+/* ---------- Footer */
 footer {
   margin: 1.5rem 0;
   text-align: center;
 }
 
-
+/* -------------------- Media Query: Desktop Size (62rem / 992px) -------------------- */
 @media only screen and (min-width: 62rem) {
+
+  body {
+    margin: 0 auto;
+    width: 90%;
+  }
 
   #navbarNav {
     padding-right: 1rem;
@@ -282,12 +346,38 @@ footer {
     right: 0;
   }
 
+  #navbarNav li a {
+    margin-top: 1rem;
+  }
+
   .menu-home, .menu-instructions {
     padding-right: 1.8rem;
   }
 
-  /* .menu-active a {
-  color: #d4d4d4 !important;
-} */  
+  nav img {
+    width: 18rem;
+  } 
+  
+  h1 {
+    font-size: 3.3rem;
+  }
 
+  h2 {
+    font-size: 2rem;
+  }
+
+  .timer h4 {
+    text-align: left;
+  }
+
+  .score h4 {
+    margin-bottom: 2.6rem;
+    text-align: right;
+  }
+
+  input {
+    font-size: 1.5rem;
+    height: 2.8rem;
+    padding: .5rem;
+  }
 }

@@ -158,6 +158,8 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 **These are credited on the css file*
 
 ## MEDIA
+**--- Logo ---**
+* Created by me using [canva](https://www.canva.com/)
 
 ## ACKNOWLEDGEMENTS
 

@@ -20,6 +20,9 @@
 
   <!-- Styles CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <title>Speed Typing</title>
 </head>
@@ -30,8 +33,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo of the website" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active menu-home">
@@ -60,11 +63,16 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm timer">
+        <div class="col-lg col-lg-3.5 timer">
           <h4><i class="fas fa-stopwatch"></i> Time: <span class="time">60</span> <span>sec.</span></h4>
-          <button class="d-none d-lg-block">Learn About The Countries</button>
+          <div class="d-none d-lg-block learn-countries" >
+            <p>
+              To learn about the “Countries”, click the below button <i class="far fa-arrow-alt-circle-down"></i>
+            </p>
+            <button class="btn btn-primary btn-countries buzz-out-on-hover">Countries</button>
+          </div>
         </div>
-        <div class="col-sm text-input">
+        <div class="col-lg col-lg-5 text-input">
           <p>
             Type the word below <i class="far fa-arrow-alt-circle-down"></i> as fast as you can
           </p>
@@ -76,10 +84,10 @@
             To play the game again, simply type the word in the input box <i class="far fa-arrow-alt-circle-up"></i>
           </p>
         </div>
-        <div class="col-sm score">
+        <div class="col-lg col-lg-3.5 score">
           <h4><i class="fas fa-trophy"></i> Score: <span class="game-score">0</span> <span>pt.</span></h4>
           <h4><span>You've got:</span> <span class="medal">Gold <i class="fas fa-medal"></i></span></h4>
-          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span class="highest-score">0</span> <span>pt.</span></h4>
+          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span class="highest-score">480</span> <span>pt.</span></h4>
         </div>
       </div>
     </div>

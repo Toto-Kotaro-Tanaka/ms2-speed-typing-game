@@ -1,34 +1,47 @@
-/* font family
-font-family: 'Bebas Neue', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Montserrat', sans-serif; */
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: #1e1e1e;
   color: #d4d4d4;
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  margin: 0 auto;
-  width: 90%;
 }
 
 h1, h4 {
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
+}
+
+h1 {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+h4 {
+  margin: 1.5rem 0; 
+  text-align: center;
 }
 
 .navbar {
   background-color: #1e1e1e !important;
 }
 
+.navbar-nav {
+  margin-right: .8rem;
+}
+
 nav img {
-  width: 19rem;
+  width: 15rem;
 }
 
 #navbarNav li a {
@@ -37,10 +50,6 @@ nav img {
   font-family: "Courgette", cursive;
   font-size: 1.2rem;
   font-weight: bolder;
-}
-
-.menu-home, .menu-instructions {
-  padding-right: 1.8rem;
 }
 
 /* .menu-active a {
@@ -62,6 +71,99 @@ nav img {
 }
 /* /End of Credit */
 
+section p {
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  padding: 1.5rem 2rem ;
+  text-align: center;
+}
+
+section p span {
+  font-weight: 800;
+}
+
+hr {
+  background-color: #007acc;
+  border: none;
+  border-radius: 2rem;
+  height: .3rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.btn-instructions {
+  background-color: #ff6565;
+  border: none;
+  border-radius: 2rem;
+  display:block;
+  font-size: 1.2rem;
+  margin: 2.2rem auto;
+  padding: .5rem 1rem;
+  width: 15rem;
+}
+
+.btn-instructions:hover,
+.btn-instructions:active,
+.btn-instructions:focus,
+.btn-instructions:active:focus {
+  background-color: #ff6565;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.timer, .text-input, .score {
+  border: 1px solid #d4d4d4;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.time {
+  color: #ff6565;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  background-color: #d4d4d4;
+  border-radius: .4rem;
+  color: #1e1e1e;
+  font-weight: bold;
+  height: 2rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  width: 80%;
+  /* opacity: .9; */
+}
+
+::placeholder {
+  color: #1e1e1e;
+  font-weight: 100;
+  opacity: .4;
+}
+
+.game-score {
+  color: #ffff98;
+}
+
+.medal {
+  color: #daa520;
+}
+
+.highest-score {
+  color: #fdf838;
+}
+
+footer {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+
 @media only screen and (min-width: 62rem) {
 
   #navbarNav {
@@ -69,5 +171,10 @@ nav img {
     position: absolute;
     right: 0;
   }
+
+  .menu-home, .menu-instructions {
+    padding-right: 1.8rem;
+  }
+  
 
 }

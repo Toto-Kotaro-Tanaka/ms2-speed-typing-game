@@ -10,7 +10,7 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet" />
 
   <!-- Fontawesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
@@ -52,32 +52,34 @@
   <section>
     <h1>Welcome to the speed typing game!</h1>
     <p>
-      This game gives you an opportunity to practice speed typing! The texts being used are names of the countries in the world so in case you got interested in some of them, go to “Countries” section and learn about them <i class="fas fa-globe"></i>
+      This game gives you an opportunity to practice speed typing! The texts being used are names of the countries in the world so in case you get interested in some of them, go to <span>“Countries”</span> section and learn about them <i class="fas fa-globe"></i>
     </p>
     <hr>
-    <button>Game Instructions</button>
+    <div>
+      <button type="button" class="btn btn-primary btn-instructions">Game Instructions</button>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <h4><i class="fas fa-stopwatch"></i> Time: <span>60</span> <span>sec.</span></h4>
-          <button>Learn About The Countries</button>
+        <div class="col-sm timer">
+          <h4><i class="fas fa-stopwatch"></i> Time: <span class="time">60</span> <span>sec.</span></h4>
+          <button class="d-none d-lg-block">Learn About The Countries</button>
         </div>
-        <div class="col-sm">
+        <div class="col-sm text-input">
           <p>
             Type the word below <i class="far fa-arrow-alt-circle-down"></i> as fast as you can
           </p>
           <h2>Ireland</h2>
           <form action="">
-            <input type="text" name="" id="">
+            <input type="text" name="text-input" id="text-input" placeholder="Type The Word HERE" autofocus>
           </form>
           <p>
             To play the game again, simply type the word in the input box <i class="far fa-arrow-alt-circle-up"></i>
           </p>
         </div>
-        <div class="col-sm">
-          <h4><i class="fas fa-trophy"></i> Score: <span>0</span> <span>pt.</span></h4>
-          <h4><i class="fas fa-medal"></i> STARS here</h4>
-          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span>0</span> <span>pt.</span></h4>
+        <div class="col-sm score">
+          <h4><i class="fas fa-trophy"></i> Score: <span class="game-score">0</span> <span>pt.</span></h4>
+          <h4><span>You've got:</span> <span class="medal">Gold <i class="fas fa-medal"></i></span></h4>
+          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span class="highest-score">0</span> <span>pt.</span></h4>
         </div>
       </div>
     </div>

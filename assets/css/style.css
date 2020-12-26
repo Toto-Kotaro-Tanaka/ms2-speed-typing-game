@@ -21,6 +21,7 @@ h1 {
 }
 
 h2 {
+  color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: .2rem;
@@ -31,6 +32,8 @@ h4 {
   margin: 1.5rem 0; 
   text-align: center;
 }
+
+/* ---------- Header */
 
 .navbar {
   background-color: #1e1e1e !important;
@@ -51,10 +54,6 @@ nav img {
   font-size: 1.2rem;
   font-weight: bolder;
 }
-
-/* .menu-active a {
-  color: #d4d4d4 !important;
-} */
 
 /* Credit: Stackoverflow @ https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4 and @ https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
 .navbar-toggler,
@@ -91,6 +90,110 @@ hr {
   width: 80%;
 }
 
+/* Credit: codepen @ https://codepen.io/techshiva/pen/JVbKLM */
+@-webkit-keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+  -webkit-animation-name: buzz-out-on-hover;
+  animation-name: buzz-out-on-hover;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* /End of Credit */
+
 .btn-instructions {
   background-color: #ff6565;
   border: none;
@@ -106,12 +209,9 @@ hr {
 .btn-instructions:active,
 .btn-instructions:focus,
 .btn-instructions:active:focus {
-  background-color: #ff6565;
-}
-
-.btn:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background-color: #ff6565 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .timer, .text-input, .score {
@@ -130,6 +230,7 @@ form {
 
 input {
   background-color: #d4d4d4;
+  border: .2rem solid #007acc;
   border-radius: .4rem;
   color: #1e1e1e;
   font-weight: bold;
@@ -137,7 +238,12 @@ input {
   letter-spacing: .1rem;
   text-align: center;
   width: 80%;
-  /* opacity: .9; */
+}
+
+input:focus {
+  outline: none !important;
+  border: .2rem solid #007acc;
+  box-shadow: 0 0 .5rem #007acc;
 }
 
 ::placeholder {
@@ -158,6 +264,10 @@ input {
   color: #fdf838;
 }
 
+.time, .game-score, .medal, .highest-score {
+  font-size: 2rem;
+}
+
 footer {
   margin: 1.5rem 0;
   text-align: center;
@@ -175,6 +285,9 @@ footer {
   .menu-home, .menu-instructions {
     padding-right: 1.8rem;
   }
-  
+
+  /* .menu-active a {
+  color: #d4d4d4 !important;
+} */  
 
 }

@@ -125,6 +125,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for interaction
 * [Google Fonts](https://fonts.google.com/) for fonts
 * [Bootstrap4](https://getbootstrap.com/), css framework, for main frame of the website
+* [Font Awesome](https://fontawesome.com/) for icons
 * [jQuery](https://jquery.com/), javaScript library, for more efficient coding
 * [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)
 * [Git](https://git-scm.com/) for version control
@@ -141,6 +142,20 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 ## DEPLOYMENT
 
 ## CREDITS
+### Code
+**--- HTML5 ---**
+* [Bootstrap Navbar](https://getbootstrap.com/docs/4.5/components/navbar/) for navigation bar
+
+**Note:**
+**These are credited on all the html files*
+
+**--- CSS3 ---**
+* [Stackoverflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4) to remove border colour of hamburger menu
+* [Stackoverflow](https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color) to change the colour of hamburger menu
+* [codepen](https://codepen.io/techshiva/pen/JVbKLM) for Buzz Out button
+
+**Note:**
+**These are credited on the css file*
 
 ## MEDIA
 

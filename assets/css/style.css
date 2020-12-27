@@ -34,6 +34,10 @@ h4 {
   text-align: center;
 }
 
+.current {
+  color: #d4d4d4;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -55,7 +59,7 @@ h4 {
   margin-bottom: .5rem;
 }
 
-.close-alert {
+#close-alert {
   display: inline-block;
   float: right;
 }
@@ -255,7 +259,7 @@ hr {
 }
 /* /End of Credit */
 
-.btn-instructions {
+.btn-instructions, .btn-countries, .btn-speed-typing {
   background-color: #ff6565;
   border: none;
   border-radius: 2rem;
@@ -267,10 +271,10 @@ hr {
   width: 15rem;
 }
 
-.btn-instructions:hover,
-.btn-instructions:active,
-.btn-instructions:focus,
-.btn-instructions:active:focus {
+.btn-instructions:hover, .btn-countries:hover, .btn-speed-typing:hover,
+.btn-instructions:active, .btn-countries:active, .btn-speed-typing:active,
+.btn-instructions:focus, .btn-countries:focus, .btn-speed-typing:focus,
+.btn-instructions:active:focus, .btn-countries:active:focus, .btn-speed-typing:active:focus {
   background-color: #ff6565 !important;
   border: none !important;
   box-shadow: none !important;
@@ -278,13 +282,7 @@ hr {
 
 .btn-countries {
   background-color: #007acc;
-  border: none;
-  border-radius: 2rem;
-  display:block;
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
   margin: 1rem 0 0 0;
-  padding: .5rem 1rem;
   width: 13rem;
 }
 
@@ -293,21 +291,30 @@ hr {
 .btn-countries:focus,
 .btn-countries:active:focus {
   background-color: #007acc !important;
-  border: none !important;
-  box-shadow: none !important;
 }
 
-.timer, .text-input, .score {
+.btn-speed-typing {
+  background-color: #1e1e1e;
+}
+
+.btn-speed-typing:hover,
+.btn-speed-typing:active,
+.btn-speed-typing:focus,
+.btn-speed-typing:active:focus {
+  background-color: #1e1e1e !important;
+}
+
+#timer, #text-input-section, #score {
   border: 0.0625rem solid #d4d4d4;
   margin: 0 auto;
   width: 90%;
 }
 
-.time {
+#time {
   color: #ff6565;
 }
 
-.learn-countries p {
+#learn-countries p {
   font-size: 1rem;
   padding: 2rem 0 0 0;
   text-align: left;
@@ -317,7 +324,7 @@ form {
   text-align: center;
 }
 
-input {
+#text-input {
   background-color: #d4d4d4;
   border: .2rem solid #007acc;
   border-radius: .4rem;
@@ -329,7 +336,7 @@ input {
   width: 80%;
 }
 
-input:focus {
+#text-input:focus {
   outline: none !important;
   border: .2rem solid #007acc;
   box-shadow: 0 0 .5rem #007acc;
@@ -343,19 +350,19 @@ input:focus {
 }
 /* /End of Credit */
 
-.game-score {
+#game-score {
   color: #ffff98;
 }
 
-.medal {
+#medal {
   color: #daa520;
 }
 
-.highest-score {
+#highest-score {
   color: #fdf838;
 }
 
-.time, .game-score, .medal, .highest-score {
+#time, #game-score, #medal, #highest-score {
   font-size: 2rem;
 }
 
@@ -363,9 +370,6 @@ input:focus {
 #countries {
   background-color: #007acc;
   border: none;
-  /* border-radius: 2rem; */
-  /* box-shadow: 0 0 .5rem #007acc; */
-  /* height: 38rem; */
   margin: 0;
 }
 
@@ -375,13 +379,21 @@ input:focus {
 }
 
 #country-flag {
-  border: 0.0625rem solid #fff;
+  border: 0.0625rem solid #d4d4d4;
   height: 9rem;
+  margin: 0 auto;
   width: 70%;
 }
 
-#countries-info h4 {
-  text-align: left;
+.input-group {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.custom-select {
+  background-color: #007acc;
+  color: #d4d4d4;
+  margin-top: 1rem;
 }
 
 #google-maps {
@@ -389,7 +401,7 @@ input:focus {
 }
 
 #maps {
-  border: .0625rem solid #fff;
+  border: .0625rem solid #d4d4d4;
   height: 80%;
 }
 
@@ -461,22 +473,22 @@ footer {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
-  .timer h4 {
+  #timer h4 {
     text-align: left;
   }
 
-  .score h4 {
-    margin-bottom: 2.6rem;
-    text-align: right;
-  }
-
-  input {
+  #text-input {
     font-size: 1.5rem;
     height: 2.8rem;
     padding: .5rem;
+  }
+
+  #score h4 {
+    margin-bottom: 3rem;
+    text-align: right;
   }
 
   #countries {
@@ -484,6 +496,10 @@ footer {
     box-shadow: 0 0 .5rem #007acc;
     height: 35rem;
   }  
+
+  #countries-info h4 {
+    text-align: left;
+  }
 
   #maps {
     border-radius: 2rem;

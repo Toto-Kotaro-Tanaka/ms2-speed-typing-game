@@ -32,7 +32,7 @@
     <div class="alert alert-danger d-lg-none" role="alert">
       <h5 class="modal-title">NOTE <i class="fas fa-exclamation-circle"></i></h5>
       <i class="fas fa-times close-alert"></i>
-      <p>The Speed Typing game is available only on <span class="desktop-size">desktop size</span> as a key board is required to play it</p>
+      <p>Speed Typing game is available only on <span class="bold">Laptop / Desktop</span> as a key board is required to play it</p>
     </div>
     <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -58,18 +58,18 @@
   </header>
 
   <section>
-    <h1>Welcome to the speed typing game!</h1>
+    <h1>Welcome to Speed Typing game!</h1>
     <p>
-      This game gives you an opportunity to practice speed typing! The texts being used are names of the countries in the world so in case you get interested in some of them, go to <span>“Countries”</span> section and learn about them <i class="fas fa-globe"></i>
+      This game gives you an opportunity to practice speed typing! The texts being used are names of the countries in the world so in case you get interested in some of them, go to <span class="bold">“Countries”</span> section and learn about them <i class="fas fa-globe"></i>
     </p>
     <hr>
     <div>
-      <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover">Game Instructions</button>
+      <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover" data-toggle="modal" data-target="#game-instructions">Game Instructions</button>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg col-lg-3.5 timer">
-          <h4><i class="fas fa-stopwatch"></i> Time: <span class="time">60</span> <span>sec.</span></h4>
+          <h4><i class="fas fa-stopwatch"></i> Time: <span class="time bold">60</span> <span>sec.</span></h4>
           <div class="d-none d-lg-block learn-countries" >
             <p>
               To learn about the “Countries”, click the below button <i class="far fa-arrow-alt-circle-down"></i>
@@ -90,9 +90,9 @@
           </p>
         </div>
         <div class="col-lg col-lg-3.5 score">
-          <h4><i class="fas fa-trophy"></i> Score: <span class="game-score">0</span> <span>pt.</span></h4>
-          <h4><span>You've got:</span> <span class="medal">Gold <i class="fas fa-medal"></i></span></h4>
-          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span class="highest-score">480</span> <span>pt.</span></h4>
+          <h4><i class="fas fa-trophy"></i> Score: <span class="game-score bold">0</span> <span>pt.</span></h4>
+          <h4><span>You've got:</span> <span class="medal bold">Gold <i class="fas fa-medal"></i></span></h4>
+          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span class="highest-score bold">0</span> <span>pt.</span></h4>
         </div>
       </div>
     </div>
@@ -102,21 +102,32 @@
     <p>&copy; Toto Tanaka 2021<p>
   </footer>
 
-    <!-- Credit: Bootstrap Modal @ https://getbootstrap.com/docs/4.0/components/modal/ -->
-  <div id="note" class="modal" tabindex="-1" role="dialog">
+  <!-- Credit: Bootstrap Modal @ https://getbootstrap.com/docs/4.0/components/modal/ -->
+  <div class="modal fade" id="game-instructions" tabindex="-1" role="dialog" aria-labelledby="game-instructions-label" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Game Instructions <i class="fas fa-chalkboard-teacher"></i></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <h5 class="modal-title" id="game-instructions-title">Game Instructions</h5>
         </div>
         <div class="modal-body">
-          <p>TEXT here</p>
+          <ol>
+            <li>There are <span class="bold">60</span> seconds per game</li>
+            <li>Names of the countries pop up randomly so you type it in the input box, as many as you can</li>
+            <li>You get <span class="bold">10</span> points per correct typing</li>
+            <li>At the end of each game, you receive a medal depending on the score</li>
+            <ul>
+              <li>More than <span class="bold">600</span> points - Gold Medal</li>
+              <li>Between <span class="bold">310 and 590</span> points - Silver Medal</li>
+              <li>Less than <span class="bold">300</span> points - Bronze Medal</li>
+            </ul>
+            <li>To start the game (& restart the game), type <span class="bold">"Ireland"</span> in the input box</li>
+          </ol>
+          <p class="modal-alert">
+            *** IMPORTANT *** <br>Speed Typing game is available only on <span class="bold">Laptop / Desktop</span> as a key board is required to play it
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary btn-instructions btn-modal" data-dismiss="modal">I'm ready!</button>
         </div>
       </div>
     </div>

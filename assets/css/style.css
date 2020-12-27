@@ -34,6 +34,10 @@ h4 {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* ---------- Alert */
 .alert {
   background-color: #ff6565;
@@ -59,10 +63,6 @@ h4 {
 .alert p {
   font-size: 1.1rem;
   margin: 0;
-}
-
-.desktop-size {
-  font-weight: bold;
 }
 
 /* ---------- Header */
@@ -117,10 +117,6 @@ section p {
   padding: 1.5rem 2rem ;
   margin-bottom: 0;
   text-align: center;
-}
-
-section p span {
-  font-weight: 800;
 }
 
 hr {
@@ -367,6 +363,33 @@ input:focus {
 footer {
   margin: 1.5rem 0;
   text-align: center;
+}
+
+/* ---------- Modal */
+.modal-content {
+  background-color: #f9dbdb;
+  color: #525252;
+  font-size: .9rem;
+  line-height: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+#game-instructions-title {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.modal-header, .modal-body {
+  border-bottom:.0625rem solid #525252;
+}
+
+.modal-alert {
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+
+.btn-modal {
+  margin: 1rem auto;
 }
 
 /* -------------------- Media Query: Desktop Size (62rem / 992px) -------------------- */

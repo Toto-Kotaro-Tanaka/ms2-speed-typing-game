@@ -29,6 +29,11 @@
 
 <body>
   <header>
+    <div class="alert alert-danger d-lg-none" role="alert">
+      <h5 class="modal-title">NOTE <i class="fas fa-exclamation-circle"></i></h5>
+      <i class="fas fa-times close-alert"></i>
+      <p>The Speed Typing game is available only on <span class="desktop-size">desktop size</span> as a key board is required to play it</p>
+    </div>
     <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo of the website" /></a>
@@ -78,7 +83,7 @@
           </p>
           <h2>Ireland</h2>
           <form action="">
-            <input type="text" name="text-input" id="text-input" placeholder="Type The Word HERE" autofocus>
+            <input type="text" name="text-input" id="text-input" placeholder="Type The Word HERE">
           </form>
           <p>
             To play the game again, simply type the word in the input box <i class="far fa-arrow-alt-circle-up"></i>
@@ -96,6 +101,27 @@
   <footer>
     <p>&copy; Toto Tanaka 2021<p>
   </footer>
+
+    <!-- Credit: Bootstrap Modal @ https://getbootstrap.com/docs/4.0/components/modal/ -->
+  <div id="note" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Game Instructions <i class="fas fa-chalkboard-teacher"></i></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>TEXT here</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /End of Credit -->
 
   <!-- Bootstrap JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

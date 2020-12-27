@@ -10,7 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h4 {
+h1, h4, h5 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: .2rem;
 }
@@ -34,6 +34,37 @@ h4 {
   text-align: center;
 }
 
+/* ---------- Alert */
+.alert {
+  background-color: #ff6565;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  opacity: .8;
+  margin: 0;
+  padding: 1rem;
+}
+
+.alert h5 {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-bottom: .5rem;
+}
+
+.close-alert {
+  display: inline-block;
+  float: right;
+}
+
+.alert p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.desktop-size {
+  font-weight: bold;
+}
+
 /* ---------- Header */
 .navbar {
   background-color: #1e1e1e !important;
@@ -41,6 +72,10 @@ h4 {
 
 .navbar-nav {
   margin-right: .8rem;
+}
+
+.navbar-toggler {
+  padding-top: .8rem;
 }
 
 nav img {
@@ -304,11 +339,13 @@ input:focus {
   box-shadow: 0 0 .5rem #007acc;
 }
 
+/* Credit: w3schools @ https://www.w3schools.com/howto/howto_css_placeholder.asp */
 ::placeholder {
   color: #1e1e1e;
   font-weight: 100;
   opacity: .4;
 }
+/* /End of Credit */
 
 .game-score {
   color: #ffff98;

@@ -145,6 +145,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 ### Code
 **--- HTML5 ---**
 * [Bootstrap Navbar](https://getbootstrap.com/docs/4.5/components/navbar/) for navigation bar
+* [Bootstrap Modal](https://getbootstrap.com/docs/4.0/components/modal/) for game instructions
 
 **Note:**
 **These are credited on all the html files*
@@ -153,6 +154,12 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 * [Stackoverflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4) to remove border colour of hamburger menu
 * [Stackoverflow](https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color) to change the colour of hamburger menu
 * [codepen](https://codepen.io/techshiva/pen/JVbKLM) for Buzz Out button
+* [w3schools](https://www.w3schools.com/howto/howto_css_placeholder.asp) for modifying placeholder
+
+**Note:**
+**These are credited on the css file*
+
+**--- JavaScript ---**
 
 **Note:**
 **These are credited on the css file*

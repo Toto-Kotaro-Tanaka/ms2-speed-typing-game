@@ -46,7 +46,7 @@
             <a class="nav-link" href="index.html">Home <i class="fas fa-street-view"></i><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item menu-instructions">
-            <a class="nav-link" href="#">Instructions</a>
+            <a class="nav-link" data-toggle="modal" data-target="#game-instructions">Instructions</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="countries.html">Countries</a>
@@ -74,7 +74,7 @@
             <p>
               To learn about the “Countries”, click the below button <i class="far fa-arrow-alt-circle-down"></i>
             </p>
-            <button class="btn btn-primary btn-countries buzz-out-on-hover">Countries</button>
+            <a class="btn btn-primary btn-countries buzz-out-on-hover" href="countries.html">Countries</a>
           </div>
         </div>
         <div class="col-lg col-lg-5 text-input">
@@ -112,13 +112,13 @@
         <div class="modal-body">
           <ol>
             <li>There are <span class="bold">60</span> seconds per game</li>
-            <li>Names of the countries pop up randomly so you type it in the input box, as many as you can</li>
+            <li>A names of the countries pops up randomly so you type it in the input box, as many as you can</li>
             <li>You get <span class="bold">10</span> points per correct typing</li>
             <li>At the end of each game, you receive a medal depending on the score</li>
             <ul>
-              <li>More than <span class="bold">600</span> points - Gold Medal</li>
-              <li>Between <span class="bold">310 and 590</span> points - Silver Medal</li>
-              <li>Less than <span class="bold">300</span> points - Bronze Medal</li>
+              <li>More than <span class="bold">600</span> points - Gold Medal <i class="fas fa-medal"></i></li>
+              <li>Between <span class="bold">310</span> and <span class="bold">590</span> points - Silver Medal <i class="fas fa-medal"></i></li>
+              <li>Less than <span class="bold">300</span> points - Bronze Medal <i class="fas fa-medal"></i></li>
             </ul>
             <li>To start the game (& restart the game), type <span class="bold">"Ireland"</span> in the input box</li>
           </ol>

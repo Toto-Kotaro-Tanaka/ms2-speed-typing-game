@@ -10,7 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h4, h5 {
+h1, h3, h4, h5 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: .2rem;
 }
@@ -38,7 +38,7 @@ h4 {
   font-weight: bold;
 }
 
-/* ---------- Alert */
+/* ---------- Alert All Pages */
 .alert {
   background-color: #ff6565;
   border: none;
@@ -65,7 +65,7 @@ h4 {
   margin: 0;
 }
 
-/* ---------- Header */
+/* ---------- Header All Pages */
 .navbar {
   background-color: #1e1e1e !important;
 }
@@ -359,13 +359,47 @@ input:focus {
   font-size: 2rem;
 }
 
-/* ---------- Footer */
+/* ---------- Section (countries.html) */
+#countries {
+  background-color: #007acc;
+  border: none;
+  /* border-radius: 2rem; */
+  /* box-shadow: 0 0 .5rem #007acc; */
+  /* height: 38rem; */
+  margin: 0;
+}
+
+#country-name, #google-maps-title {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#country-flag {
+  border: 0.0625rem solid #fff;
+  height: 9rem;
+  width: 70%;
+}
+
+#countries-info h4 {
+  text-align: left;
+}
+
+#google-maps {
+  height: 25rem;
+}
+
+#maps {
+  border: .0625rem solid #fff;
+  height: 80%;
+}
+
+/* ---------- Footer All Pages */
 footer {
   margin: 1.5rem 0;
   text-align: center;
 }
 
-/* ---------- Modal */
+/* ---------- Modal All Pages */
 .modal-content {
   background-color: #f9dbdb;
   color: #525252;
@@ -386,6 +420,10 @@ footer {
 .modal-alert {
   font-size: .8rem;
   margin-bottom: 0;
+}
+
+.modal-body ul {
+  padding-left: 1rem;
 }
 
 .btn-modal {
@@ -440,4 +478,15 @@ footer {
     height: 2.8rem;
     padding: .5rem;
   }
+
+  #countries {
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem #007acc;
+    height: 35rem;
+  }  
+
+  #maps {
+    border-radius: 2rem;
+    height: 120%;
+  }  
 }

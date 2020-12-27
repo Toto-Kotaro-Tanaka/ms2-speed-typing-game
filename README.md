@@ -146,6 +146,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 **--- HTML5 ---**
 * [Bootstrap Navbar](https://getbootstrap.com/docs/4.5/components/navbar/) for navigation bar
 * [Bootstrap Modal](https://getbootstrap.com/docs/4.0/components/modal/) for game instructions
+* [Bootstrap Input](https://getbootstrap.com/docs/4.0/components/input-group/#custom-select) for country input
 
 **Note:**
 **These are credited on all the html files*

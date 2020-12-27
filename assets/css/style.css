@@ -16,7 +16,7 @@ h1, h3, h4, h5 {
 }
 
 h1 {
-  padding-top: 1.5rem;
+  padding: 1.5rem 1rem 0;
   text-align: center;
 }
 
@@ -475,6 +475,11 @@ footer {
   h2 {
     font-size: 2.2rem;
   }
+
+  #text-input-section p, #text-input p {
+    font-size: 1rem;
+    padding: 1.5rem .5rem ;
+  }  
 
   #timer h4 {
     text-align: left;

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <title>Speed Typing</title>
+</head>
+
+<body>
+  <header>
+    <div class="alert alert-danger d-lg-none" role="alert">
+      <h5 class="modal-title">NOTE <i class="fas fa-exclamation-circle"></i></h5>
+      <i class="fas fa-times close-alert"></i>
+      <p>Speed Typing game is available only on <span class="bold">Laptop / Desktop</span> as a key board is required to play it</p>
+    </div>
+    <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo of the website" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active menu-home">
+            <a class="nav-link" href="index.html">Home <i class="fas fa-street-view"></i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item menu-instructions">
+            <a class="nav-link" href="#">Instructions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="countries.html">Countries</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /End of Credit -->
+  </header>
+
+  <section>
+    <h1>Welcome to Speed Typing game!</h1>
+    <p>
+      This game gives you an opportunity to practice speed typing! The texts being used are names of the countries in the world so in case you get interested in some of them, go to <span class="bold">“Countries”</span> section and learn about them <i class="fas fa-globe"></i>
+    </p>
+    <hr>
+    <div>
+      <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover" data-toggle="modal" data-target="#game-instructions">Game Instructions</button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg col-lg-3.5 timer">
+          <h4><i class="fas fa-stopwatch"></i> Time: <span class="time bold">60</span> <span>sec.</span></h4>
+          <div class="d-none d-lg-block learn-countries" >
+            <p>
+              To learn about the “Countries”, click the below button <i class="far fa-arrow-alt-circle-down"></i>
+            </p>
+            <button class="btn btn-primary btn-countries buzz-out-on-hover">Countries</button>
+          </div>
+        </div>
+        <div class="col-lg col-lg-5 text-input">
+          <p>
+            Type the word below <i class="far fa-arrow-alt-circle-down"></i> as fast as you can
+          </p>
+          <h2>Ireland</h2>
+          <form action="">
+            <input type="text" name="text-input" id="text-input" placeholder="Type The Word HERE">
+          </form>
+          <p>
+            To play the game again, simply type the word in the input box <i class="far fa-arrow-alt-circle-up"></i>
+          </p>
+        </div>
+        <div class="col-lg col-lg-3.5 score">
+          <h4><i class="fas fa-trophy"></i> Score: <span class="game-score bold">0</span> <span>pt.</span></h4>
+          <h4><span>You've got:</span> <span class="medal bold">Gold <i class="fas fa-medal"></i></span></h4>
+          <h4><i class="fas fa-thumbtack"></i> Highest Score: <span class="highest-score bold">0</span> <span>pt.</span></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Toto Tanaka 2021<p>
+  </footer>
+
+  <!-- Credit: Bootstrap Modal @ https://getbootstrap.com/docs/4.0/components/modal/ -->
+  <div class="modal fade" id="game-instructions" tabindex="-1" role="dialog" aria-labelledby="game-instructions-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="game-instructions-title">Game Instructions</h5>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>There are <span class="bold">60</span> seconds per game</li>
+            <li>Names of the countries pop up randomly so you type it in the input box, as many as you can</li>
+            <li>You get <span class="bold">10</span> points per correct typing</li>
+            <li>At the end of each game, you receive a medal depending on the score</li>
+            <ul>
+              <li>More than <span class="bold">600</span> points - Gold Medal</li>
+              <li>Between <span class="bold">310 and 590</span> points - Silver Medal</li>
+              <li>Less than <span class="bold">300</span> points - Bronze Medal</li>
+            </ul>
+            <li>To start the game (& restart the game), type <span class="bold">"Ireland"</span> in the input box</li>
+          </ol>
+          <p class="modal-alert">
+            *** IMPORTANT *** <br>Speed Typing game is available only on <span class="bold">Laptop / Desktop</span> as a key board is required to play it
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-instructions btn-modal" data-dismiss="modal">I'm ready!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /End of Credit -->
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!-- Main JavaScript -->
+  <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>

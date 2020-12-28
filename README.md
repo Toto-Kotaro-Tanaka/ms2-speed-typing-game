@@ -132,6 +132,15 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 * [GitHub](https://github.com/) for keeping the files, documents and deploy the website
 
 ## RESOURCES
+### General Resources
+* Code Institute course materials
+* Code Institute Slack Community
+* [MDN](https://developer.mozilla.org/en-US/)
+* [Stackoverflow](https://stackoverflow.com/)
+* [Youtube](https://www.youtube.com/)
+* [W3schools](https://www.w3schools.com/)
+
+### Tools
 
 ## TESTING
 
@@ -161,11 +170,15 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 **These are credited on the css file*
 
 **--- JavaScript ---**
+* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Codes written on my JavaScript are based on this with my customisation
 
 **Note:**
 **These are credited on the css file*
 
-## MEDIA
+### Contents
+* All the contents were written by me
+
+### MEDIA
 **--- Logo ---**
 * Created by me using [canva](https://www.canva.com/)
 

@@ -279,7 +279,7 @@ hr {
 
 .btn-countries {
   background-color: #007acc;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
   width: 13rem;
 }
 
@@ -307,13 +307,13 @@ hr {
   width: 90%;
 }
 
-#time {
+#time, #time-up {
   color: #ff6565;
 }
 
 #learn-countries p {
   font-size: 1rem;
-  padding: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
   text-align: left;
 }
 
@@ -353,6 +353,11 @@ form {
 
 #medal {
   color: #daa520;
+}
+
+#score h5 {
+  margin-top: -3rem;
+  text-align: right;
 }
 
 #highest-score {
@@ -526,6 +531,6 @@ footer {
   }
   
   footer {
-    margin-bottom: 20rem; /*check with Spencer */
+     /*check with Spencer */
   }
 }

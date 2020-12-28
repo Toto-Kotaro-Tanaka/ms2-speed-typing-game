@@ -70,6 +70,7 @@
       <div class="row">
         <div id="timer" class="col-lg col-lg-3.5">
           <h4><i class="fas fa-stopwatch"></i> Time: <span id="time" class="bold">60</span> <span>sec.</span></h4>
+          <h4 id="time-up" class="d-none d-lg-block"></h4>
           <div id="learn-countries" class="d-none d-lg-block" >
             <p>
               To learn about the “Countries”, click the below button <i class="far fa-arrow-alt-circle-down"></i>
@@ -81,9 +82,9 @@
           <p>
             Type the word below <i class="far fa-arrow-alt-circle-down"></i> as fast as you can
           </p>
-          <h2>Ireland</h2>
-          <form action="">
-            <input type="text" name="text-input" id="text-input" placeholder="Type The Word HERE">
+          <h2 id="country-text"></h2>
+          <form>
+            <input type="text" name="text-input" id="text-input" placeholder="Type The Word HERE" autofocus>
           </form>
           <p>
             To play the game again, simply type the word in the input box <i class="far fa-arrow-alt-circle-up"></i>
@@ -92,6 +93,7 @@
         <div id="score" class="col-lg col-lg-3.5">
           <h4><i class="fas fa-trophy"></i> Score: <span id="game-score" class="bold">0</span> <span>pt.</span></h4>
           <h4><span>You've got:</span> <span id="medal" class="bold">Gold <i class="fas fa-medal"></i></span></h4>
+          <h5 class="d-none d-lg-block">Well done!</h5>
           <h4><i class="fas fa-thumbtack"></i> Highest Score: <span id="highest-score" class="bold">0</span> <span>pt.</span></h4>
         </div>
       </div>

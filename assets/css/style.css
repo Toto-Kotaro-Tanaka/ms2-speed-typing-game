@@ -45,8 +45,8 @@ h4 {
   border: none;
   border-radius: 0;
   color: #fff;
-  opacity: .8;
   margin: 0;
+  opacity: .8;
   padding: 1rem;
 }
 
@@ -317,10 +317,6 @@ hr {
   text-align: left;
 }
 
-form {
-  text-align: center;
-}
-
 #text-input {
   background-color: #d4d4d4;
   border: .2rem solid #007acc;
@@ -329,6 +325,7 @@ form {
   font-weight: bold;
   height: 2rem;
   letter-spacing: .1rem;
+  margin: 0 auto;
   text-align: center;
   width: 80%;
 }
@@ -341,11 +338,22 @@ form {
 
 /* Credit: w3schools @ https://www.w3schools.com/howto/howto_css_placeholder.asp */
 ::placeholder {
-  color: #1e1e1e;
-  font-weight: 100;
-  opacity: .4;
+  color: #1e1e1e !important;
+  font-size: 1rem;
+  font-weight: 100 !important;
+  opacity: .3 !important;
 }
 /* /End of Credit */
+
+#start-button {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#start-button:hover {
+  color: #007acc;
+}
 
 #game-score {
   color: #ffff98;
@@ -395,7 +403,7 @@ form {
   font-size: 1.2rem;
 }
 
-.input-group {
+#country-dropdown {
   margin: 0 auto;
   width: 70%;
 }
@@ -496,10 +504,19 @@ footer {
     text-align: left;
   }
 
+  .input-group-prepend {
+    margin: 0;
+    width: 100%;
+  }  
+
   #text-input {
     font-size: 1.5rem;
     height: 2.8rem;
     padding: .5rem;
+  }
+
+  ::placeholder {
+    font-size: 1.2rem;
   }
 
   #score h4 {

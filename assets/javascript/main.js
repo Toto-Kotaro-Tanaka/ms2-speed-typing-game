@@ -1,24 +1,22 @@
-window.addEventListener("load", init);
+$(window).on("load", init);
 
-// To hide alert
+// To Hide Alert
 $("#close-alert").click(function() {
   $(".alert").hide();
 });
 
 // Codes for Speed Typing Game
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
+
+// Global Valuables
 let time = 20;
 let gameScore = 0;
+let highestScore = 0;
 let isPlaying;
 
-const wordInput = document.querySelector("#text-input");
-const currentWord = document.querySelector("#country-text");
-const scoreDisplay = document.querySelector("#game-score");
-const timeDisplay = document.querySelector("#time");
-const message = document.querySelector("#time-up");
-
-const words = [
-  'Ireland',
+// This will be replaced by Countries API
+const texts = [
+  'Galway',
   'Desk',
   'Chair',
   'Computer',
@@ -31,70 +29,60 @@ const words = [
   'JavaScript'
 ]
 
-// Initialize Game
+// To Initialise Game
 function init() {
-  // Load text from array
-  showWord(words);
-  // Start Matching On Text Input
-  wordInput.addEventListener("input", startMatch);
-  // Call countdown
+  // To Load Text From Array
+  showText(texts);
+  // To Start Matching On Text Input
+  $("#text-input").on("input", startMatch);
+  // To Call Countdown
   setInterval(countdown, 1000);
-  // Check Game Status
+  // To Check Game Status
   setInterval(checkStatus, 50);
 }
 
-// Start Match
+// To Start Match
 function startMatch() {
   if (matchWords()) {
-
     isPlaying = true;
-    showWord(words);
-    wordInput.value = "";
+    showText(texts);
     gameScore += 10;
-    console.log("MATCH!");
-    // // console.log(wordInput);
-    // console.log(wordInput.value);
-    // console.log(currentWord.innerHTML);
-    // // console.log($("#country-text"));
-  } else {
-    console.log("false");
-    scoreDisplay.innerHTML = gameScore;
-  }
+    $("#text-input").val("");
+    $("#game-score").html(gameScore);
+  } 
 }
 
-// Match Current Word to Text Input
+// To Match Current Word to Text Input
 function matchWords() {
-  if (wordInput.value === currentWord.innerHTML) {
-    message.innerHTMT = "Correct";
+  if ($("#text-input").val() === $("#country-text").html()) {
     return true;
   } else {
-    message.innerHTML = "";
     return false;
   }
 }
 
-// Pick & Show Random Text
-function showWord(words) {
-  // Generate Random Array Index
-  const randomIndex = Math.floor(Math.random() * words.length);
-  // Output Randome Text
-  currentWord.innerHTML = words[randomIndex];
+// To Pick & Show Random Text
+function showText(texts) {
+  // To Generate Random Array Index
+  const randomIndex = Math.floor(Math.random() * texts.length);
+  // To Output Randome Text
+  $("#country-text").html(texts[randomIndex]);
 }
 
-// Countdwon Timer
+// To Countdown Time
 function countdown() {
   if (time > 0) {
     time--;
   } else if(time === 0) {
     isPlaying = false;
   }
-  // Show Countdown Time
-  timeDisplay.innerHTML = time;
+  // To Show Countdown Time
+  $("#time").html(time);
 }
 
-// Check Game Status
+// To Check Game Status
 function checkStatus() {
   if (!isPlaying && time === 0) {
-    message.innerHTML = "Time is Up!";
+    $("#time-up").html("Time is Up!");
   }
 }

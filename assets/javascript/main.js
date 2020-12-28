@@ -5,6 +5,26 @@ $("#close-alert").click(function() {
   $(".alert").hide();
 });
 
+// Fancy Heading Display
+// Credit: Tobias Ahlin Bjerrome @ https://tobiasahlin.com/moving-letters/#3
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 500,
+    delay: (el, i) => 60 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
 // Codes for Speed Typing Game
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
 
@@ -86,3 +106,8 @@ function checkStatus() {
     $("#time-up").html("Time is Up!");
   }
 }
+
+// ---------- /Speed Typing Game ----------
+
+
+

@@ -420,6 +420,7 @@ hr {
 
 #maps {
   border: .0625rem solid #d4d4d4;
+  border-radius: 2rem;
   height: 80%;
 }
 
@@ -504,11 +505,6 @@ footer {
     text-align: left;
   }
 
-  .input-group-prepend {
-    margin: 0;
-    width: 100%;
-  }  
-
   #text-input {
     font-size: 1.5rem;
     height: 2.8rem;
@@ -543,11 +539,11 @@ footer {
   }
 
   #maps {
-    border-radius: 2rem;
-    height: 130%;
+    height: 128%;
   }
   
   footer {
      /*check with Spencer */
   }
+
 }

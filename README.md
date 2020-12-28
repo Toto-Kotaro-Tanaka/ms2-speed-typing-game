@@ -170,6 +170,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 **These are credited on the css file*
 
 **--- JavaScript ---**
+* [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
 * [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Codes written on my JavaScript are based on this with my customisation
 
 **Note:**
@@ -178,7 +179,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 ### Contents
 * All the contents were written by me
 
-### MEDIA
+### Media
 **--- Logo ---**
 * Created by me using [canva](https://www.canva.com/)
 

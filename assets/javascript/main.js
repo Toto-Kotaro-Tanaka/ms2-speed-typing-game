@@ -1,4 +1,4 @@
-$(window).on("load", init);
+// $(window).on("load", init);
 
 // To Hide Alert
 $("#close-alert").click(function() {
@@ -29,7 +29,7 @@ anime.timeline({loop: false})
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
 
 // Global Valuables
-let time = 20;
+let time = 60;
 let gameScore = 0;
 let highestScore = 0;
 let isPlaying;
@@ -50,7 +50,7 @@ const texts = [
 ]
 
 // To Initialise Game
-function init() {
+function startGame() {
   // To Load Text From Array
   showText(texts);
   // To Start Matching On Text Input

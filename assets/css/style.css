@@ -363,10 +363,10 @@ hr {
   color: #daa520;
 }
 
-#score h5 {
+/* #score h5 {
   margin-top: -3rem;
   text-align: right;
-}
+} */
 
 #highest-score {
   color: #fdf838;

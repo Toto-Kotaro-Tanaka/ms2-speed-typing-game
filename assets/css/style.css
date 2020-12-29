@@ -115,7 +115,7 @@ nav img {
 section p {
   font-size: 1rem;
   letter-spacing: .1rem;
-  padding: 1.5rem 2rem ;
+  padding: 2.5rem 2rem ;
   margin-bottom: 0;
   text-align: center;
 }
@@ -496,6 +496,18 @@ footer {
     font-size: 2.2rem;
   }
 
+  section p {
+    padding: 3.5rem 2rem ;
+  }
+
+  .btn-instructions {
+    margin: 4rem auto;
+  }
+
+  .btn-ready {
+    margin: 1rem auto;
+  }
+
   #text-input-section p, #text-input p {
     font-size: 1rem;
     padding: 1.5rem .5rem ;
@@ -541,9 +553,8 @@ footer {
   #maps {
     height: 128%;
   }
-  
-  footer {
-     /*check with Spencer */
-  }
 
+  footer {
+    margin: 3.5rem auto 1.5rem;
+  }
 }

@@ -344,35 +344,31 @@ hr {
 }
 /* /End of Credit */
 
-#play-btn, #replay-btn {
+#play-btn, #reset-btn {
   background-color: #1e1e1e;
   border: none;
   color: #d4d4d4;
+  float: left;
   font-size: 2.5rem;
   margin-top: 1rem;
-  text-align: center;
+  padding: 0 1rem;
 }
 
-#play-btn:hover, #replay-btn:hover {
+#play-btn:hover, #reset-btn:hover {
   color: #007acc;
 }
 
-#play-btn {
-  float: left;
-  padding: 0 1rem;
-}
-
-#replay-btn {
-  float: right;
-  padding: 0 1rem;
-}
-
-#play-btn:hover, #replay-btn:hover,
-#play-btn:active, #replay-btn:active,
-#play-btn:focus, #replay-btn:focus,
-#play-btn:active:focus, #replay-btn:focus {
+#play-btn:hover, #reset-btn:hover,
+#play-btn:active, #reset-btn:active,
+#play-btn:focus, #reset-btn:focus,
+#play-btn:active:focus, #reset-btn:focus {
   outline: none;
 }
+
+#reset-btn {
+  display: none;
+}
+
 
 #game-score {
   color: #ffff98;

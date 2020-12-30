@@ -146,6 +146,12 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 
 ## PROJECT BARRIERS & SOLUTIONS
 
+Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.
+
+Draft: Even the time was up, I could still type and the score increased etc so I used attribute disabled for input and came up with a solution to have reset button so that until users click it, the game stays the same as how they finished and when they want to play it again, they click reset button
+
+Draft: Display: hide; didn't apply on some elements which had d-none. Therefore, I came up with a solution to put these elements in div and give the div d-none so that I could apply display: hide for the elements inside the div.
+
 ## VERSION CONTROL
 
 ## DEPLOYMENT

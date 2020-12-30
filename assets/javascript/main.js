@@ -1,5 +1,3 @@
-// $(window).on("load", init);
-
 // To Hide Alert
 $("#close-alert").click(function() {
   $(".alert").hide();
@@ -25,14 +23,13 @@ anime.timeline({loop: false})
     delay: 1000
   });
 
-// Codes for Speed Typing Game
+// ---------- Codes for Speed Typing Game ----------
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
 
 // Global Valuables
-let time = 60;
+let time = 10; //10s is just for testing - should be 60
 let gameScore = 0;
 let highestScore = 0;
-let isPlaying;
 
 // This will be replaced by Countries API
 const texts = [
@@ -49,30 +46,44 @@ const texts = [
   'JavaScript'
 ]
 
-// To Initialise Game
-function startGame() {
-  // To Load Text From Array
+//To Play The Game
+$("#play-btn").click(function() {
+  countdown();
   showText(texts);
-  // To Start Matching On Text Input
   $("#text-input").on("input", startMatch);
-  // To Call Countdown
-  setInterval(countdown, 1000);
-  // To Check Game Status
-  setInterval(checkStatus, 50);
+});
+
+//To Countdown Time
+function countdown() {
+  gameScore = 0;
+  $("input").focus();
+  const timer = setInterval(function() {
+    //To Prevent Users Hitting It Again
+    $("#play-btn").attr("disabled", "true");
+    time--;
+    $("#time").html(time);
+
+    if (time === 0) {
+      //To Prevent Users Typing Words In
+      $("input").attr("disabled", "true");
+      $("#time-up").html("Time is Up!");
+      $("#country-text").html("Try Again!");
+      $("#medal").html('Gold Medal <i class="fas fa-medal"></i>');
+      $("#message").html("Well Done");
+      clearInterval(timer);
+      $("#reset-btn").show();
+      $("#reset-message").html('Click the "Reset" button <i class="far fa-registered"></i> to play it again')
+    }
+  }, 1000);
 }
 
-// To Start Match
-function startMatch() {
-  if (matchWords()) {
-    isPlaying = true;
-    showText(texts);
-    gameScore += 10;
-    $("#text-input").val("");
-    $("#game-score").html(gameScore);
-  } 
+// To Show Typing Word
+function showText(texts) {
+  const randomIndex = Math.floor(Math.random() * texts.length);
+  $("#country-text").html(texts[randomIndex]);
 }
 
-// To Match Current Word to Text Input
+// To Check Current Word And Input Word Match
 function matchWords() {
   if ($("#text-input").val() === $("#country-text").html()) {
     return true;
@@ -81,31 +92,19 @@ function matchWords() {
   }
 }
 
-// To Pick & Show Random Text
-function showText(texts) {
-  // To Generate Random Array Index
-  const randomIndex = Math.floor(Math.random() * texts.length);
-  // To Output Randome Text
-  $("#country-text").html(texts[randomIndex]);
-}
-
-// To Countdown Time
-function countdown() {
-  if (time > 0) {
-    time--;
-  } else if(time === 0) {
-    isPlaying = false;
-  }
-  // To Show Countdown Time
-  $("#time").html(time);
-}
-
-// To Check Game Status
-function checkStatus() {
-  if (!isPlaying && time === 0) {
-    $("#time-up").html("Time is Up!");
+// To Act When Words Match
+function startMatch() {
+  if (matchWords()) {
+    showText(texts);
+    gameScore += 10;
+    $("#text-input").val("");
+    $("#game-score").html(gameScore);
   }
 }
+
+$("#reset-btn").click(function() {
+  location.reload();
+});
 
 // ---------- /Speed Typing Game ----------
 

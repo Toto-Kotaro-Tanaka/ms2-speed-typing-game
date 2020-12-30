@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* ---------- Headings & General Style */
 h1, h3, h4, h5 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: .2rem;
@@ -365,10 +366,13 @@ hr {
   outline: none;
 }
 
+#reset {
+  height: 0;
+}
+
 #reset-btn {
   display: none;
 }
-
 
 #game-score {
   color: #ffff98;
@@ -498,7 +502,7 @@ footer {
   } 
   
   h1 {
-    font-size: 3.3rem;
+    font-size: 4rem;
   }
 
   h2 {

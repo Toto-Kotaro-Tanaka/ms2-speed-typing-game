@@ -71,8 +71,10 @@ function countdown() {
       $("#medal").html('Gold Medal <i class="fas fa-medal"></i>');
       $("#message").html("Well Done");
       clearInterval(timer);
+      $("#play-btn").css("color", "#ff6565");
+      $("#play-message").hide();
       $("#reset-btn").show();
-      $("#reset-message").html('Click the "Reset" button <i class="far fa-registered"></i> to play it again')
+      $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again')
     }
   }, 1000);
 }

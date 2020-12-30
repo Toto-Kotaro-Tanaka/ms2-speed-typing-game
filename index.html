@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet"/>
 
   <!-- Fontawesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
@@ -22,7 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   
   <!-- Styles CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css"/>
   
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -35,11 +35,11 @@
     <div class="alert alert-danger d-lg-none" role="alert">
       <h5>NOTE <i class="fas fa-exclamation-circle"></i></h5>
       <i id="close-alert" class="fas fa-times"></i>
-      <p>Speed Typing game is available only on <span class="bold">Laptop / Desktop</span> as a key board is required to play it</p>
+      <p>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it</p>
     </div>
     <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Website Logo" /></a>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Website Logo"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,18 +63,16 @@
   <section>
     <h1 class="ml3">Welcome to Speed Typing game!</h1>
     <p>
-      This game gives you an opportunity to practice speed typing! The texts are names of the countries in the world so in case you get interested in some of them, go to <span class="bold">“Countries”</span> page and learn about them <i class="fas fa-globe"></i>
+      This game gives you an opportunity to practice speed typing! The words are names of the countries in the world so in case you get interested in some of them, go to <span class="bold">“Countries”</span> page and learn about them <i class="fas fa-globe"></i>
     </p>
     <hr>
-    <div>
-      <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover" data-toggle="modal" data-target="#game-instructions">Game Instructions</button>
-    </div>
+    <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover" data-toggle="modal" data-target="#game-instructions">Game Instructions</button>
     <div class="container-fluid">
       <div class="row">
         <div id="timer" class="col-lg col-lg-3.5">
           <h4><i class="fas fa-stopwatch"></i> Time: <span id="time" class="bold">60</span> <span>sec.</span></h4>
           <h3 id="time-up" class="d-none d-lg-block"></h3>
-          <div id="learn-countries" class="d-none d-lg-block" >
+          <div id="learn-countries" class="d-none d-lg-block">
             <p>
               To learn about the “Countries”, click the below button <i class="far fa-arrow-alt-circle-down"></i>
             </p>
@@ -87,14 +85,18 @@
           </p>
           <h2 id="country-text">Ireland</h2>
           <input type="text" id="text-input" class="form-control" placeholder="Type The Word HERE" aria-label="" aria-describedby="basic-addon1">
-          <i id="start-button" class="far fa-play-circle d-none d-lg-block" onclick="startGame()"></i>
+          <button id="play-btn" class="d-none d-lg-inline-block"><i class="far fa-play-circle"></i></button>
+          <button id="replay-btn" class="d-none d-lg-inline-block"><i class="far fa-registered"></i></button>
           <p>
-            To play the game, simply click the "Start" button <i class="far fa-play-circle"></i>
+            To play the game, simply click the "Play" button <i class="far fa-play-circle"></i>
+          </p>
+          <p id="replay-game-message" class="d-none d-lg-inline">
+            <!-- To replay the game, simply click the "Replay" button <i class="far fa-registered"></i> -->
           </p>
         </div>
         <div id="score" class="col-lg col-lg-3.5">
           <h4><i class="fas fa-trophy"></i> Score: <span id="game-score" class="bold">0</span> <span>pt.</span></h4>
-          <h4 id="medal-message">You've got <i class="fas fa-medal"></i>: <span id="medal" class="bold"></span><br><span id="message"></span></h4>
+          <h4 id="medal-message" class="d-none d-lg-block">You've got: <span id="medal" class="bold"></span><br><span id="message"></span></h4>
           <h4><i class="fas fa-thumbtack"></i> Highest Score: <span id="highest-score" class="bold">0</span> <span>pt.</span></h4>
         </div>
       </div>
@@ -119,14 +121,14 @@
             <li>You get <span class="bold">10</span> points per correct typing</li>
             <li>At the end of each game, you receive a medal depending on the score</li>
             <ul>
-              <li>Gold Medal <i class="fas fa-medal"></i> - More than <span class="bold">600</span> points</li>
-              <li>Silver Medal <i class="fas fa-medal"></i> - Between <span class="bold">310</span> and <span class="bold">590</span> points</li>
-              <li>Bronze Medal <i class="fas fa-medal"></i> - Less than <span class="bold">300</span> points</li>
+              <li>Gold Medal <i class="fas fa-medal"></i> - Over <span class="bold">400</span> points</li>
+              <li>Silver Medal <i class="fas fa-medal"></i> - Between <span class="bold">300</span> and <span class="bold">390</span> points</li>
+              <li>Bronze Medal <i class="fas fa-medal"></i> - Below <span class="bold">290</span> points</li>
             </ul>
-            <li>To start (& restart) the game, click <span class="bold">Start button <i class="far fa-play-circle"></i></span> below input box</li>
+            <li>To play the game, click <span class="bold">Play <i class="far fa-play-circle"></i></span> button below the input box</li>
           </ol>
           <p class="modal-alert">
-            *** IMPORTANT *** <br>Speed Typing game is available only on <span class="bold">Laptop / Desktop</span> as a key board is required to play it
+            *** IMPORTANT *** <br>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it
           </p>
         </div>
         <div class="modal-footer">

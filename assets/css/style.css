@@ -45,7 +45,7 @@ h4 {
   border: none;
   border-radius: 0;
   color: #fff;
-  margin: 0;
+  margin: 0 0 1rem 0;
   opacity: .8;
   padding: 1rem;
 }
@@ -72,7 +72,7 @@ h4 {
 }
 
 .navbar-nav {
-  margin-right: .8rem;
+  margin-right: 1rem;
 }
 
 .navbar-toggler {
@@ -87,7 +87,6 @@ nav img {
   color: #007acc;
   float: right;
   font-family: "Courgette", cursive;
-  font-size: 1rem;
   font-weight: bolder;
   letter-spacing: .1rem;
 }
@@ -113,10 +112,9 @@ nav img {
 
 /* ---------- Section (index.html) */
 section p {
-  font-size: 1rem;
   letter-spacing: .1rem;
-  padding: 2.5rem 2rem ;
   margin-bottom: 0;
+  padding: 2.5rem 2rem ;
   text-align: center;
 }
 
@@ -292,6 +290,7 @@ hr {
 
 .btn-speed-typing {
   background-color: #1e1e1e;
+  margin: 1rem auto;
 }
 
 .btn-speed-typing:hover,
@@ -333,7 +332,7 @@ hr {
 #text-input:focus {
   outline: none !important;
   border: .2rem solid #007acc;
-  box-shadow: 0 0 .5rem #007acc;
+  box-shadow: 0 0 .7rem #007acc;
 }
 
 /* Credit: w3schools @ https://www.w3schools.com/howto/howto_css_placeholder.asp */
@@ -345,27 +344,42 @@ hr {
 }
 /* /End of Credit */
 
-#start-button {
+#play-btn, #replay-btn {
+  background-color: #1e1e1e;
+  border: none;
+  color: #d4d4d4;
   font-size: 2.5rem;
   margin-top: 1rem;
   text-align: center;
 }
 
-#start-button:hover {
+#play-btn:hover, #replay-btn:hover {
   color: #007acc;
+}
+
+#play-btn {
+  float: left;
+  padding: 0 1rem;
+}
+
+#replay-btn {
+  float: right;
+  padding: 0 1rem;
+}
+
+#play-btn:hover, #replay-btn:hover,
+#play-btn:active, #replay-btn:active,
+#play-btn:focus, #replay-btn:focus,
+#play-btn:active:focus, #replay-btn:focus {
+  outline: none;
 }
 
 #game-score {
   color: #ffff98;
 }
 
-#medal {
+/* #medal {
   color: #daa520;
-}
-
-/* #score h5 {
-  margin-top: -3rem;
-  text-align: right;
 } */
 
 #highest-score {
@@ -408,10 +422,10 @@ hr {
   width: 70%;
 }
 
-.custom-select {
+#list-of-countries {
   background-color: #007acc;
   color: #d4d4d4;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 #google-maps {
@@ -470,7 +484,6 @@ footer {
   }
 
   #navbarNav {
-    padding-right: 1rem;
     position: absolute;
     right: 0;
   }
@@ -497,6 +510,7 @@ footer {
   }
 
   section p {
+    font-size: 1.3rem;
     padding: 3.5rem 2rem ;
   }
 
@@ -509,7 +523,7 @@ footer {
   }
 
   #text-input-section p, #text-input p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 1.5rem .5rem ;
   }  
 
@@ -524,7 +538,7 @@ footer {
   }
 
   ::placeholder {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   #score h4 {
@@ -534,7 +548,7 @@ footer {
 
   #countries {
     border-radius: 1rem;
-    box-shadow: 0 0 .5rem #007acc;
+    box-shadow: 0 0 .7rem #007acc;
     height: 37rem;
   }
   
@@ -546,7 +560,7 @@ footer {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding-left: 2.2rem;
+    padding-left: 2rem;
     text-align: left;
   }
 

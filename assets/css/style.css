@@ -382,11 +382,11 @@ hr {
   color: #daa520;
 } */
 
-#highest-score {
+#high-score {
   color: #fdf838;
 }
 
-#time, #game-score, #medal, #highest-score {
+#time, #game-score, #medal, #high-score {
   font-size: 2rem;
 }
 

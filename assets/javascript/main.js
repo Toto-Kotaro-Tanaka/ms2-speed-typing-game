@@ -30,7 +30,11 @@ anime.timeline({loop: false})
 // Global Valuables
 let time = 10; //10s is just for testing - should be 60
 let gameScore = 0;
-let highestScore = 0;
+let highScore = 0;
+highScore = localStorage.getItem("speedTypingHighScore");
+
+$("#high-score").html(highScore);
+
 
 // This will be replaced by Countries API
 const texts = [
@@ -91,6 +95,13 @@ function countdown() {
         $("#medal").html('Gold <i class="fas fa-medal"></i>');
         $("#message").html("Perfect!!!");
       }
+
+      if (gameScore > highScore) {
+        localStorage.setItem("speedTypingHighScore", gameScore);
+      }
+
+      highScore = localStorage.getItem("speedTypingHighScore");
+      $("#high-score").html(highScore);
     }
   }, 1000);
 }
@@ -114,7 +125,7 @@ function matchWords() {
 function startMatch() {
   if (matchWords()) {
     showText(texts);
-    gameScore += 10;
+    gameScore += 100;
     $("#text-input").val("");
     $("#game-score").html(gameScore);
   }

@@ -28,7 +28,7 @@ anime.timeline({loop: false})
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
 
 // Global Valuables
-let time = 10; //10s is just for testing - should be 60
+let time = 5; //10s is just for testing - should be 60
 let gameScore = 0;
 let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
@@ -82,18 +82,22 @@ function countdown() {
       $("#reset-btn").show();
       $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');
 
-      if (gameScore <= 290) {
-        $("#medal").css("color", "#b08d57");
-        $("#medal").html('Bronze <i class="fas fa-medal"></i>');
-        $("#message").html("Unlucky!");
+      if (gameScore >= 460) {
+        $("#medal").css("color", "#e84610");
+        $("#medal").html('CI <i class="fas fa-medal"></i>');
+        $("#message").html("Secret Medal");
+      } else if (gameScore >= 400 && gameScore < 460) {
+        $("#medal").css("color", "#d4af37");
+        $("#medal").html('Gold <i class="fas fa-medal"></i>');
+        $("#message").html("Perfect!!!");
       } else if (gameScore >= 300 && gameScore < 400) {
         $("#medal").css("color", "#808080");
         $("#medal").html('Silver <i class="fas fa-medal"></i>');
         $("#message").html("Well Done!!");
       } else {
-        $("#medal").css("color", "#d4af37");
-        $("#medal").html('Gold <i class="fas fa-medal"></i>');
-        $("#message").html("Perfect!!!");
+        $("#medal").css("color", "#b08d57");
+        $("#medal").html('Bronze <i class="fas fa-medal"></i>');
+        $("#message").html("Unlucky!");
       }
 
       if (gameScore > highScore) {
@@ -125,7 +129,7 @@ function matchWords() {
 function startMatch() {
   if (matchWords()) {
     showText(texts);
-    gameScore += 100;
+    gameScore += 450;
     $("#text-input").val("");
     $("#game-score").html(gameScore);
   }

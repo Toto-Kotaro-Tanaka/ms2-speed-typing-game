@@ -3,7 +3,7 @@ $("#close-alert").click(function() {
   $(".alert").hide();
 });
 
-// Fancy Heading Display
+// ---------- Fancy Heading Display ----------
 // Credit: Tobias Ahlin Bjerrome @ https://tobiasahlin.com/moving-letters/#3
 var textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -22,6 +22,7 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     delay: 1000
   });
+// ---------- /End of Fancy Heading Display ----------
 
 // ---------- Codes for Speed Typing Game ----------
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
@@ -59,22 +60,37 @@ function countdown() {
   $("input").focus();
   const timer = setInterval(function() {
     //To Prevent Users Hitting It Again
+    $("#play-message").hide();
+    $("#play-btn").css("color", "#ff6565");
     $("#play-btn").attr("disabled", "true");
     time--;
     $("#time").html(time);
 
     if (time === 0) {
+      clearInterval(timer);
       //To Prevent Users Typing Words In
       $("input").attr("disabled", "true");
       $("#time-up").html("Time is Up!");
       $("#country-text").html("Try Again!");
       $("#medal").html('Gold Medal <i class="fas fa-medal"></i>');
       $("#message").html("Well Done");
-      clearInterval(timer);
-      $("#play-btn").css("color", "#ff6565");
       $("#play-message").hide();
       $("#reset-btn").show();
-      $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again')
+      $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');
+
+      if (gameScore <= 290) {
+        $("#medal").css("color", "#b08d57");
+        $("#medal").html('Bronze <i class="fas fa-medal"></i>');
+        $("#message").html("Unlucky!");
+      } else if (gameScore >= 300 && gameScore < 400) {
+        $("#medal").css("color", "#808080");
+        $("#medal").html('Silver <i class="fas fa-medal"></i>');
+        $("#message").html("Well Done!!");
+      } else {
+        $("#medal").css("color", "#d4af37");
+        $("#medal").html('Gold <i class="fas fa-medal"></i>');
+        $("#message").html("Perfect!!!");
+      }
     }
   }, 1000);
 }
@@ -107,8 +123,7 @@ function startMatch() {
 $("#reset-btn").click(function() {
   location.reload();
 });
-
-// ---------- /Speed Typing Game ----------
+// ---------- /End of Speed Typing Game ----------
 
 
 

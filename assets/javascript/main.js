@@ -28,33 +28,35 @@ anime.timeline({loop: false})
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
 
 // Global Valuables
-let time = 5; //10s is just for testing - should be 60
+let time = 10; //10s is just for testing - should be 60
 let gameScore = 0;
 let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
-
 $("#high-score").html(highScore);
 
-
 // This will be replaced by Countries API
-const texts = [
-  'Galway',
-  'Desk',
-  'Chair',
-  'Computer',
-  'House',
-  'Car',
-  'Hero',
-  'Keyboard',
-  'Piano',
-  'Football',
-  'JavaScript'
+const countries = [
+  'Canada',
+  'Australia',
+  'NewZealand',
+  'Japan',
+  'United States',
+  'France',
+  'Nigeria',
+  'Brazil',
+  'China',
+  'Germany',
+  'South Africa',
+  'Mexico',
+  'Wales',
+  'Argentina',
+  'Saudi Arabia'
 ]
 
 //To Play The Game
 $("#play-btn").click(function() {
   countdown();
-  showText(texts);
+  showCountries(countries);
   $("#text-input").on("input", startMatch);
 });
 
@@ -63,34 +65,33 @@ function countdown() {
   gameScore = 0;
   $("input").focus();
   const timer = setInterval(function() {
-    //To Prevent Users Hitting It Again
     $("#play-message").hide();
     $("#play-btn").css("color", "#ff6565");
-    $("#play-btn").attr("disabled", "true");
+    $("#play-btn").attr("disabled", "true"); // To Prevent Users Hitting It Again
     time--;
     $("#time").html(time);
 
     if (time === 0) {
       clearInterval(timer);
-      //To Prevent Users Typing Words In
-      $("input").attr("disabled", "true");
+      $("input").attr("disabled", "true"); // To Prevent Users Typing Words In
       $("#time-up").html("Time is Up!");
+      $("#country-text").css("color", "#007acc")
       $("#country-text").html("Try Again!");
-      $("#medal").html('Gold Medal <i class="fas fa-medal"></i>');
-      $("#message").html("Well Done");
       $("#play-message").hide();
       $("#reset-btn").show();
       $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');
 
-      if (gameScore >= 460) {
+      if (gameScore >= 350) {
         $("#medal").css("color", "#e84610");
-        $("#medal").html('CI <i class="fas fa-medal"></i>');
-        $("#message").html("Secret Medal");
-      } else if (gameScore >= 400 && gameScore < 460) {
+        $("#medal").html('CI <i class="fas fa-crown"></i>'); // Code Institute Colour Medal - secret medal for special people reaching that high score and not written on instructions (just for fun)
+        $("#message").css("color", "#e84610");
+        $("#message").html("Special Crown");  
+      } else if (gameScore >= 300 && gameScore < 350) {
         $("#medal").css("color", "#d4af37");
         $("#medal").html('Gold <i class="fas fa-medal"></i>');
-        $("#message").html("Perfect!!!");
-      } else if (gameScore >= 300 && gameScore < 400) {
+        $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
+        $("#message").html("Great job! Try to reach 350 pt and see what happens...");
+      } else if (gameScore >= 250 && gameScore < 300) {
         $("#medal").css("color", "#808080");
         $("#medal").html('Silver <i class="fas fa-medal"></i>');
         $("#message").html("Well Done!!");
@@ -110,13 +111,13 @@ function countdown() {
   }, 1000);
 }
 
-// To Show Typing Word
-function showText(texts) {
-  const randomIndex = Math.floor(Math.random() * texts.length);
-  $("#country-text").html(texts[randomIndex]);
+// To Show Countries
+function showCountries(countries) {
+  const randomIndex = Math.floor(Math.random() * countries.length);
+  $("#country-text").html(countries[randomIndex]);
 }
 
-// To Check Current Word And Input Word Match
+// To Check Current Word (Country) And Input Word Match
 function matchWords() {
   if ($("#text-input").val() === $("#country-text").html()) {
     return true;
@@ -128,8 +129,8 @@ function matchWords() {
 // To Act When Words Match
 function startMatch() {
   if (matchWords()) {
-    showText(texts);
-    gameScore += 450;
+    showCountries(countries);
+    gameScore += 10;
     $("#text-input").val("");
     $("#game-score").html(gameScore);
   }

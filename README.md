@@ -1,4 +1,4 @@
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/readme-logo.png)
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.png)
 
 # SPEED TYPING
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2(Interactive Frontend Development ), Full Stack Software Development in Code Institute**.  
@@ -19,7 +19,12 @@ It is a mobile responsive website however the speed typing game can be played on
 * #### FEATURES
 * #### TECHNOLOGIES USED
 * #### RESOURCES
+  * ##### General Resources
+  * ##### Tools
 * #### TESTING
+  * ##### Html
+  * ##### Css
+  * ##### JavaScript
 * #### PROJECT BARRIERS & SOLUTIONS
 * #### VERSION CONTROL
 * #### DEPLOYMENT
@@ -27,7 +32,6 @@ It is a mobile responsive website however the speed typing game can be played on
   * ##### Code
   * ##### Contents
   * ##### Media
-* #### MEDIA
 * #### ACKNOWLEDGEMENTS
 
 ## WHO'S THIS WEBSITE FOR?
@@ -99,9 +103,9 @@ The website consists of 2 pages.
 ### Skeleton Plane
 Desktop first design, though it is also responsive website. The Speed Typing game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Countries page(countries.html) for desktop and mobile sizes.
 
-* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-index-html.png)
-* ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-countries-html.png)~
-* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/wireframe-countries-html-2.png) *This is the revised version after looking for some better ideas showing the country details
+* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png)
+* ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
+* [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html-2.png) *This is the revised version after looking for some better ideas showing the country details
 
 
 ### Surface Plane
@@ -113,12 +117,12 @@ Bittersweet (#ff6565) is used for timer because it is important information and 
 
 On "Learn About The Countries" page (countries.html), Bright Navy Blue (#007acc) is used for back ground as it links to an image of the earth. Main test colour is Eeriec (#1e1e1e) so the page looks like the reversible version of index.html.
 
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/colours.png)
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/colours.png)
 
 **--- Typography ---**
 Courgette, which is similar type of font of the logo, is used for menu to show the image of "Speed". Bebas Neue is used for headings to stand out the headings and Montserrat is used for main contents to make the fonts visibility and readability maximum so that users don't have any issue of reading it and typing it.
 
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/fonts.png)
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/fonts.png)
 
 ## FEATURES
 
@@ -150,22 +154,22 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 **--- Functions ---**
 As I completed the core functions of JavaScript for Speed Typing game, I test them using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript Code to see if they work.<br>
 Below are the steps of the test.
-1. Create a testing folder called **speed-typing-jasmine** on my desk top
-1. Open the file with **[Visual Studio Code](https://code.visualstudio.com/)** which is my Integrated Development Environment (IDE)
-1. Create `index.html` which is html document for testing, `script` and `spec` folders and `speed-typing.js` which is actual JavaScript in script folder and `speed-typing-spec.js` which is testing JavaScript in spec folder
-1. Create a boliler template on index.html
-1. Add Jasmine CDNs on index.html. CDNs are from **[<cdnsjs>](https://cdnjs.com/libraries/jasmine)**. They must be added inside `<head>` and the order of CDN is very important. It must be jasmine.js --> jasmine-html.js --> boot.js --> jasmine.css in order to make testing work correctly
-1. Add `speed-typing.js` and `speed-typing-spec.js` on index.html. They can be inside `<head>` unlike usual JavaScript files (usually, JavaScript files located the bottom of `<body>`). As the boilder template create `<body>`, I put them in there. The order of JavaScript files is very important, though, and it must be `speed-typing.js` --> `speed-typing-spec.js` in order to make testing work correctly
+1. Create a testing folder called **speed-typing-jasmine** on my desk top [Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine1.png)
+1. Open the file with **[Visual Studio Code](https://code.visualstudio.com/)** which is my Integrated Development Environment (IDE) [Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine2.png)
+1. Create `index.html` which is html document for testing, `script` and `spec` folders and `speed-typing.js` which is actual JavaScript in script folder and `speed-typing-spec.js` which is testing JavaScript in spec folder [Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine3.png)
+1. Create a boliler template on index.html [Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine4.png)
+1. Add Jasmine CDNs on index.html. CDNs are from **[<cdnsjs>](https://cdnjs.com/libraries/jasmine)**. They must be added inside `<head>` and the order of CDN is very important. It must be jasmine.js --> jasmine-html.js --> boot.js --> jasmine.css in order to make testing work correctly [Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine5.png)
+1. Add `speed-typing.js` and `speed-typing-spec.js` on index.html. They can be inside `<head>` unlike usual JavaScript files (usually, JavaScript files located the bottom of `<body>`). As the boilder template create `<body>`, I put them in there. The order of JavaScript files is very important, though, and it must be `speed-typing.js` --> `speed-typing-spec.js` in order to make testing work correctly [Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine6.png)
 
 To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and make it pass writing just enough code to pass afterwards. The reason of this is because it could pass the test even code doesn't work and it is important to test it from different angles. 
 I test showCountries function which takes a country name as argument from a list of countries and a function which contains if else statement.
 
 **showCountries Function**
-1. Write description code of `clickButton` with `showCountries` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no showCountries function defined
-1. Create `showCountries` function on `speed-typing.js` but still expecting to be failed as there is no country defined
-1. Create a valuable called country = "Ireland", return country expecting to be passed
-1. This function should have country as a parameter and take it as an argument so add expect(showCountries(country)).toBe(country); on `speed-typing-spec.js`. Run the test expecting that "should show Ireland to be failed" now but should show countries to be passed
-1. Remove "should show Ireland" as this function should work taking country as an argument and show names of countries from the list.
+1. Write description code of `clickButton` with `showCountries` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no showCountries function defined [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries2.png)
+1. Create `showCountries` function on `speed-typing.js` but still expecting to be failed as there is no country defined [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries4.png)
+1. Create a valuable called country = "Ireland", return country expecting to be passed [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries6.png)
+1. This function should have country as a parameter and take it as an argument so add expect(showCountries(country)).toBe(country); on `speed-typing-spec.js`. Run the test expecting that "should show Ireland to be failed" now but should show countries to be passed [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries8.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries9.png)
+1. Remove "should show Ireland" as this function should work taking country as an argument and show names of countries from the list [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries10.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries11.png)
 
 **Function With If Statement**
 This function should show correct medal depending on the score. Below is the category of each medal.
@@ -174,14 +178,14 @@ Silver: score >= 250 && score <= 290
 Gold: score >= 300 && score <= 340
 Special Crown:  score >= 350
 
-1. Write description code of `scoreCategory` with `getMedal` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no getMedal function defined
-1. Create `getMedal` function on `speed-typing.js` but still expecting to be failed as there is no score defined
-1. Set a parameter to take an argument, expecting to be passed
-1. Change the value to 250 expecting to be failed. Just to see if the value is effecting correctly
-1. Add Silver Medal category, which is score >= 250 && score <= 290, on `speed-typing-spec.js` expecting to be failed as there is no if statement for this yet
-1. Add else if statement of score >= 250 && score <= 290 on `speed-typing.js` returnning a value of "Silver" expecting to be passed
-1. Add Gold Medal category, which is score >=300 && score <= 340 on `speed-typing-spec.js`, and add else if statement of score >=300 && score <= 340 on `speed-typing.js` returning a value of "Gold" expecting to be passed
-1. Add special Crown category, which is score >=350 on `speed-typing-spec.js`, and add else statement on `speed-typing.js` returning a value of "Crown" expecting to be passed
+1. Write description code of `scoreCategory` with `getMedal` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no getMedal function defined [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal2.png)
+1. Create `getMedal` function on `speed-typing.js` but still expecting to be failed as there is no score defined [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal4.png)
+1. Set a parameter to take an argument, expecting to be passed [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal6.png)
+1. Change the value to 250 expecting to be failed. Just to see if the value is effecting correctly [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal8.png)
+1. Add Silver Medal category, which is score >= 250 && score <= 290, on `speed-typing-spec.js` expecting to be failed as there is no if statement for this yet [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal9.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal10.png)
+1. Add else if statement of score >= 250 && score <= 290 on `speed-typing.js` returnning a value of "Silver" expecting to be passed [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal11.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal12.png)
+1. Add Gold Medal category, which is score >=300 && score <= 340 on `speed-typing-spec.js`, and add else if statement of score >=300 && score <= 340 on `speed-typing.js` returning a value of "Gold" expecting to be passed [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal13.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal14.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal15.png)
+1. Add special Crown category, which is score >=350 on `speed-typing-spec.js`, and add else statement on `speed-typing.js` returning a value of "Crown" expecting to be passed [Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal16.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal17.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal18.png)
 
 
 

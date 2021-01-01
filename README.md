@@ -143,6 +143,17 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 ### Tools
 
 ## TESTING
+### Speed Typing Game
+**--- Functions ---**
+As I completed the core functions of JavaScript for Speed Typing game, I test them using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript Code to see if they work.<br>
+Below are the steps of the test.
+1. Create a testing folder called **speed-typing-jasmine** on my desk top
+1. Open the file with **[Visual Studio Code](https://code.visualstudio.com/)** which is my Integrated Development Environment (IDE)
+1. Create `index.html` which is html document for testing, `script` and `spec` folders and `speed-typing.js` which is actual JavaScript in script folder and `speed-typing-spec.js` which is testing JavaScript in spec folder
+1. Create a boliler template on index.html
+1. Add Jasmine CDNs on index.html. CDNs are from **[<cdnsjs>](https://cdnjs.com/libraries/jasmine)**. They must be added inside `<head>` and the order of CDN is very important. It must be jasmine.js --> jasmine-html.js --> boot.js --> jasmine.css in order to make testing work correctly
+1. Add `speed-typing.js` and `speed-typing-spec.js` on index.html. They must be added inside `<body>` and the order of them is very important. It must be `speed-typing.js` --> `speed-typing-spec.js` in order to make testing work correctly
+1. 
 
 ## PROJECT BARRIERS & SOLUTIONS
 

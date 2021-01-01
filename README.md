@@ -24,6 +24,9 @@ It is a mobile responsive website however the speed typing game can be played on
 * #### VERSION CONTROL
 * #### DEPLOYMENT
 * #### CREDITS
+  * ##### Code
+  * ##### Contents
+  * ##### Media
 * #### MEDIA
 * #### ACKNOWLEDGEMENTS
 
@@ -143,7 +146,7 @@ Courgette, which is similar type of font of the logo, is used for menu to show t
 ### Tools
 
 ## TESTING
-### Speed Typing Game
+### JavaScript Speed Typing Game
 **--- Functions ---**
 As I completed the core functions of JavaScript for Speed Typing game, I test them using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript Code to see if they work.<br>
 Below are the steps of the test.
@@ -158,14 +161,31 @@ To test the functions, I use **"Red Green Refactor"** method which purposely fai
 I test showCountries function which takes a country name as argument from a list of countries and a function which contains if else statement.
 
 **showCountries Function**
-
-1. Write description code of `clickButton` function with `showCountries` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no showCountries function defined
+1. Write description code of `clickButton` with `showCountries` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no showCountries function defined
 1. Create `showCountries` function on `speed-typing.js` but still expecting to be failed as there is no country defined
 1. Create a valuable called country = "Ireland", return country expecting to be passed
 1. This function should have country as a parameter and take it as an argument so add expect(showCountries(country)).toBe(country); on `speed-typing-spec.js`. Run the test expecting that "should show Ireland to be failed" now but should show countries to be passed
 1. Remove "should show Ireland" as this function should work taking country as an argument and show names of countries from the list.
 
 **Function With If Statement**
+This function should show correct medal depending on the score. Below is the category of each medal.
+Bronz: score <= 240
+Silver: score >= 250 && score <= 290
+Gold: score >= 300 && score <= 340
+Special Crown:  score >= 350
+
+1. Write description code of `scoreCategory` with `getMedal` function inside it on `speed-typing-spec.js` and run it expecting to be failed as there is no getMedal function defined
+1. Create `getMedal` function on `speed-typing.js` but still expecting to be failed as there is no score defined
+1. Set a parameter to take an argument, expecting to be passed
+1. Change the value to 250 expecting to be failed. Just to see if the value is effecting correctly
+1. Add Silver Medal category, which is score >= 250 && score <= 290, on `speed-typing-spec.js` expecting to be failed as there is no if statement for this yet
+1. Add else if statement of score >= 250 && score <= 290 on `speed-typing.js` returnning a value of "Silver" expecting to be passed
+1. Add Gold Medal category, which is score >=300 && score <= 340 on `speed-typing-spec.js`, and add else if statement of score >=300 && score <= 340 on `speed-typing.js` returning a value of "Gold" expecting to be passed
+1. Add special Crown category, which is score >=350 on `speed-typing-spec.js`, and add else statement on `speed-typing.js` returning a value of "Crown" expecting to be passed
+
+
+
+
 
 ## PROJECT BARRIERS & SOLUTIONS
 

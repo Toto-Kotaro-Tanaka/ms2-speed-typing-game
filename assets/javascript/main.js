@@ -28,7 +28,7 @@ anime.timeline({loop: false})
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
 
 // Global Valuables
-let time = 10; //10s is just for testing - should be 60
+let time = 5; //10s is just for testing - should be 60
 let gameScore = 0;
 let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
@@ -83,15 +83,15 @@ function countdown() {
 
       if (gameScore >= 350) {
         $("#medal").css("color", "#e84610");
-        $("#medal").html('CI <i class="fas fa-crown"></i>'); // Code Institute Colour Medal - secret medal for special people reaching that high score and not written on instructions (just for fun)
+        $("#medal").html('Special <i class="fas fa-crown"></i>'); // Code Institute Colour Crown - secret item for special people reaching that high score. This is a surprise and not written on the instructions
         $("#message").css("color", "#e84610");
-        $("#message").html("Special Crown");  
-      } else if (gameScore >= 300 && gameScore < 350) {
+        $("#message").html("Secret Crown");  
+      } else if (gameScore >= 300 && gameScore <= 340) {
         $("#medal").css("color", "#d4af37");
         $("#medal").html('Gold <i class="fas fa-medal"></i>');
         $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
         $("#message").html("Great job! Try to reach 350 pt and see what happens...");
-      } else if (gameScore >= 250 && gameScore < 300) {
+      } else if (gameScore >= 250 && gameScore <= 290) {
         $("#medal").css("color", "#808080");
         $("#medal").html('Silver <i class="fas fa-medal"></i>');
         $("#message").html("Well Done!!");

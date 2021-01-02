@@ -146,7 +146,7 @@ To be updated
 * [W3schools](https://www.w3schools.com/)
 
 ### Tools
-To be updated
+* [Adobe](https://www.adobe.com/ie/photoshop/online/resize-image.html) To resize images
 
 ## TESTING
 ### Html
@@ -181,9 +181,6 @@ Below are the steps of the set up for the testing.
 To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and make it pass writing just enough code to pass afterwards. The reason of this is because it could pass the test even code doesn't work and it is important to do tests from different angles.<br>
 I test **showCountries** function which takes a country name as argument from a list of countries and a function which contains **if else statement**.
 
-**- Conclusion -**
-**showCountries** function works in the way expected
-
 **showCountries Function**
 1. Write description code of **clickButton** with **showCountries** function in it on **`speed-typing-spec.js`** and run it expecting to be <u>failed</u> as there is no **showCountries** function defined<br>
 ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries2.png))
@@ -200,8 +197,8 @@ I test **showCountries** function which takes a country name as argument from a 
 1. Remove "should show Ireland" as this function should be used taking country as an argument and show names of countries from the list<br>
 ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries10.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries11.png))
 
-**- Conclusion -**
-Function with **if else** statement works in the way expected
+**- Conclusion -**<br>
+**showCountries** function works in the way expected
 
 **Function With If Else Statement**<br>
 This function should show correct medal depending on the score. Below is the category of each medal.
@@ -239,6 +236,9 @@ This function should show correct medal depending on the score. Below is the cat
 
 1. Add additional **if else** statement on **`speed-typing.js`** and define only if the type of score is **number**, then go to next **if else** statement, expecting to be <u>passed</u><br>
 ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal21.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal22.png))
+
+**- Conclusion -**<br>
+Function with **if else** statement works in the way expected
 
 ## PROJECT BARRIERS & SOLUTIONS
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.

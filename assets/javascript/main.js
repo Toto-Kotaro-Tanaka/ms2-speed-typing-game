@@ -141,12 +141,17 @@ $("#reset-btn").click(function() {
 });
 // ---------- /End of Speed Typing Game ----------
 
-// ---------- Code for Countries ----------
+// ---------- Code for Countries API ----------
 // Credit: Coding Journey @ https://www.youtube.com/watch?v=THZyM2z8s-o *Referred this tutorial but customised by me
 // API: REST Countries @ https://restcountries.eu/
 
 // Global Valuables
 let apiCountries;
+
+// To Change Country Info Details
+$("#list-of-countries").change(function(event) {
+  displayCountryInfo(event.target.value);
+});
 
 // To Receive Countries Data From API  
 const xhr = new XMLHttpRequest();
@@ -171,4 +176,18 @@ function initialise(countriesData) {
     options += `<option value="${apiCountries[i].alpha3Code}">${apiCountries[i].name}</option>`;
   }
   $("#list-of-countries").html(options);
+  displayCountryInfo("IRL");
 }
+
+// To Show Country Info
+function displayCountryInfo(countryByAlpha3Code) {
+  const countryData = apiCountries.find(country => country.alpha3Code === countryByAlpha3Code); // Array.prototype.find() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+  $("#country").html(countryData.name);
+  $("#flag").attr("src", countryData.flag);
+  $("#flag").attr("alt", `Flag of ${countryData.name}`);
+  $("#region").html(countryData.region);
+  $("#capital").html(countryData.capital);
+  $("#population").html(countryData.population.toLocaleString("en-US"));
+  $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
+}
+// ---------- /End of Countries API ----------

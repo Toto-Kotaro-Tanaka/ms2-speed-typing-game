@@ -35,7 +35,7 @@ It is a mobile responsive website however the speed typing game can be played on
 * #### ACKNOWLEDGEMENTS
 
 ## WHO'S THIS WEBSITE FOR?
-People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Learn About The Countries In The World”** section to provide basic information of each country, such as a location on the google maps, capital city, population, language and a flag.
+People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s).
 
 ## WHO IS THE OWNER?
 I am the owner of the website. My goals of this website are to provide a speed typing game that users can practice typing with fun as well as to provide basic information of countries that they see in the game.
@@ -43,9 +43,9 @@ I am the owner of the website. My goals of this website are to provide a speed t
 ## UX 5 PLANES
 ### Strategy Plane
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (My note: 60s / 30s - TBC) and score, that increments by 10 rather than 1 so that they feel they achieved better (e.g. When you get 20 correct typings, it shows 200 instead of 20), users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
-The highest score remains during the game so that users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text, that they type, and it comes up randomly so that different combination of texts appear on each game. There are 195 countries in the world*. Users know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Learn About The Countries In The World”** on a different page that provides basic information of each country, such as a location on the google maps, capital city, population, language and a flag, as an addition function to the speed typing game. 
+The highest score remains during the game so that users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text, that they type, and it comes up randomly so that different combination of texts appear on each game. There are 195 countries in the world*. Users know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s), as an additional function to the speed typing game. 
 
-*As of 20 Dec 2020 and referenced by **[worldometers](https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/)**
+*As of 3 Jan 2021, there are 250 countries listed on **[REST Countries API](https://restcountries.eu/)** that is being used on the website
 
 The main aims for this website are;
 

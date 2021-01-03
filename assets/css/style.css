@@ -424,6 +424,15 @@ hr {
   font-size: 1.2rem;
 }
 
+.fa-info-circle {
+  font-size: 1.5rem;
+  padding: 1.5rem .5rem;
+}
+
+.fa-info-circle:hover {
+  color: #1e1e1e;
+}
+
 #country-dropdown {
   margin: 0 auto;
   width: 70%;
@@ -433,6 +442,23 @@ hr {
   background-color: #007acc;
   color: #d4d4d4;
   margin: 1rem 0;
+}
+
+#country-info {
+  color: #d4d4d4;
+  display: none;
+  font-size: .8rem;
+  margin: 0;
+  padding: 0;
+}
+
+#country-info a {
+  color:#d4d4d4;
+  text-decoration: none;
+}
+
+#country-info a:hover {
+  color: #1e1e1e;
 }
 
 #google-maps {
@@ -568,6 +594,12 @@ footer {
     margin-bottom: 1rem;
     padding-left: 2rem;
     text-align: left;
+  }
+
+  #country-dropdown {
+    margin: 0;
+    padding-left: 1.2rem;
+    width: 100%;
   }
 
   #maps {

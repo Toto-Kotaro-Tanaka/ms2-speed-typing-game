@@ -191,3 +191,8 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
 }
 // ---------- /End of Countries API ----------
+
+// To Show & Hide Countries Info API Link
+  $(".fa-info-circle").click(function(){
+    $("#country-info").toggle();
+  });

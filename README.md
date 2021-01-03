@@ -132,6 +132,8 @@ To be updated
 * [Bootstrap4](https://getbootstrap.com/), css framework, for main frame of the website
 * [Font Awesome](https://fontawesome.com/) for icons
 * [jQuery](https://jquery.com/), javaScript library, for more efficient coding
+* [REST Countries API](https://restcountries.eu/) for text of speed typing game and country information display 
+* [Google Maps API](https://cloud.google.com/maps-platform/) to show a location of selected countries
 * [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)
 * [Git](https://git-scm.com/) for version control
 * [GitHub](https://github.com/) for keeping the files, documents and deploy the website
@@ -274,7 +276,9 @@ To be updated
 
 **--- JavaScript ---**
 * [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
-* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Codes written on my JavaScript are based on this with my customisation
+* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Code written on my JavaScript are based on this with my customisation
+
+* [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer this YouTube tutorial to get an idea of how to provide country information display. Code written on my JavaScript are based on this with my customisation
 
 **Note:**
 **These are credited on the css file*

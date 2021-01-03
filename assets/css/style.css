@@ -468,7 +468,7 @@ hr {
 #maps {
   border: .0625rem solid #d4d4d4;
   border-radius: 2rem;
-  height: 80%;
+  height: 95%;
 }
 
 /* ---------- Footer All Pages */
@@ -582,7 +582,7 @@ footer {
   #countries {
     border-radius: 1rem;
     box-shadow: 0 0 .7rem #007acc;
-    height: 37rem;
+    height: auto;
   }
   
   #countries h3 {
@@ -603,7 +603,7 @@ footer {
   }
 
   #maps {
-    height: 128%;
+    height: 100%;
   }
 
   footer {

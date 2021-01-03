@@ -378,10 +378,6 @@ hr {
   color: #ffff98;
 }
 
-/* #medal {
-  color: #daa520;
-} */
-
 #high-score {
   color: #fdf838;
 }
@@ -406,11 +402,23 @@ hr {
   font-size: 1.6rem;
 }
 
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
 #country-flag {
   border: 0.0625rem solid #d4d4d4;
-  height: 9rem;
+  border-radius: .2rem;
+  height: auto;
   margin: 0 auto;
-  width: 70%;
+  width: 9.375rem;
+}
+
+#flag {
+  border-radius: .2rem;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 #countries h4 {

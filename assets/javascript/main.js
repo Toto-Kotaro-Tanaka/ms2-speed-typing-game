@@ -24,8 +24,8 @@ anime.timeline({loop: false})
   });
 // ---------- /End of Fancy Heading Display ----------
 
-// ---------- Codes for Speed Typing Game ----------
-// Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customise some by me
+// ---------- Code for Speed Typing Game ----------
+// Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customised by me
 
 // Global Valuables
 let time = 5; //10s is just for testing - should be 60
@@ -141,5 +141,34 @@ $("#reset-btn").click(function() {
 });
 // ---------- /End of Speed Typing Game ----------
 
+// ---------- Code for Countries ----------
+// Credit: Coding Journey @ https://www.youtube.com/watch?v=THZyM2z8s-o *Referred this tutorial but customised by me
+// API: REST Countries @ https://restcountries.eu/
 
+// Global Valuables
+let apiCountries;
 
+// To Receive Countries Data From API  
+const xhr = new XMLHttpRequest();
+
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.send();
+
+xhr.onreadystatechange = function() {
+  if (this.readyState === 4 && this.status === 200) {
+    let data = JSON.parse(this.responseText);
+    initialise(data);
+  } else {
+    return "Error";
+  }
+}
+
+// To Show A List Of Countries In Dropdown Menu
+function initialise(countriesData) {
+  apiCountries = countriesData;
+  let options = "";
+  for (let i = 0; i < apiCountries.length; i++) {
+    options += `<option value="${apiCountries[i].alpha3Code}">${apiCountries[i].name}</option>`;
+  }
+  $("#list-of-countries").html(options);
+}

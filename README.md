@@ -169,13 +169,13 @@ Below are the steps of the set up for the testing.
 1. Create **`index.html`** which is html document for testing, **script** and **spec** folders and **`speed-typing.js`** which is actual JavaScript in **script** folder and **`speed-typing-spec.js`** which is testing JavaScript in **spec** folder<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine3.png))
 
-1. Create a boiler template on **`index.html`**<br>
+1. Create a boilerplate on **`index.html`**<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine4.png))
 
 1. Add Jasmine **CDNs** on **`index.html`**. CDNs are from **[cdnsjs](https://cdnjs.com/libraries/jasmine)**. They must be added inside **<head>** and the <ins>order of CDN is very important</ins>. It must be **`jasmine.js`** --> **`jasmine-html.js`** --> **`boot.js`** --> **`jasmine.css`** in order to make testing work correctly<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine5.png))
 
-1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **<head>** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **<body>**). As the boiler template create **<body>**, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** --> **`speed-typing-spec.js`** in order to load the files correctly<br>
+1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **<head>** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **<body>**). As the boilerplate create **<body>**, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** --> **`speed-typing-spec.js`** in order to load the files correctly<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine6.png))
 
 To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and make it pass writing just enough code to pass afterwards. The reason of this is because it could pass the test even code doesn't work and it is important to do tests from different angles.<br>

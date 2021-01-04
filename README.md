@@ -1,9 +1,10 @@
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.png)
 
-# SPEED TYPING
+# [SPEED TYPING](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development in [Code Institute](https://codeinstitute.net/)**.  
 
-It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on HERE (My note: attach a link of the website here)
+It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on [HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/
+)
 
 ----- Mockup goes in here when the website is completed -----
 
@@ -250,10 +251,52 @@ Draft: Even the time was up, I could still type and the score increased etc so I
 Draft: Display: hide; didn't apply on some elements which had d-none. Therefore, I came up with a solution to put these elements in div and give the div d-none so that I could apply display: hide for the elements inside the div.
 
 ## VERSION CONTROL
-To be updated
+### Git & GitHub
+I used **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;
+1. Create a **remote repository** in GitHub by clicking **"New repository"** on the main page
+2. Create a folder called **ms2-speed-typing-game** on my computer
+3. Open the folder with [Visual Studio Code](https://code.visualstudio.com/) which is my Integrated Development Environment (IDE)
+4. Create README.md file
+5. Create a **local repository** by using command line with *git init* command
+6. First commit in git repository and first push to GitHub using the below commands;
+````
+* git add README.md
+* git commit -m "Initial commit"
+* git branch -M main
+* git remote add origin https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game.git
+* git push -u origin main
+````
+7. From the second commit, I used the below process and I did it whenever I completed a section or even a group of work in order to make sure to keep the history of my work logged
+
+````
+* git status | To check the status of new / modifiled folders, files and documents
+* git add . | To put all new and updated work on the stage in git
+* git commit -m "Example commit" | To commit the work on the stage in git before pushing it to GitHub
+* git push | To update the work in GitHub
+````
 
 ## DEPLOYMENT
-To be updated
+My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS and JavaScript.
+To deploy the website, I follow the below steps, once I login [GitHub webiste](https://github.com/login)
+1. Go to **repositories** that can be accessed from **1** or **1 - 1**
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br></br>
+
+1. Open the **repository**
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment2.png)</br></br></br>
+
+1. Go to **Setting**
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment3.png)</br></br></br>
+
+1. Go to **GitHub Pages** section, select **main** as the branch and click **save**
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment4.png)</br></br></br>
+
+1. Once the website is successfully deployed, a link of the website appears
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br></br></br>
+
+Note: 
+- It may take some time that your website becomes availabe on public
+- URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"
+(e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 
 ## CREDITS
 ### Code
@@ -277,7 +320,6 @@ To be updated
 **--- JavaScript ---**
 * [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
 * [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Code written on my JavaScript are based on this with my customisation
-
 * [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer this YouTube tutorial to get an idea of how to provide country information display. Code written on my JavaScript are based on this with my customisation
 
 **Note:**

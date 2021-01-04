@@ -1,9 +1,9 @@
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.png)
 
 # [SPEED TYPING](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
-This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development in [Code Institute](https://codeinstitute.net/)**.  
+This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
 
-It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on [HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/
+It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/**
 )
 
 ----- Mockup goes in here when the website is completed -----
@@ -266,7 +266,7 @@ I used **[Git](https://git-scm.com/)** as a local repository and **[GitHub](http
 * git remote add origin https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game.git
 * git push -u origin main
 ````
-7. From the second commit, I used the below process and I did it whenever I completed a section or even a group of work in order to make sure to keep the history of my work logged
+7. From the second commit, the below process and commands are used. Whenever a section or even a group of work are completed, they are commited in git and pushed into GitHub, in order to make sure to keep the history of the work logged properly and not to lose the work by unexpected situations
 
 ````
 * git status | To check the status of new / modifiled folders, files and documents
@@ -277,25 +277,25 @@ I used **[Git](https://git-scm.com/)** as a local repository and **[GitHub](http
 
 ## DEPLOYMENT
 My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS and JavaScript.
-To deploy the website, I follow the below steps, once I login [GitHub webiste](https://github.com/login)
-1. Go to **repositories** that can be accessed from **1** or **1 - 1**
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br></br>
+To deploy the website, I follow the below steps, once I login [GitHub](https://github.com/login)
+1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br>
 
-1. Open the **repository**
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment2.png)</br></br></br>
+1. Open the **repository**<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment2.png)</br></br>
 
-1. Go to **Setting**
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment3.png)</br></br></br>
+1. Go to **Setting**<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment3.png)</br></br>
 
-1. Go to **GitHub Pages** section, select **main** as the branch and click **save**
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment4.png)</br></br></br>
+1. Go to **GitHub Pages** section, select **main** as the branch and click **save**<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment4.png)</br></br>
 
 1. Once the website is successfully deployed, a link of the website appears
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br></br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br>
 
 Note: 
 - It may take some time that your website becomes availabe on public
-- URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"
+- URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
 (e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 
 ## CREDITS

@@ -466,7 +466,8 @@ hr {
 }
 
 #maps {
-  border: .0625rem solid #d4d4d4;
+  /* border: .0625rem solid #d4d4d4; */
+  border: none;
   border-radius: .5rem;
   height: 95%;
 }
@@ -599,7 +600,7 @@ footer {
   #country-dropdown {
     margin: 0;
     padding-left: 1.2rem;
-    width: 100%;
+    width: 80%;
   }
 
   #maps {

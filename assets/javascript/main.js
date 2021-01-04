@@ -28,35 +28,18 @@ anime.timeline({loop: false})
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customised by me
 
 // Global Valuables
-let time = 5; //10s is just for testing - should be 60
+let time = 60;
 let gameScore = 0;
 let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
 $("#high-score").html(highScore);
 
 // This will be replaced by Countries API
-const countries = [
-  'Canada',
-  'Australia',
-  'NewZealand',
-  'Japan',
-  'United States',
-  'France',
-  'Nigeria',
-  'Brazil',
-  'China',
-  'Germany',
-  'South Africa',
-  'Mexico',
-  'Wales',
-  'Argentina',
-  'Saudi Arabia'
-]
 
 //To Play The Game
 $("#play-btn").click(function() {
   countdown();
-  showCountries(countries);
+  showCountries(transferData);
   $("#text-input").on("input", startMatch);
 });
 
@@ -128,7 +111,7 @@ function matchWords() {
 // To Act When Words Match
 function startMatch() {
   if (matchWords()) {
-    showCountries(countries);
+    showCountries(transferData);
     gameScore += 10;
     $("#text-input").val("");
     $("#game-score").html(gameScore);
@@ -161,9 +144,16 @@ xhr.onreadystatechange = function() {
   if (this.readyState === 4 && this.status === 200) {
     let data = JSON.parse(this.responseText);
     initialise(data);
+    getCountries(data);
   } else {
     return "Error";
   }
+}
+
+// To Get Countries From API
+function getCountries(getData) {
+  transferData = getData;
+  showCountries(transferData);
 }
 
 // To Show A List Of Countries In Dropdown Menu

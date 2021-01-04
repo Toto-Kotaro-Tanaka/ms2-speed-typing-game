@@ -24,7 +24,7 @@ anime.timeline({loop: false})
   });
 // ---------- /End of Fancy Heading Display ----------
 
-// ---------- Code for Speed Typing Game ----------
+// ---------- Speed Typing Game ----------
 // Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customised by me
 
 // Global Valuables
@@ -110,7 +110,6 @@ function countdown() {
     }
   }, 1000);
 }
-
 // To Show Countries
 function showCountries(countries) {
   const randomIndex = Math.floor(Math.random() * countries.length);
@@ -135,13 +134,12 @@ function startMatch() {
     $("#game-score").html(gameScore);
   }
 }
-
 $("#reset-btn").click(function() {
   location.reload();
 });
 // ---------- /End of Speed Typing Game ----------
 
-// ---------- Code for Countries API ----------
+// ---------- REST Countries API ----------
 // Credit: Coding Journey @ https://www.youtube.com/watch?v=THZyM2z8s-o *Referred this tutorial but customised by me
 // API: REST Countries @ https://restcountries.eu/
 
@@ -189,6 +187,11 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#capital").html(countryData.capital);
   $("#population").html(countryData.population.toLocaleString("en-US"));
   $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
+
+  //Google Maps
+  lat = countryData.latlng[0];
+  lng = countryData.latlng[1];
+  initMap(lat, lng);
 }
 // ---------- /End of Countries API ----------
 
@@ -196,3 +199,22 @@ function displayCountryInfo(countryByAlpha3Code) {
   $(".fa-info-circle").click(function(){
     $("#country-info").toggle();
   });
+
+// ---------- Google Maps API ----------
+function initMap(lat, lng) {
+  let options = {
+    zoom: 4,
+    center: {
+      lat: (lat),
+      lng: (lng)
+    }
+  }
+  const map = new google.maps.Map($("#maps")[0], options);
+
+  let marker = new google.maps.Marker({
+    position: {
+      lat: (lat),
+      lng: (lng)
+    }, map: map
+  });
+}

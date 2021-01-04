@@ -96,7 +96,7 @@ function countdown() {
 // To Show Countries
 function showCountries(countries) {
   const randomIndex = Math.floor(Math.random() * countries.length);
-  $("#country-text").html(countries[randomIndex]);
+  $("#country-text").html(countries[randomIndex].name);
 }
 
 // To Check Current Word (Country) And Input Word Match

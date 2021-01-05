@@ -128,7 +128,6 @@ $("#reset-btn").click(function() {
 
 // Global Valuables
 let apiCountries;
-let transferData;
 
 // To Change Country Info Details
 $("#list-of-countries").change(function(event) {
@@ -180,32 +179,32 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
 
   //Google Maps
-  lat = countryData.latlng[0];
-  lng = countryData.latlng[1];
-  initMap(lat, lng);
+  // lat = countryData.latlng[0];
+  // lng = countryData.latlng[1];
+  // initMap(lat, lng);
 }
 // ---------- /End of Countries API ----------
 
 // To Show & Hide Countries Info API Link
-  $(".fa-info-circle").click(function(){
-    $("#country-info").toggle();
-  });
+  // $(".fa-info-circle").click(function(){
+  //   $("#country-info").toggle();
+  // });
 
 // ---------- Google Maps API ----------
-function initMap(lat, lng) {
-  let options = {
-    zoom: 4,
-    center: {
-      lat: (lat),
-      lng: (lng)
-    }
-  }
-  const map = new google.maps.Map($("#maps")[0], options);
+// function initMap(lat, lng) {
+//   let options = {
+//     zoom: 4,
+//     center: {
+//       lat: (lat),
+//       lng: (lng)
+//     }
+//   }
+//   const map = new google.maps.Map($("#maps")[0], options);
 
-  let marker = new google.maps.Marker({
-    position: {
-      lat: (lat),
-      lng: (lng)
-    }, map: map
-  });
-}
+//   let marker = new google.maps.Marker({
+//     position: {
+//       lat: (lat),
+//       lng: (lng)
+//     }, map: map
+//   });
+// }

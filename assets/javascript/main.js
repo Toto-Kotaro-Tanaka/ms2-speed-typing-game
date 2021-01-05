@@ -74,7 +74,7 @@ function countdown() {
           $("#medal").css("color", "#d4af37");
           $("#medal").html('Gold <i class="fas fa-medal"></i>');
           $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
-          $("#message").html("Great job! Try to reach 350 pt and see what happens...");
+          $("#message").html("Great job! Try to reach 260 pt and see what happens...");
         } else if (gameScore >= 180 && gameScore <= 220) {
           $("#medal").css("color", "#808080");
           $("#medal").html('Silver <i class="fas fa-medal"></i>');

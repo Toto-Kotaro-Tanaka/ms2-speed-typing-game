@@ -34,15 +34,12 @@ let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
 $("#high-score").html(highScore);
 
-// This will be replaced by Countries API
-
 //To Play The Game
 $("#play-btn").click(function() {
   $("input").focus();
   $("#play-message").hide();
   $("#play-btn").css("color", "#ff6565");
-  $("#play-btn").attr("disabled", "true"); // To Prevent Users Hitting It Again
-  $("#medal").hide();
+  $("#play-btn").attr("disabled", "true"); // To Prevent Users Hitting It Again As It Causes Problems
   countdown();
   showCountries(transferData);
   $("#text-input").on("input", startMatch);
@@ -57,32 +54,9 @@ function countdown() {
 
     if (time === 0) {
       clearInterval(timer);
-      $("input").attr("disabled", "true"); // To Prevent Users Typing Words In
+      $("input").attr("disabled", "true"); // To Prevent Users Typing Words In It As It Would Still Count Scores
       $("#time-up").html("Time is Up!");
       $("#country-text").css("color", "#007acc")
-      $("#country-text").html("Try Again!");
-      $("#reset-btn").show();
-      $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');
-
-      if (gameScore >= 350) {
-        $("#medal").css("color", "#e84610");
-        $("#medal").html('Special <i class="fas fa-crown"></i>'); // Code Institute Colour Crown - secret item for special people reaching that high score. This is a surprise and not written on the instructions
-        $("#message").css("color", "#e84610");
-        $("#message").html("Secret Crown");  
-      } else if (gameScore >= 300 && gameScore <= 340) {
-        $("#medal").css("color", "#d4af37");
-        $("#medal").html('Gold <i class="fas fa-medal"></i>');
-        $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
-        $("#message").html("Great job! Try to reach 350 pt and see what happens...");
-      } else if (gameScore >= 250 && gameScore <= 290) {
-        $("#medal").css("color", "#808080");
-        $("#medal").html('Silver <i class="fas fa-medal"></i>');
-        $("#message").html("Well Done!!");
-      } else {
-        $("#medal").css("color", "#b08d57");
-        $("#medal").html('Bronze <i class="fas fa-medal"></i>');
-        $("#message").html("Unlucky!");
-      }
 
       if (gameScore > highScore) {
         localStorage.setItem("speedTypingHighScore", gameScore);
@@ -90,6 +64,34 @@ function countdown() {
 
       highScore = localStorage.getItem("speedTypingHighScore");
       $("#high-score").html(highScore);
+
+      setTimeout(function() {
+        if (gameScore >= 350) {
+          $("#medal").css("color", "#e84610");
+          $("#medal").html('Special <i class="fas fa-crown"></i>'); // Code Institute Colour Crown - secret item for special people reaching that high score. This is a surprise and not written on the instructions
+          $("#message").css("color", "#e84610");
+          $("#message").html("Secret Crown");  
+        } else if (gameScore >= 300 && gameScore <= 340) {
+          $("#medal").css("color", "#d4af37");
+          $("#medal").html('Gold <i class="fas fa-medal"></i>');
+          $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
+          $("#message").html("Great job! Try to reach 350 pt and see what happens...");
+        } else if (gameScore >= 250 && gameScore <= 290) {
+          $("#medal").css("color", "#808080");
+          $("#medal").html('Silver <i class="fas fa-medal"></i>');
+          $("#message").html("Well Done!!");
+        } else {
+          $("#medal").css("color", "#b08d57");
+          $("#medal").html('Bronze <i class="fas fa-medal"></i>');
+          $("#message").html("Unlucky!");
+        }  
+      }, 1500);
+
+      setTimeout(function() {
+        $("#country-text").html("Try Again!");
+        $("#reset-btn").show();
+        $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');  
+      }, 2000);
     }
   }, 1000);
 }
@@ -97,7 +99,15 @@ function countdown() {
 // To Show Countries
 function showCountries(countries) {
   const randomIndex = Math.floor(Math.random() * countries.length);
-  $("#country-text").html(countries[randomIndex].name);
+  let textCountryName = countries[randomIndex].name;
+  let textCountryLength = textCountryName.length;
+  const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+
+  if (textCountryName.match(letters) && textCountryLength <= 20) { // To Show Countries With Only Alphabets (Including Space) & 20 or Less Characters 
+    $("#country-text").html(countries[randomIndex].name);
+  } else {
+    showCountries(countries);
+  }
 }
 
 // To Check Current Word (Country) And Input Word Match
@@ -147,6 +157,7 @@ xhr.onreadystatechange = function() {
     let data = JSON.parse(this.responseText);
     initialise(data);
     getCountries(data);
+    $("#country-text").html("Ireland");
   } else {
     return "Error";
   }

@@ -250,6 +250,10 @@ Draft: Even the time was up, I could still type and the score increased etc so I
 
 Draft: Display: hide; didn't apply on some elements which had d-none. Therefore, I came up with a solution to put these elements in div and give the div d-none so that I could apply display: hide for the elements inside the div.
 
+Draft: Linking google maps with REST Countries API. I wasn't sure how to do it so looked for some solutions on google. However, I wasn't able to find any solutions so started trying to put code thinking from the logical point of view (looking at how REST countries API works for country display information) and somehow I managed to make it work. 
+
+
+
 ## VERSION CONTROL
 ### Git & GitHub
 I used **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;

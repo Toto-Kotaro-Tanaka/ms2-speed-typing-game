@@ -42,6 +42,7 @@ $("#play-btn").click(function() {
   $("#play-message").hide();
   $("#play-btn").css("color", "#ff6565");
   $("#play-btn").attr("disabled", "true"); // To Prevent Users Hitting It Again
+  $("#medal").hide();
   countdown();
   showCountries(transferData);
   $("#text-input").on("input", startMatch);
@@ -60,7 +61,6 @@ function countdown() {
       $("#time-up").html("Time is Up!");
       $("#country-text").css("color", "#007acc")
       $("#country-text").html("Try Again!");
-      $("#play-message").hide();
       $("#reset-btn").show();
       $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');
 
@@ -183,7 +183,9 @@ function displayCountryInfo(countryByAlpha3Code) {
   //Google Maps
   lat = countryData.latlng[0];
   lng = countryData.latlng[1];
-  initMap(lat, lng);
+  setTimeout(function() {
+    initMap(lat, lng);
+  }, 0);
 }
 // ---------- /End of Countries API ----------
 

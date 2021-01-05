@@ -38,13 +38,13 @@ $("#high-score").html(highScore);
 
 //To Play The Game
 $("#play-btn").click(function() {
-  countdown();
-  showCountries(transferData);
   $("input").focus();
-  $("#text-input").on("input", startMatch);
   $("#play-message").hide();
   $("#play-btn").css("color", "#ff6565");
   $("#play-btn").attr("disabled", "true"); // To Prevent Users Hitting It Again
+  countdown();
+  showCountries(transferData);
+  $("#text-input").on("input", startMatch);
 });
 
 //To Countdown Time

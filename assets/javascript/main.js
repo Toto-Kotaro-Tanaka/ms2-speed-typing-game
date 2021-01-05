@@ -128,6 +128,7 @@ $("#reset-btn").click(function() {
 
 // Global Valuables
 let apiCountries;
+let transferData;
 
 // To Change Country Info Details
 $("#list-of-countries").change(function(event) {

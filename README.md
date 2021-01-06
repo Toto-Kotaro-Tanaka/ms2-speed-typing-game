@@ -1,6 +1,6 @@
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.png)
 
-# [SPEED TYPING](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
+# [SPEED TYPING GAME](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
 
 It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**
@@ -8,7 +8,7 @@ It is a mobile responsive website however the speed typing game can be played on
 ----- Mockup goes in here when the website is completed -----
 
 ## TABLE OF CONTENTS
-* #### WHO'S THIS WEBSITE FOR?
+* #### [WHO'S THIS WEBSITE FOR?](#WHO'S THIS WEBSITE FOR?)
 * #### WHO IS THE OWNER?
 * #### UX 5 PLANES
   * ##### Strategy Plane
@@ -32,7 +32,7 @@ It is a mobile responsive website however the speed typing game can be played on
   * ##### Code
   * ##### Contents
   * ##### Media
-* #### ACKNOWLEDGEMENTS
+* #### [ACKNOWLEDGEMENTS](#ACKNOWLEDGEMENTS)
 
 ## WHO'S THIS WEBSITE FOR?
 People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s).
@@ -198,19 +198,19 @@ I test **showCountries** function which takes a country name as argument from a 
 
 **showCountries Function**
 1. Write description code of **clickButton** with **showCountries** function in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no showCountries function defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries2.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries2.png))
 
 1. Create **showCountries** function on **`speed-typing.js`** but still expecting to be <ins>failed</ins> as there is no country defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries4.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries4.png))
 
 1. Create a valuable called **let country = "Ireland"** and returning a value of "country" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries6.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries6.png))
 
 1. This function should have **country** as a parameter and take it as an argument so add **expect(showCountries(country)).toBe(country);** on **`speed-typing-spec.js`**. Run the test expecting that "should show Ireland to be <ins>failed</ins>" but "should show countries to be <ins>passed</ins>"<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries8.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries9.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries8.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries9.png))
 
 1. Remove "should show Ireland" as this function should be used taking country as an argument and show names of countries from the list<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries10.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/showCountries11.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries10.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries11.png))
 
 **- Conclusion -**<br>
 **showCountries** function works in the way expected
@@ -223,34 +223,34 @@ This function should show correct medal depending on the score. Below is the cat
 * Special Crown: score >= 350
 
 1. Write description code of **scoreCategory** with **getMedal** function with **Bronze Medal** category which has a value of 240 in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no getMedal function defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal2.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal2.png))
 
 1. Create **getMedal** function on **`speed-typing.js`** but still expecting to be <ins>failed</ins> as there is no score defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal4.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal4.png))
 
 1. Set a parameter of "score" to take an argument, expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal6.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal6.png))
 
 1. Change the value to 250 expecting to be <ins>failed</ins>. This is just to see if the value is effecting correctly<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal8.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal8.png))
 
 1. Add **Silver Medal** category which has a value of 250 on **`speed-typing-spec.js`** expecting to be <ins>failed</ins> as there is no **if statement** defined for this yet<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal9.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal10.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal9.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal10.png))
 
 1. Add **else if** statement of (score >= 250 && score <= 290) on **`speed-typing.js`** returning a value of "Silver" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal11.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal12.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal11.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal12.png))
 
 1. Add **Gold Medal** category which has a value of 300 on **`speed-typing-spec.js`** and add **else if** statement of (score >=300 && score <= 340) on **`speed-typing.js`** returning a value of "Gold" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal13.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal14.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal15.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal13.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal14.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal15.png))
 
 1. Add **Special Crown** category which has a value of 350 on **`speed-typing-spec.js`**, and add **else** statement on **`speed-typing.js`** returning a value of "Crown" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal16.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal17.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal18.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal16.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal17.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal18.png))
 
 1. Add a value in **String** on **`speed-typing-spec.js`** expecting to be <ins>failed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal19.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal20.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal19.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal20.png))
 
 1. Add additional **if else** statement on **`speed-typing.js`** and define only if the type of score is **number**, then go to next **if else** statement, expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal21.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/getMedal22.png))
+([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal21.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal22.png))
 
 **- Conclusion -**<br>
 Function with **if else** statement works in the way expected
@@ -339,8 +339,11 @@ Note:
 
 **--- JavaScript ---**
 * [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
-* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Code written on my JavaScript are based on this with my customisation
-* [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer this YouTube tutorial to get an idea of how to provide country information display. Code written on my JavaScript are based on this with my customisation
+* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Code written on my JavaScript are based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
+([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/traversy-media.pdf))
+
+* [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer this YouTube tutorial to get an idea of how to provide country information display. Code written on my JavaScript are based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
+([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/coding-journey.pdf))
 
 **Note:**
 **These are credited on the JavaScript file*

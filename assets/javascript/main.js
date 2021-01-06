@@ -107,7 +107,6 @@ function countdown() {
 function showCountries(countries) {
   const randomIndex = Math.floor(Math.random() * countries.length);
   let textCountryName = countries[randomIndex].name;
-  let textCountryLength = textCountryName.length;
   const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
 
   if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space) 

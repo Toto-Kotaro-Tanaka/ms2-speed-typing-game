@@ -42,21 +42,21 @@ I am the owner of the website. My goals of this website are to provide a speed t
 
 ## UX 5 PLANES
 ### Strategy Plane
-Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (My note: 60s / 30s - TBC) and score, that increments by 10 rather than 1 so that they feel they achieved better (e.g. When you get 20 correct typings, it shows 200 instead of 20), users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
-The highest score remains during the game so that users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text, that they type, and it comes up randomly so that different combination of texts appear on each game. There are 195 countries in the world*. Users know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s), as an additional function to the speed typing game. 
+Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), score which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points) and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
+High score remains even after the game finishes, even browser is closed, so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combination of texts appear on each game. Names of countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API*. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s), as an additional function to the speed typing game. 
 
-*As of 3 Jan 2021, there are 250 countries listed on **[REST Countries API](https://restcountries.eu/)** that is being used on the website*
+* *As of 3 Jan 2021*
 
 The main aims for this website are;
 
-- To give users an opportunity to practice speed typing with fun. In order to achieve this, the visual and functions are kept minimum. There is a logo, title, navebar to *Home*, *Instructions* and *Countries* on the header. On the main section, there is a welcome message, game instructions button, a timer (My note: 60s / 30s TBC), a letter display, input box, score board, the highest score board and a button to “Learn About The Countries In The World” page.
-To give users more motivation, each correct point is set to 10 instead of 1 so that they fee they’ve achieved better.
-There are also 3 different categories at the end of the game. Depending on the score, they get a Gold medal, a Silver medal or a Bronze medal (My note: Scores for this TBC)
+- To give users an opportunity to practice speed typing with fun. In order to achieve this, the visual and functions are kept minimum. There is a logo with the title, navebar to lead to *Home*, *Instructions* and *Countries* on the header. For the screen size 62rem / 992px, there is an alert that tells users that the game is only availabe on laptop / desktop only as a keyboard is required to play it. On the main section, there is a welcome message, game instructions button, a 60-second timer, a button to link to **“Let's Learn About The Countries”** page, a letter display, input box, game start button, score board, medal display, high score board.<br>
+To give users more motivation, each correct point is set to 10 instead of 1 so that they fee they achieve better.
+There are also 3 different medals at the end of the game. Depending on the score, they get a Gold medal, a Silver medal or a Bronze medal (My note: Scores for this TBC). There is a secret special crown for those who achieve very high score. This is not written on the instructions as it is a secret item, however once you get gold medal, you get a message trying to achieve further points (currently set to 250 but TBC) and see what happens.
 
 - To provide basic information of countries in the world 
-In order to achieve this, Countries API (My note: TBC) is linked with google maps and capital city, population, language and a flag are generated from API.
+In order to achieve this, **[REST Countries API](https://restcountries.eu/)** is linked with the website and a location on the google maps, a flag, region, capital city, population and language(s) are displayed when a country is selected on the dropdown menu.
 
-All the functions on the tables below are minimum functions that must be implemented in the website to achieve user's and owner's goals.  
+All the functions on the tables below are minimum that must be implemented in the website to achieve user's and owner's goals.  
 
 | Opportunity                                            | Importance | Viability / Feasibility |
 | :----------------------------------------------------- | :--------: | :---------------------: |
@@ -64,22 +64,24 @@ All the functions on the tables below are minimum functions that must be impleme
 | A Timer                                                |     5      |            5            |
 | A Random Text                                          |     5      |            5            |
 | Score Board                                            |     5      |            5            |
-| API with Google Maps                                   |     5      |            5            |
+| Countries API with Google Maps                         |     5      |            5            |
 | Google Maps                                            |     5      |            5            |
-| Info Card for Countries                                |     5      |            5            |
-| The Highest Score Board                                |     4      |            5            |
-| Fancy Opening When The Page Loads                      |     3      |            4            |
+| Info Display for Countries                             |     5      |            5            |
+| High Score Board                                       |     4      |            5            |
+| Fancy Welcome Message                                  |     3      |            4            |
 | Responsiveness                                         |     3      |            4            |
 
-These are the additional functions that can improve the website however not mandatory to achieve user's and owner's goals currently set up. Some aren't implemented due to a lack of my current skills and knowledges and some due to lack of time. 
+Below are the additional functions that can improve the website however not mandatory to achieve user's and owner's goals, that are currently set up. Some aren't implemented due to a lack of my current skills and knowledges and some due to lack of time. 
 
 | Opportunity                                            | Importance | Viability / Feasibility |
 | :----------------------------------------------------- | :--------: | :---------------------: |
 | Different Levels (e.g. length of letters)              |     3      |            2            |
-| Keeping The Highest Score Even Game Disconnected       |     3      |            2            |
+| Keeping High Score Even Game Disconnected*             |     3      |            2            |
 | User Name Input                                        |     2      |            4            |
 | Highlighting Letters When Correct / Incorrect          |     2      |            2            |
 | Counting Down Last 10 Seconds                          |     2      |            1            |
+
+Note: Keeping The Highest Score Even Game Disconnected* - At the time of planning, I had thought keeping high score when the game disconnected was very difficult thing to do however, by reviewing lessons of Code Institute, I found the way of doing it so this is implemented in the game 
 
 ### Scope Plane
 Features to be included on this project are;
@@ -87,19 +89,21 @@ Features to be included on this project are;
 - Timer 
 - Randomly selected letters (country names) when the game starts
 - Counting score 
-- Keeping the highest score
+- Keeping high score
 - Displaying customised / interactive message (e.g. The results of the game, details of the countries)
 - Google maps with API
 - Country information with API
-- Caution message in modal when the size goes below 960px as the game is available on desktop only
+- Caution message in modal when the size goes below 62rem / 992px as the game is available on laptop / desktop only
+
+Note: Realised that caution message does not need to be in modal so set up it in alart
 
 ### Structure Plane
 The website consists of 2 pages.
-- First page (index.html) is **Speed Typing** game page with a logo, title, navbar, timer, letter display, input, , score, the highest score and instruction.
-- Second Page is (countries.html) is **“Learn About The Countries In The World”** page. The same header as the first page applies and 26 alphabets with a list of countries for country information and location on google maps.
+- **`index.html`** is **Speed Typing** game page with a logo, navbar, an alert (for table & mobile sizes screen), welcome message, game instructions button, a timer, a button to countries page, letter display, input box, a start button, score board, medal display, high score board
+- **`countries.html`** is **“Let's Learn About The Countries”** page. The same header as the first page ~26 alphabets with a list of countries for country information~ and simple display of country information with dropdown menu. Location displays on google maps.
 
 ### Skeleton Plane
-Desktop first design, though it is also responsive website. The Speed Typing game is only available on desktop but countries information is available on mobile size as well. There are wireframes of Main page(index.html) and Countries page(countries.html) for desktop and mobile sizes.
+Desktop first design, though it is also responsive website. The Speed Typing game is only available on laptop / desktop but country information is available on both desktop and mobile sizes. There are wireframes of Main page (index.html) and Countries page (countries.html) for desktop and mobile sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png)
 * ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
@@ -107,22 +111,31 @@ Desktop first design, though it is also responsive website. The Speed Typing gam
 
 ### Surface Plane
 **--- Colour ---**<br>
-On "Speed Typing" page (index.html), a page which looks similar to Visual Studio Code is considered because main purpose of the website is for typing. Eerie Black (#1e1e1e) is used for the back ground colour and Bright Navy Blue (#007acc) is used for the logo and menu.
-Main text colour is Light Grey (#d4d4d4) so that it doesn't give users too much contrast between the text and back ground colours. 
-Canary(#ffff98) is used for score to stands out the score and stronger colour than Canary, Maximum Yellow (#fdf838), is used for the highest score.
-Bittersweet (#ff6565) is used for timer because it is important information and must be very clear during the game 
+On **"Speed Typing"** game page (index.html), a page which looks similar to Visual Studio Code is considered because main purpose of the website is for typing. **Eerie Black (#1e1e1e)** is used for the background colour and **Bright Navy Blue (#007acc)** is used for the logo and menu. Main text colour is **Light Grey (#d4d4d4)** so that it does not give users too much contrast between the text and back ground colours. 
+**Canary (#ffff98)** is used for score to stands out the score and stronger colour than Canary, that is **Maximum Yellow (#fdf838)** for high score. **Bittersweet (#ff6565)** is used for a timer because it is very important information and must be very clear during the game 
 
-On "Learn About The Countries" page (countries.html), Bright Navy Blue (#007acc) is used for back ground as it links to an image of the earth. Main text colour is Eerie (#1e1e1e) so the page looks like the reversible version of index.html.
+On **“Let's Learn About The Countries”** page (countries.html), **Bright Navy Blue (#007acc)** is used for background of information and google maps as it links to an image of the earth and present it well. Main text colour is ~Eerie (#1e1e1e) so the page looks like the reversible version of index.html~ **Light Grey (#d4d4d4)** as it Eerie on Bright Navy Blue do not match.
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/colours.png)
 
 **--- Typography ---**<br>
-Courgette, which is similar type of font of the logo, is used for menu to show the image of "Speed". Bebas Neue is used for headings to stand out the headings and Montserrat is used for main contents to make the fonts visibility and readability maximum so that users don't have any issue of reading it and typing it.
+**Courgette** which is similar type of font of the logo (Lobster) is used for menu to show the image of "Speed". **Bebas Neue** is used for headings to stand out the headings and **Montserrat** is used for main contents to make the fonts visibility and readability maximum so that users do not have any issue of reading it especially for typing game.
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/fonts.png)
 
 ## FEATURES
-To be updated
+### Existing Features
+* Created with **HTML5**, **CSS3** (with Bootstrap4 framework), **JavaScript** (with jQuery library)
+* It consists of 2 individual pages
+* Modal for game instructions
+* Text of typing, country information is from **[REST Countries API](https://restcountries.eu/)**
+* Google maps API for location display
+
+### Features Left To Implement
+* Setting different levels - I think I could implement this by setting a length of text (e.g. Easy for text length up to 10 characters) however currently do not have time to do this and as it is not absolutely essential to achieve user's goals, I leave this out
+* Having a user name - This would give users more customised game however currently do not have time to implement this well from the design's point of view, because by having this on the current page, it may look too busy on the page and will defeat the purpose of simple page, so I leave this out
+* Highlighting Letters When Correct / Incorrect - This would be helpful especially when letters are quite long. I currently do not have skills to implement this and not for essential for the game so I leave this out
+* Counting Down Last 10 Seconds - This would also be useful as users may not be able to take their eyes off while they are typing. A timer is relatively close to text display & input box so should be visible but giving a warning by sound would be nice function to have. I currently do not have skills and time but might look at this. (TBC)
 
 ## TECHNOLOGIES USED
 * [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
@@ -258,12 +271,12 @@ I checked chrome dev tools to see what the issue was and saw that is not defined
 
 ## VERSION CONTROL
 ### Git & GitHub
-I used **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;
+I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;
 1. Create a **remote repository** in GitHub by clicking **"New repository"** on the main page
-2. Create a folder called **ms2-speed-typing-game** on my computer
+2. Create a folder called **ms2-speed-typing-game** on my computer (e.g. Desktop)
 3. Open the folder with [Visual Studio Code](https://code.visualstudio.com/) which is my Integrated Development Environment (IDE)
 4. Create README.md file
-5. Create a **local repository** by using command line with *git init* command
+5. Create a **local repository** by using command line with ***git init*** command
 6. First commit in git repository and first push to GitHub using the below commands;
 ````
 * git add README.md
@@ -283,7 +296,7 @@ I used **[Git](https://git-scm.com/)** as a local repository and **[GitHub](http
 
 ## DEPLOYMENT
 My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS and JavaScript.
-To deploy the website, I follow the below steps, once I login [GitHub](https://github.com/login)
+To deploy the website, I follow the below steps from the login screen of [GitHub](https://github.com/login)
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br>
 
@@ -300,6 +313,7 @@ To deploy the website, I follow the below steps, once I login [GitHub](https://g
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br>
 
 Note: 
+- Deployed before completing the website in order to test google maps API because restriction is set that API only works from this website so in order to test goole maps, deployment was required
 - It may take some time that your website becomes availabe on public
 - URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
 (e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
@@ -329,7 +343,7 @@ Note:
 * [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer this YouTube tutorial to get an idea of how to provide country information display. Code written on my JavaScript are based on this with my customisation
 
 **Note:**
-**These are credited on the css file*
+**These are credited on the JavaScript file*
 
 ### Contents
 * All the contents were written by me

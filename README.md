@@ -3,8 +3,7 @@
 # [SPEED TYPING](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
 
-It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/**
-)
+It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**
 
 ----- Mockup goes in here when the website is completed -----
 
@@ -46,7 +45,7 @@ I am the owner of the website. My goals of this website are to provide a speed t
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (My note: 60s / 30s - TBC) and score, that increments by 10 rather than 1 so that they feel they achieved better (e.g. When you get 20 correct typings, it shows 200 instead of 20), users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
 The highest score remains during the game so that users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text, that they type, and it comes up randomly so that different combination of texts appear on each game. There are 195 countries in the world*. Users know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s), as an additional function to the speed typing game. 
 
-*As of 3 Jan 2021, there are 250 countries listed on **[REST Countries API](https://restcountries.eu/)** that is being used on the website
+*As of 3 Jan 2021, there are 250 countries listed on **[REST Countries API](https://restcountries.eu/)** that is being used on the website*
 
 The main aims for this website are;
 
@@ -107,7 +106,7 @@ Desktop first design, though it is also responsive website. The Speed Typing gam
 * [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html-2.png) *This is the revised version after looking for some better ideas showing the country details
 
 ### Surface Plane
-**--- Colour ---**
+**--- Colour ---**<br>
 On "Speed Typing" page (index.html), a page which looks similar to Visual Studio Code is considered because main purpose of the website is for typing. Eerie Black (#1e1e1e) is used for the back ground colour and Bright Navy Blue (#007acc) is used for the logo and menu.
 Main text colour is Light Grey (#d4d4d4) so that it doesn't give users too much contrast between the text and back ground colours. 
 Canary(#ffff98) is used for score to stands out the score and stronger colour than Canary, Maximum Yellow (#fdf838), is used for the highest score.
@@ -117,7 +116,7 @@ On "Learn About The Countries" page (countries.html), Bright Navy Blue (#007acc)
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/colours.png)
 
-**--- Typography ---**
+**--- Typography ---**<br>
 Courgette, which is similar type of font of the logo, is used for menu to show the image of "Speed". Bebas Neue is used for headings to stand out the headings and Montserrat is used for main contents to make the fonts visibility and readability maximum so that users don't have any issue of reading it and typing it.
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/fonts.png)
@@ -132,7 +131,7 @@ To be updated
 * [Google Fonts](https://fonts.google.com/) for fonts
 * [Bootstrap4](https://getbootstrap.com/), css framework, for main frame of the website
 * [Font Awesome](https://fontawesome.com/) for icons
-* [jQuery](https://jquery.com/), javaScript library, for more efficient coding
+* [jQuery](https://jquery.com/), JavaScript library, for more efficient coding
 * [REST Countries API](https://restcountries.eu/) for text of speed typing game and country information display 
 * [Google Maps API](https://cloud.google.com/maps-platform/) to show a location of selected countries
 * [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)

@@ -65,16 +65,16 @@ function countdown() {
       $("#high-score").html(highScore);
 
       setTimeout(function() {
-        if (gameScore >= 260) {
+        if (gameScore >= 250) {
           $("#medal").css("color", "#e84610");
           $("#medal").html('Special <i class="fas fa-crown"></i>'); // Code Institute Colour Crown - secret item for special people reaching that high score. This is a surprise and not written on the instructions
           $("#message").css("color", "#e84610");
           $("#message").html("Secret Crown");  
-        } else if (gameScore >= 230 && gameScore <= 250) {
+        } else if (gameScore >= 230 && gameScore <= 240) {
           $("#medal").css("color", "#d4af37");
           $("#medal").html('Gold <i class="fas fa-medal"></i>');
           $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
-          $("#message").html("Great job! Try to reach 260 pt and see what happens...");
+          $("#message").html("Great job! Try to reach 250 pt and see what happens...");
         } else if (gameScore >= 180 && gameScore <= 220) {
           $("#medal").css("color", "#808080");
           $("#medal").html('Silver <i class="fas fa-medal"></i>');
@@ -87,10 +87,17 @@ function countdown() {
       }, 1500);
 
       setTimeout(function() {
-        $("#country-text").css("color", "#007acc")
-        $("#country-text").html("Try Again!");
-        $("#reset-btn").show();
-        $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');  
+        if (gameScore <= 240) {
+          $("#country-text").css("color", "#007acc")
+          $("#country-text").html("Try Again!");
+          $("#reset-btn").show();
+          $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');    
+        } else {
+          $("#country-text").css("color", "#e84610")
+          $("#country-text").html('Congratulation! <i class="fas fa-glass-cheers"></i>');
+          $("#reset-btn").show();
+          $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');    
+        }
       }, 2500);
     }
   }, 1000);
@@ -103,7 +110,7 @@ function showCountries(countries) {
   let textCountryLength = textCountryName.length;
   const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
 
-  if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space) & 20 or Less Characters 
+  if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space) 
     $("#country-text").html(countries[randomIndex].name);
   } else {
     showCountries(countries);
@@ -178,6 +185,7 @@ function initialise(countriesData) {
   }
   $("#list-of-countries").html(options);
   displayCountryInfo("IRL");
+  initMap(53, -8);
 }
 
 // To Show Country Info

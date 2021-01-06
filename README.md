@@ -8,42 +8,43 @@ It is a mobile responsive website however the speed typing game can be played on
 ----- Mockup goes in here when the website is completed -----
 
 ## TABLE OF CONTENTS
-* #### [WHO'S THIS WEBSITE FOR?](#whos-this-website-for)
-* #### WHO IS THE OWNER?
-* #### UX 5 PLANES
-  * ##### Strategy Plane
-  * ##### Scope Plane
-  * ##### Structure Plane
-  * ##### Skeleton Plane
-  * ##### Surface Plane
-* #### FEATURES
-* #### TECHNOLOGIES USED
-* #### RESOURCES
-  * ##### General Resources
-  * ##### Tools
-* #### TESTING
-  * ##### Html
-  * ##### Css
-  * ##### JavaScript
-* #### PROJECT BARRIERS & SOLUTIONS
-* #### VERSION CONTROL
-* #### DEPLOYMENT
-* #### CREDITS
-  * ##### Code
-  * ##### Contents
-  * ##### Media
-* #### [ACKNOWLEDGEMENTS](#acknow)
-* [ACKNOWLEDGEMENTS-Test](#acknow-test)
+* #### [WHO'S THIS WEBSITE FOR?](#whos-this-website-for-heading)
+* #### [WHO IS THE OWNER?](#who-is-the-owner-heading)
+* #### [UX 5 PLANES](#ux5-planes-heading)
+  * ##### [Strategy Plane](#strategy-plane-heading)
+  * ##### [Scope Plane](#scope-plane-heading)
+  * ##### [Structure Plane](#structure-plane-heading)
+  * ##### [Skeleton Plane](#skeleton-plane-heading)
+  * ##### [Surface Plane](#surface-plane-heading)
+* #### [FEATURES](#features-heading)
+  * ##### [Existing Features](#existing-features-heading)
+  * ##### [Features Left To Implement](#features-left-heading)
+* #### [TECHNOLOGIES USED](#technologies-used-heading)
+* #### [RESOURCES](#resources-heading)
+  * ##### [General Resources](#general-resources-heading)
+  * ##### [Tools](#tools-heading)
+* #### [TESTING](#testing-heading)
+  * ##### [Html](#html-heading)
+  * ##### [Css](#css-heading)
+  * ##### [JavaScript](#javascript-heading)
+* #### [PROJECT BARRIERS & SOLUTIONS](#barriers-solutions-heading)
+* #### [VERSION CONTROL](#version-control-heading)
+  * ##### [Git & GitHub](#git-github-heading)
+* #### [DEPLOYMENT](#deployment-heading)
+* #### [CREDITS](#credits-heading)
+  * ##### [Code](#code-heading)
+  * ##### [Contents](#contents-heading)
+  * ##### [Media](#media-heading)
+* #### [ACKNOWLEDGEMENTS](#acknowledgements-heading)
 
-
-## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for"></a>
+## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for-heading"></a>
 People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s).
 
-## WHO IS THE OWNER?
+## WHO IS THE OWNER? <a name="who-is-the-owner-heading"></a>
 I am the owner of the website. My goals of this website are to provide a speed typing game that users can practice typing with fun as well as to provide basic information of countries that they see in the game.
 
-## UX 5 PLANES
-### Strategy Plane
+## UX 5 PLANES <a name="ux5-planes-heading"></a>
+### Strategy Plane <a name="strategy-plane-heading"></a>
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), score which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points) and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
 High score remains even after the game finishes, even browser is closed, so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combination of texts appear on each game. Names of countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API*. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s), as an additional function to the speed typing game. 
 
@@ -85,7 +86,7 @@ Below are the additional functions that can improve the website however not mand
 
 Note: Keeping The Highest Score Even Game Disconnected* - At the time of planning, I had thought keeping high score when the game disconnected was very difficult thing to do however, by reviewing lessons of Code Institute, I found the way of doing it so this is implemented in the game 
 
-### Scope Plane
+### Scope Plane <a name="scope-plane-heading"></a>
 Features to be included on this project are;
 - Game instructions on modal (to keep the number of pages minimum)
 - Timer 
@@ -99,19 +100,19 @@ Features to be included on this project are;
 
 Note: Realised that caution message does not need to be in modal so set up it in alart
 
-### Structure Plane
+### Structure Plane <a name="structure-plane-heading"></a>
 The website consists of 2 pages.
 - **`index.html`** is **Speed Typing** game page with a logo, navbar, an alert (for table & mobile sizes screen), welcome message, game instructions button, a timer, a button to countries page, letter display, input box, a start button, score board, medal display, high score board
 - **`countries.html`** is **“Let's Learn About The Countries”** page. The same header as the first page ~26 alphabets with a list of countries for country information~ and simple display of country information with dropdown menu. Location displays on google maps.
 
-### Skeleton Plane
+### Skeleton Plane <a name="skeleton-plane-heading"></a>
 Desktop first design, though it is also responsive website. The Speed Typing game is only available on laptop / desktop but country information is available on both desktop and mobile sizes. There are wireframes of Main page (index.html) and Countries page (countries.html) for desktop and mobile sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png)
 * ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
 * [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html-2.png) *This is the revised version after looking for some better ideas showing the country details
 
-### Surface Plane
+### Surface Plane <a name="surface-plane-heading"></a>
 **--- Colour ---**<br>
 On **"Speed Typing"** game page (index.html), a page which looks similar to Visual Studio Code is considered because main purpose of the website is for typing. **Eerie Black (#1e1e1e)** is used for the background colour and **Bright Navy Blue (#007acc)** is used for the logo and menu. Main text colour is **Light Grey (#d4d4d4)** so that it does not give users too much contrast between the text and back ground colours. 
 **Canary (#ffff98)** is used for score to stands out the score and stronger colour than Canary, that is **Maximum Yellow (#fdf838)** for high score. **Bittersweet (#ff6565)** is used for a timer because it is very important information and must be very clear during the game 
@@ -125,21 +126,21 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/fonts.png)
 
-## FEATURES
-### Existing Features
+## FEATURES <a name="features-heading"></a>
+### Existing Features <a name="existing-features-heading"></a>
 * Created with **HTML5**, **CSS3** (with Bootstrap4 framework), **JavaScript** (with jQuery library)
 * It consists of 2 individual pages
 * Modal for game instructions
 * Text of typing, country information is from **[REST Countries API](https://restcountries.eu/)**
 * Google maps API for location display
 
-### Features Left To Implement
+### Features Left To Implement <a name="features-left-heading"></a>
 * Setting different levels - I think I could implement this by setting a length of text (e.g. Easy for text length up to 10 characters) however currently do not have time to do this and as it is not absolutely essential to achieve user's goals, I leave this out
 * Having a user name - This would give users more customised game however currently do not have time to implement this well from the design's point of view, because by having this on the current page, it may look too busy on the page and will defeat the purpose of simple page, so I leave this out
 * Highlighting Letters When Correct / Incorrect - This would be helpful especially when letters are quite long. I currently do not have skills to implement this and not for essential for the game so I leave this out
 * Counting Down Last 10 Seconds - This would also be useful as users may not be able to take their eyes off while they are typing. A timer is relatively close to text display & input box so should be visible but giving a warning by sound would be nice function to have. I currently do not have skills and time but might look at this. (TBC)
 
-## TECHNOLOGIES USED
+## TECHNOLOGIES USED <a name="technologies-used-heading"></a>
 * [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
 * [CSS3](https://en.wikipedia.org/wiki/CSS) for style
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for interaction
@@ -153,8 +154,8 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 * [Git](https://git-scm.com/) for version control
 * [GitHub](https://github.com/) for keeping the files, documents and deploy the website
 
-## RESOURCES
-### General Resources
+## RESOURCES <a name="resources-heading"></a>
+### General Resources <a name="general-resources-heading"></a>
 * Code Institute course materials
 * Code Institute Slack Community
 * [MDN](https://developer.mozilla.org/en-US/)
@@ -162,15 +163,15 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 * [Youtube](https://www.youtube.com/)
 * [W3schools](https://www.w3schools.com/)
 
-### Tools
+### Tools <a name="tools-heading"></a>
 * [Adobe](https://www.adobe.com/ie/photoshop/online/resize-image.html) To resize images
 
-## TESTING
-### Html
+## TESTING <a name="testing-heading"></a>
+### Html <a name="html-heading"></a>
 
-### Css
+### Css <a name="css-heading"></a>
 
-### JavaScript Speed Typing Game
+### JavaScript Speed Typing Game <a name="javascript-heading"></a>
 **--- Functions ---**
 
 As I completed the core functions of JavaScript for Speed Typing game, I test them using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript code to see if they work. 
@@ -257,7 +258,7 @@ This function should show correct medal depending on the score. Below is the cat
 **- Conclusion -**<br>
 Function with **if else** statement works in the way expected
 
-## PROJECT BARRIERS & SOLUTIONS
+## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a>
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.
 
 Draft: Even the time was up, I could still type and the score increased etc so I used attribute disabled for input and came up with a solution to have reset button so that until users click it, the game stays the same as how they finished and when they want to play it again, they click reset button
@@ -271,8 +272,8 @@ It worked when I was testing it however when I implement the code into main.js w
 I compared all the code which worked and didn’t work and discovered that initMap(lat, lng) function in displayCountryInfo was causing an issue. (I discovered it by making it in active)
 I checked chrome dev tools to see what the issue was and saw that is not defined, though when there is no initMap function, it is defined and works. Therefore, to solve the issue, I first created another function to retrieve data from REST Countries just for getCountries and showCountries functions. This worked as far as I’m concerned however I felt this wasn’t the most efficient way of solving the issue so though about for a while and came up with an idea of using setTimeout() method to get the function of initMap delayed, although this would cause a delay of showing google maps on countreis.html so wanted to minimise the delay. I put the delaying time of 3000 ms and worked fine, tried 1000 ms  and worked as well and put 0 ms and still worked so I decided to leave it 0 ms to minimise the delaying time of showing google maps but still country name shows as a text
 
-## VERSION CONTROL
-### Git & GitHub
+## VERSION CONTROL <a name="version-control-heading"></a>
+### Git & GitHub <a name="git-github-heading"></a>
 I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;
 1. Create a **remote repository** in GitHub by clicking **"New repository"** on the main page
 2. Create a folder called **ms2-speed-typing-game** on my computer (e.g. Desktop)
@@ -296,7 +297,7 @@ I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https
 * git push | To update the work in GitHub
 ````
 
-## DEPLOYMENT
+## DEPLOYMENT <a name="deployment-heading"></a>
 My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS and JavaScript.
 To deploy the website, I follow the below steps from the login screen of [GitHub](https://github.com/login)
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
@@ -320,8 +321,8 @@ Note:
 - URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
 (e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 
-## CREDITS
-### Code
+## CREDITS <a name="credits-heading"></a>
+### Code <a name="code-heading"></a>
 **--- HTML5 ---**
 * [Bootstrap Navbar](https://getbootstrap.com/docs/4.5/components/navbar/) for navigation bar
 * [Bootstrap Modal](https://getbootstrap.com/docs/4.0/components/modal/) for game instructions
@@ -350,15 +351,12 @@ Note:
 **Note:**
 **These are credited on the JavaScript file*
 
-### Contents
+### Contents <a name="contents-heading"></a>
 * All the contents were written by me
 
-### Media
+### Media <a name="media-heading"></a>
 **--- Logo ---**
 * Created by me using [canva](https://www.canva.com/)
 
-## ACKNOWLEDGEMENTS <a name="acknow"></a>
+## ACKNOWLEDGEMENTS <a name="acknowledgements-heading"></a>
 To be updated
-
-## ACKNOWLEDGEMENTS-Test <a name="acknow-test"></a>
-Test

@@ -1,6 +1,6 @@
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.png)
 
-# [SPEED TYPING GAME](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
+# [SPEED TYPING GAME](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/) <a name="top"></a>
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
 
 It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**
@@ -358,5 +358,5 @@ Note:
 **--- Logo ---**
 * Created by me using [canva](https://www.canva.com/)
 
-## ACKNOWLEDGEMENTS <a name="acknowledgements-heading"></a>
+## [ACKNOWLEDGEMENTS](#top) <a name="acknowledgements-heading"></a>
 To be updated

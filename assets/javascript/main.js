@@ -185,7 +185,6 @@ function initialise(countriesData) {
   }
   $("#list-of-countries").html(options);
   displayCountryInfo("IRL");
-  initMap(53, -8);
 }
 
 // To Show Country Info

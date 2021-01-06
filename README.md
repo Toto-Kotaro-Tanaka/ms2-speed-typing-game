@@ -32,7 +32,9 @@ It is a mobile responsive website however the speed typing game can be played on
   * ##### Code
   * ##### Contents
   * ##### Media
-* #### [ACKNOWLEDGEMENTS](#acknowledgements)
+* #### [ACKNOWLEDGEMENTS](#acknow)
+* [ACKNOWLEDGEMENTS-Test](#acknow-test)
+
 
 ## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for"></a>
 People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s).
@@ -355,7 +357,8 @@ Note:
 **--- Logo ---**
 * Created by me using [canva](https://www.canva.com/)
 
-## ACKNOWLEDGEMENTS <a name="acknowledgements"></a>
+## ACKNOWLEDGEMENTS <a name="acknow"></a>
 To be updated
 
-
+## ACKNOWLEDGEMENTS-Test <a name="acknow-test"></a>
+Test

@@ -38,8 +38,7 @@ $("#high-score").html(highScore);
 $("#play-btn").click(function() {
   $("input").focus();
   $("#play-message").hide();
-  $("#play-btn").css("color", "#ff6565");
-  $("#play-btn").attr("disabled", "true"); // To Prevent Users Hitting It Again As It Causes Problems
+  $("#play-btn").css("color", "#ff6565").attr("disabled", "true"); // To Prevent Users Hitting It Again As It Causes Problems
   countdown();
   showCountries(transferData);
   $("#text-input").on("input", startMatch);
@@ -66,35 +65,27 @@ function countdown() {
 
       setTimeout(function() {
         if (gameScore >= 250) {
-          $("#medal").css("color", "#e84610");
-          $("#medal").html('Special <i class="fas fa-crown"></i>'); // Code Institute Colour Crown - secret item for special people reaching that high score. This is a surprise and not written on the instructions
-          $("#message").css("color", "#e84610");
-          $("#message").html("Secret Crown");  
+          $("#medal").css("color", "#e84610").html('Special <i class="fas fa-crown"></i>'); // Code Institute Colour Crown - Secret item for special people reaching that high score. This is a surprise and not written on the instructions
+          $("#message").css("color", "#e84610").html("Secret Crown");  
         } else if (gameScore >= 230 && gameScore <= 240) {
-          $("#medal").css("color", "#d4af37");
-          $("#medal").html('Gold <i class="fas fa-medal"></i>');
-          $("#message").css("fontSize", "1.2rem").css("color", "#007acc").css("fontFamily", "Courgette, cursive");
-          $("#message").html("Great job! Try to reach 250 pt and see what happens...");
+          $("#medal").css("color", "#d4af37").html('Gold <i class="fas fa-medal"></i>');
+          $("#message").css({"fontSize": "1.2rem", "color": "#007acc", "fontFamily": "Courgette, cursive"}).html("Great job! Try to reach 250 pt and see what happens...");
         } else if (gameScore >= 180 && gameScore <= 220) {
-          $("#medal").css("color", "#808080");
-          $("#medal").html('Silver <i class="fas fa-medal"></i>');
+          $("#medal").css("color", "#808080").html('Silver <i class="fas fa-medal"></i>');
           $("#message").html("Well Done!!");
         } else {
-          $("#medal").css("color", "#b08d57");
-          $("#medal").html('Bronze <i class="fas fa-medal"></i>');
+          $("#medal").css("color", "#b08d57").html('Bronze <i class="fas fa-medal"></i>');
           $("#message").html("Unlucky!");
         }  
       }, 1500);
 
       setTimeout(function() {
         if (gameScore <= 240) {
-          $("#country-text").css("color", "#007acc")
-          $("#country-text").html("Try Again!");
+          $("#country-text").css("color", "#007acc").html("Try Again!");
           $("#reset-btn").show();
           $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');    
         } else {
-          $("#country-text").css("color", "#e84610")
-          $("#country-text").html('Congratulation! <i class="fas fa-glass-cheers"></i>');
+          $("#country-text").css("color", "#e84610").html('Congratulation! <i class="fas fa-glass-cheers"></i>');
           $("#reset-btn").show();
           $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');    
         }
@@ -109,8 +100,8 @@ function showCountries(countries) {
   let textCountryName = countries[randomIndex].name;
   const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
 
-  if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space) 
-    $("#country-text").html(countries[randomIndex].name);
+  if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space and Comma) 
+    $("#country-text").html(textCountryName);
   } else {
     showCountries(countries);
   }
@@ -140,9 +131,8 @@ $("#reset-btn").click(function() {
 });
 // ---------- /End of Speed Typing Game ----------
 
-// ---------- REST Countries API ----------
+// ---------- REST Countries API @ https://restcountries.eu/ ----------
 // Credit: Coding Journey @ https://www.youtube.com/watch?v=THZyM2z8s-o *Referred this tutorial but customised by me
-// API: REST Countries @ https://restcountries.eu/
 
 // Global Valuables
 let apiCountries;
@@ -188,10 +178,9 @@ function initialise(countriesData) {
 
 // To Show Country Info
 function displayCountryInfo(countryByAlpha3Code) {
-  const countryData = apiCountries.find(country => country.alpha3Code === countryByAlpha3Code); // Array.prototype.find() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+  const countryData = apiCountries.find(country => country.alpha3Code === countryByAlpha3Code);
   $("#country-name").html(countryData.name);
-  $("#flag").attr("src", countryData.flag);
-  $("#flag").attr("alt", `Flag of ${countryData.name}`);
+  $("#flag").attr({"src": countryData.flag, "alt": `Flag of ${countryData.name}`});
   $("#region").html(countryData.region);
   $("#capital").html(countryData.capital);
   $("#population").html(countryData.population.toLocaleString("en-US"));
@@ -206,7 +195,7 @@ function displayCountryInfo(countryByAlpha3Code) {
 }
 // ---------- /End of Countries API ----------
 
-// To Show & Hide Countries Info API Link
+// To Show & Hide Country Info API Link
   $(".fa-info-circle").click(function(){
     $("#country-info").toggle();
   });

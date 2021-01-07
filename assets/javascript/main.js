@@ -189,7 +189,7 @@ function initialise(countriesData) {
 // To Show Country Info
 function displayCountryInfo(countryByAlpha3Code) {
   const countryData = apiCountries.find(country => country.alpha3Code === countryByAlpha3Code); // Array.prototype.find() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
-  $("#country").html(countryData.name);
+  $("#country-name").html(countryData.name);
   $("#flag").attr("src", countryData.flag);
   $("#flag").attr("alt", `Flag of ${countryData.name}`);
   $("#region").html(countryData.region);

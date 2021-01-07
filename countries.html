@@ -2,38 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet"/>
-
   <!-- Fontawesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
-
   <!-- JQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
   <!-- Fancy Heading Display -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  
   <!-- Styles CSS -->
   <link rel="stylesheet" href="assets/css/style.css"/>
-  
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <title>Speed Typing</title>
+  <title>Speed Typing Game</title>
 </head>
 
 <body>
   <header>
     <div class="alert alert-danger d-lg-none" role="alert">
-      <h5>NOTE <i class="fas fa-exclamation-circle"></i></h5>
+      <h5>Note <i class="fas fa-exclamation-circle"></i></h5>
       <i id="close-alert" class="fas fa-times"></i>
       <p>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it</p>
     </div>
@@ -62,13 +56,11 @@
 
   <section>
     <h1 class="ml3">Let's Learn About The Countries!</h1>
-    <p>
-      You can learn about the basic information of the countries that you have come across in the typing game <i class="fas fa-globe"></i>
-    </p>
+    <p>You can learn about the basic information of the countries that you have come across in "<a class="bold" href="index.html">Speed Typing</a>" game <i class="fas fa-globe"></i></p>
     <div id="countries" class="container-fluid">
       <div class="row">
         <div id="countries-info" class="col-lg col-lg-4">
-          <h3 id="country-name"><span id="country"></span></h3>
+          <h3 id="country-name"></h3>
           <div id="country-flag">
             <img id="flag" src="" alt="Country Flag">
           </div>
@@ -81,7 +73,7 @@
             <i class="fas fa-info-circle"></i> <select id="list-of-countries" class="custom-select"></select>
           </div>
           <!-- /End of Credit -->
-          <p id="country-info">Countries info from <a class="bold" href="https://restcountries.eu/" target="_blank">REST Countries API</a></p>
+          <p id="country-info">Countries info from <a class="bold" href="https://restcountries.eu/" target="_blank" rel="noopener">REST Countries API</a></p>
           <a class="d-none d-lg-block btn btn-primary btn-speed-typing buzz-out-on-hover" href="index.html">Speed Typing</a>
         </div>
         <div id="google-maps" class="col-lg col-lg-8">
@@ -109,16 +101,14 @@
             <li>A name of the countries pops up randomly so you type it in the input box. Note <span class="bold">letter case</span> and <span class="bold">space</span> matter</li>
             <li>You get <span class="bold">10</span> points per correct typing</li>
             <li>At the end of each game, you receive a medal depending on the score</li>
-            <ul>
-              <li>Gold Medal <i class="fas fa-medal"></i> - Over <span class="bold">230</span> points</li>
-              <li>Silver Medal <i class="fas fa-medal"></i> - Between <span class="bold">180</span> and <span class="bold">220</span> points</li>
-              <li>Bronze Medal <i class="fas fa-medal"></i> - Below <span class="bold">170</span> points</li>
-            </ul>
-            <li>To play the game, click <span class="bold">Play <i class="far fa-play-circle"></i></span> button below the input box. Input box will be focused automatically so you don't need to click it</li>
+              <ul>
+                <li>Gold Medal <i class="fas fa-medal"></i> - Over <span class="bold">230</span> points</li>
+                <li>Silver Medal <i class="fas fa-medal"></i> - Between <span class="bold">180</span> and <span class="bold">220</span> points</li>
+                <li>Bronze Medal <i class="fas fa-medal"></i> - Below <span class="bold">170</span> points</li>
+              </ul>
+            <li>To play the game, click <span class="bold">Play <i class="far fa-play-circle"></i></span> button below input box. Input box will be focused automatically so you don't need to click it</li>
           </ol>
-          <p class="modal-important">
-            *** IMPORTANT *** <br>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it
-          </p>
+          <p class="modal-important">*** IMPORTANT *** <br>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary btn-instructions btn-modal buzz-out-on-hover btn-ready" data-dismiss="modal">I'm ready!</button>

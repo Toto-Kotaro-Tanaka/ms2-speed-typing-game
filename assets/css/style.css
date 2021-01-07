@@ -40,6 +40,16 @@ h4 {
   font-weight: bold;
 }
 
+a {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007acc;
+  text-decoration: none;
+}
+
 /* ---------- Alert All Pages */
 .alert {
   background-color: #ff6565;

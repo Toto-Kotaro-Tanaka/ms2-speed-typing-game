@@ -168,13 +168,41 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 
 ## TESTING <a name="testing-heading"></a>
 ### Html <a name="html-heading"></a>
+**--- Code Validation ---**
+When I complete the core html code, I test it using **[W3C Markup Validation Service](https://validator.w3.org/)**, which is a validator by the World Wide Web Consortium that allows to check HTML and XHTML documents for well-formed markup, to check any warnings and errors
+
+**`index.html`**: [2 warnings and 3 errors found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/index.png)
+1. **Warning: Empty heading**<br>
+
+1. **Warning: Empty heading**<br>
+
+1. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
+
+1. **Error: The `aria-describedby` attribute must point to an element in the same document.**<br>
+
+1. **Error: The `aria-labelledby` attribute must point to an element in the same document.**<br>
+
+
+**`countries.html`**: [1 warnings and 3 errors found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/countries.png)
+1. **Warning: Empty heading**<br>
+
+1. **Error: Bad value for attribute `src` on element `img`: Must be non-empty.**<br>
+
+1. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
+
+1. **Error: The `aria-labelledby` attribute must point to an element in the same document.**<br>
 
 ### Css <a name="css-heading"></a>
+**--- Code Validation ---**
+When I complete the core css code, I test it using **[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)**, which is a validator by the World Wide Web Consortium that allows to check Cascading Style Sheets, to make sure that my css complies with the standards set by the World Wide Web Consortium
+
+**`styles.css`~**: [0 errors found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/no-errors.png) / [16 warnings found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/warnings.png)
+
 
 ### JavaScript Speed Typing Game <a name="javascript-heading"></a>
 **--- Functions ---**
 
-As I completed the core functions of JavaScript for Speed Typing game, I test them using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript code to see if they work. 
+When I complete the core functions of JavaScript for Speed Typing game, I test it using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript code to see if they work. 
 
 Below are the steps of the set up for the testing.
 

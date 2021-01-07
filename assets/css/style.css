@@ -68,7 +68,6 @@ a:hover {
 }
 
 #close-alert {
-  display: inline-block;
   float: right;
 }
 
@@ -476,7 +475,6 @@ hr {
 }
 
 #maps {
-  /* border: .0625rem solid #d4d4d4; */
   border: none;
   border-radius: .5rem;
   height: 95%;
@@ -519,7 +517,7 @@ footer {
   margin: 1rem auto;
 }
 
-/* -------------------- Media Query: Desktop Size (62rem / 992px) -------------------- */
+/* -------------------- Media Query: Screen Size Bigger Than 62rem / 992px -------------------- */
 @media only screen and (min-width: 62rem) {
 
   body {

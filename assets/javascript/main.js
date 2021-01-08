@@ -54,7 +54,7 @@ function countdown() {
     if (time === 0) {
       clearInterval(timer);
       $("input").attr("disabled", "true"); // To Prevent Users Typing Words In It As It Would Still Count Scores
-      $("#time-up").html("Time is Up!");
+      $("#time-up").show();
 
       if (gameScore > highScore) {
         localStorage.setItem("speedTypingHighScore", gameScore);

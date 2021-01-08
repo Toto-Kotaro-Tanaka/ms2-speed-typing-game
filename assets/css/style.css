@@ -320,6 +320,10 @@ hr {
   color: #ff6565;
 }
 
+#time-up {
+  display: none;
+}
+
 #learn-countries p {
   font-size: 1rem;
   padding: 1rem 0 0 0;

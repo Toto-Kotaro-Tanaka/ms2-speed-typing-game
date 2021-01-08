@@ -212,17 +212,24 @@ Put the code on the validator after fixing these, test it and receive **[no warn
 When I complete majority of html, I test quality of the website using **[Lighthouse](https://developers.google.com/web/tools/lighthouse)**, which is an open-source, automated one of the dev tools for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO.  
 
 **`index.html` Mobile Size**<br>
-Before - [Performance: 85 / Accessibility: 97 / Best Practices: 93 / SEO: 83 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-before.png)
+Before - [Performance: 85 / Accessibility: 97 / Best Practices: 93 / SEO: 83 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-before.png)<br>
 Issues on Performance and SEO are addressed and solved with suggestions by Lighthouse. The issues on Performance are fixed by reducing the size of logo and removing one of Bootstrap JavaScript, which is not necessary to be on index.html. The issue on SEO is fixed by adding `<meta name="description"/>` tag.<br>
 After - [Performance: 92 / Accessibility: 97 / Best Practices: 93 / SEO: 92 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-after.png)
 
 Note: Score of Perfomance varies. It may depend on internet speed?
 
 **`index.html` Desktop Size**<br>
-Before - [Performance: 95 / Accessibility: 88 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-before.png)
+Before - [Performance: 95 / Accessibility: 88 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-before.png)<br>
 Issues on Accessibility are addressed and solved with suggestions by Lighthouse. The issues are fixed by adding `aria-label="Play game button"` attribute on two buttons that have no label. This is important for screen readers. Also, there is `<h3>`(Time is Up message) after `<h4>` which causes heading elements not being a sequentially-descending order so `<h3>` is changed to `<h4>`<br>
 After - [Performance: 95 / Accessibility: 96 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-after.png)
 
+**`countries.html` Mobile Size**<br>
+Before - [Performance: 72 / Accessibility: 91 / Best Practices: 100 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
+My note => need to be looked at when I have more time
+
+**`countries.html` Desktop Size**<br>
+Before - [Performance: 94 / Accessibility: 91 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
+All ok and nothing is addressed
 
 ### Css <a name="css-heading"></a>
 **--- Code Validation ---**<br>

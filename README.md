@@ -239,7 +239,13 @@ When I complete the core CSS code, I test it using **[W3C CSS Validation Service
 **`styles.css`**: [0 error found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/no-errors.png) / [16 warnings found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/warnings.png)
 
 
-### JavaScript Speed Typing Game <a name="javascript-heading"></a>
+### JavaScript <a name="javascript-heading"></a>
+**--- Code Validation ---**<br>
+When I complete the core JavaScript code, I test it using **[JSHint](https://jshint.com/)**, which is a static code analysis tool used in software development for checking if JavaScript source code complies with coding rules
+
+**`main.js`**: [25 warning](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-warnings.png), [6 undefined variables](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-undefined.png) and [1 unused variable](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-unused.png)
+
+
 **--- Functions ---**<br>
 When I complete the core functions of JavaScript for Speed Typing game, I test it using **[Jasmine](https://jasmine.github.io/)** which is a framework for testing JavaScript code to see if they work. 
 

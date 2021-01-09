@@ -3,7 +3,7 @@
 # [SPEED TYPING GAME](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 This is a website of a speed typing game with an additional function that users can learn about basic information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
 
-It is a mobile responsive website however the speed typing game can be played on laptop / desktop only as a keyboard is required. The link of website is available on **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**
+It is a mobile responsive website however the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**
 
 ----- Mockup goes in here when the website is completed -----
 
@@ -38,28 +38,28 @@ It is a mobile responsive website however the speed typing game can be played on
 * #### [ACKNOWLEDGEMENTS](#acknowledgements-heading)
 
 ## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for-heading"></a>
-People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s).
+People who would like to practice typing by playing a game. I use names of the countries in the world for this so they might come across the countries that they might be interested in or never heard of. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a location on google maps, a flag, region, capital city, population and language(s).
 
 ## WHO IS THE OWNER? <a name="who-is-the-owner-heading"></a>
-I am the owner of the website. My goals of this website are to provide a speed typing game that users can practice typing with fun as well as to provide basic information of countries that they see in the game.
+I am the owner of the website. My goals for this website are to provide a speed typing game that users can practice typing with fun as well as to provide basic information of countries that they see in the game.
 
 ## UX 5 PLANES <a name="ux5-planes-heading"></a>
 ### Strategy Plane <a name="strategy-plane-heading"></a>
-Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), score which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points) and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
-High score remains even after the game finishes, even browser is closed, so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combination of texts appear on each game. Names of countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API*. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on the google maps, a flag, region, capital city, population and language(s), as an additional function to the speed typing game. 
+Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), scores which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points) and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
+A high score remains even after the game finishes and even the browser is closed so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combinations of texts appear on each game. Names of countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API*. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a location on google maps, a flag, region, capital city, population, and language(s), as an additional function to the speed typing game. 
 
 * *As of 3 Jan 2021*
 
 The main aims for this website are;
 
-- To give users an opportunity to practice speed typing with fun. In order to achieve this, the visual and functions are kept minimum. There is a logo with the title, navebar to lead to *Home*, *Instructions* and *Countries* on the header. For the screen size 62rem / 992px, there is an alert that tells users that the game is only availabe on laptop / desktop only as a keyboard is required to play it. On the main section, there is a welcome message, game instructions button, a 60-second timer, a button to link to **“Let's Learn About The Countries”** page, a letter display, input box, game start button, score board, medal display, high score board.<br>
+* To allow users to practice speed typing with fun. In order to achieve this, the visual and functions are kept minimum. There is a logo with the title, navbar to lead to *Home*, *Instructions*, and *Countries* on the header. For the screen size 62rem / 992px, there is an alert that tells users that the game is only available on laptop or desktop only as a keyboard is required to play it. In the main section, there is a welcome message, game instructions button, a 60-second timer, a button to link to the **“Let's Learn About The Countries”** page, a letter display, an input box, game start button, a scoreboard, a medal display, a high scoreboard.<br>
 To give users more motivation, each correct point is set to 10 instead of 1 so that they fee they achieve better.
-There are also 3 different medals at the end of the game. Depending on the score, they get a Gold medal, a Silver medal or a Bronze medal (My note: Scores for this TBC). There is a secret special crown for those who achieve very high score. This is not written on the instructions as it is a secret item, however once you get gold medal, you get a message trying to achieve further points (currently set to 250 but TBC) and see what happens.
+There are also 3 different medals at the end of the game. Depending on the score, they get a Gold medal, a Silver medal, or a Bronze medal (My note: Scores for this TBC). There is a secret special crown for those who achieve a very high score. This is not written on the instructions as it is a secret item, however, once you get a Gold medal, you get a message trying to achieve further points (currently set to 250 but TBC) and see what happens.
 
-- To provide basic information of countries in the world 
-In order to achieve this, **[REST Countries API](https://restcountries.eu/)** is linked with the website and a location on the google maps, a flag, region, capital city, population and language(s) are displayed when a country is selected on the dropdown menu.
+* To provide basic information of countries in the world. 
+In order to achieve this, **[REST Countries API](https://restcountries.eu/)** is linked with the website and a location on google maps, a flag, region, capital city, population, and language(s) are displayed when a country is selected on the dropdown menu.
 
-All the functions on the tables below are minimum that must be implemented in the website to achieve user's and owner's goals.  
+All the functions on the tables below are minimum that must be implemented on the website to achieve user's and owner's goals.  
 
 | Opportunity                                            | Importance | Viability / Feasibility |
 | :----------------------------------------------------- | :--------: | :---------------------: |
@@ -74,7 +74,7 @@ All the functions on the tables below are minimum that must be implemented in th
 | Fancy Welcome Message                                  |     3      |            4            |
 | Responsiveness                                         |     3      |            4            |
 
-Below are the additional functions that can improve the website however not mandatory to achieve user's and owner's goals, that are currently set up. Some aren't implemented due to a lack of my current skills and knowledges and some due to lack of time. 
+Below are the additional functions that can improve the website however not mandatory to achieve user's and owner's goals, that are currently set up. Some aren't implemented due to a lack of my current skills and knowledge and some due to lack of time. 
 
 | Opportunity                                            | Importance | Viability / Feasibility |
 | :----------------------------------------------------- | :--------: | :---------------------: |
@@ -84,29 +84,29 @@ Below are the additional functions that can improve the website however not mand
 | Highlighting Letters When Correct / Incorrect          |     2      |            2            |
 | Counting Down Last 10 Seconds                          |     2      |            1            |
 
-Note: Keeping The Highest Score Even Game Disconnected* - At the time of planning, I had thought keeping high score when the game disconnected was very difficult thing to do however, by reviewing lessons of Code Institute, I found the way of doing it so this is implemented in the game 
+Note: Keeping The Highest Score Even Game Disconnected* - At the time of planning, I had thought keeping a high score when the game disconnected was a very difficult thing to do, however, by reviewing lessons of Code Institute, I found a way of doing it so this is implemented in the game 
 
 ### Scope Plane <a name="scope-plane-heading"></a>
-Features to be included on this project are;
-- Game instructions on modal (to keep the number of pages minimum)
-- Timer 
-- Randomly selected letters (country names) when the game starts
-- Counting score 
-- Keeping high score
-- Displaying customised / interactive message (e.g. The results of the game, details of the countries)
-- Google maps with API
-- Country information with API
-- Caution message in modal when the size goes below 62rem / 992px as the game is available on laptop / desktop only
+Features to be included in this project are;
+* Game instructions on modal (to keep the number of pages minimum)
+* Timer 
+* Randomly selected letters (country names) when the game starts
+* Counting score 
+* Keeping a high score
+* Displaying customised and interactive message (e.g. The results of the game, details of the countries)
+* Google maps with API
+* Country information with API
+* Caution message in a modal when the size goes below 62rem / 992px as the game is available on a laptop or desktop only
 
-Note: Realised that caution message does not need to be in modal so set up it in alart
+Note: Realised that caution message does not need to be in modal so set up it in alert
 
 ### Structure Plane <a name="structure-plane-heading"></a>
 The website consists of 2 pages.
-- **`index.html`** is **Speed Typing** game page with a logo, navbar, an alert (for table & mobile sizes screen), welcome message, game instructions button, a timer, a button to countries page, letter display, input box, a start button, score board, medal display, high score board
-- **`countries.html`** is **“Let's Learn About The Countries”** page. The same header as the first page ~26 alphabets with a list of countries for country information~ and simple display of country information with dropdown menu. Location displays on google maps.
+* **`index.html`** is **Speed Typing** game page with a logo, navbar, an alert (for table & mobile sizes screen), welcome message, game instructions button, a timer, a button to countries page, letter display, input box, a start button, a scoreboard, medal display, a high scoreboard
+* **`countries.html`** is **“Let's Learn About The Countries”** page. The same header as the first page ~26 alphabets with a list of countries for country information~ and simple display of country information with a dropdown menu. Location displays on google maps.
 
 ### Skeleton Plane <a name="skeleton-plane-heading"></a>
-Desktop first design, though it is also responsive website. The Speed Typing game is only available on laptop / desktop but country information is available on both desktop and mobile sizes. There are wireframes of Main page (index.html) and Countries page (countries.html) for desktop and mobile sizes.
+The desktop-first design, though it is also a mobile responsive website. The Speed Typing game is only available on a laptop or desktop but country information is available on both desktop and mobile sizes. There are wireframes of the Main page (index.html) and Countries page (countries.html) for desktop and mobile sizes.
 
 * [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png)
 * ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
@@ -114,15 +114,15 @@ Desktop first design, though it is also responsive website. The Speed Typing gam
 
 ### Surface Plane <a name="surface-plane-heading"></a>
 **--- Colour ---**<br>
-On **"Speed Typing"** game page (index.html), a page which looks similar to Visual Studio Code is considered because main purpose of the website is for typing. **Eerie Black (#1e1e1e)** is used for the background colour and **Bright Navy Blue (#007acc)** is used for the logo and menu. Main text colour is **Light Grey (#d4d4d4)** so that it does not give users too much contrast between the text and back ground colours. 
-**Canary (#ffff98)** is used for score to stands out the score and stronger colour than Canary, that is **Maximum Yellow (#fdf838)** for high score. **Bittersweet (#ff6565)** is used for a timer because it is very important information and must be very clear during the game 
+On the **"Speed Typing"** game page (index.html), a page that looks similar to Visual Studio Code is considered because the main purpose of the website is for typing. **Eerie Black (#1e1e1e)** is used for the background colour and **Bright Navy Blue (#007acc)** is used for the logo and menu. Main text colour is **Light Grey (#d4d4d4)** so that it does not give users too much contrast between the text and background colours. 
+**Canary (#ffff98)** is used for a score to stands out the score and stronger colour than Canary, which is **Maximum Yellow (#fdf838)** for a high score. **Bittersweet (#ff6565)** is used for a timer because it is very important information and must be very clear during the game 
 
-On **“Let's Learn About The Countries”** page (countries.html), **Bright Navy Blue (#007acc)** is used for background of information and google maps as it links to an image of the earth and present it well. Main text colour is ~Eerie (#1e1e1e) so the page looks like the reversible version of index.html~ **Light Grey (#d4d4d4)** as it Eerie on Bright Navy Blue do not match.
+On the **“Let's Learn About The Countries”** page (countries.html), **Bright Navy Blue (#007acc)** is used for the background of information and google maps as it links to an image of the earth and presents it well. The main text colour is ~Eerie (#1e1e1e) so the page looks like the reversible version of index.html~ **Light Grey (#d4d4d4)** as Eerie on Bright Navy Blue do not match.
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/colours.png)
 
 **--- Typography ---**<br>
-**Courgette** which is similar type of font of the logo (Lobster) is used for menu to show the image of "Speed". **Bebas Neue** is used for headings to stand out the headings and **Montserrat** is used for main contents to make the fonts visibility and readability maximum so that users do not have any issue of reading it especially for typing game.
+**Courgette** which is a similar type of font to the logo (Lobster) is used for the menu to show the image of "Speed". **Bebas Neue** is used for headings to stand out the headings and **Montserrat** is used for main contents to make the fonts visibility and readability maximum so that users do not have any issue of reading it especially for typing game.
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/fonts.png)
 
@@ -132,13 +132,13 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 * It consists of 2 individual pages
 * Modal for game instructions
 * Text of typing, country information is from **[REST Countries API](https://restcountries.eu/)**
-* Google maps API for location display
+* Google Maps API for location display
 
 ### Features Left To Implement <a name="features-left-heading"></a>
-* Setting different levels - I think I could implement this by setting a length of text (e.g. Easy for text length up to 10 characters) however currently do not have time to do this and as it is not absolutely essential to achieve user's goals, I leave this out
-* Having a user name - This would give users more customised game however currently do not have time to implement this well from the design's point of view, because by having this on the current page, it may look too busy on the page and will defeat the purpose of simple page, so I leave this out
-* Highlighting Letters When Correct / Incorrect - This would be helpful especially when letters are quite long. I currently do not have skills to implement this and not for essential for the game so I leave this out
-* Counting Down Last 10 Seconds - This would also be useful as users may not be able to take their eyes off while they are typing. A timer is relatively close to text display & input box so should be visible but giving a warning by sound would be nice function to have. I currently do not have skills and time but might look at this. (TBC)
+* Setting different levels - I think I could implement this by setting a length of text (e.g. Easy for text length up to 10 characters) however currently do not have time to do this and as it is not essential to achieve user's goals, I leave this out
+* Having a user name - This would give users a more customised game however currently do not have time to implement this well from the design's point of view, because by having this on the current page, it may look too busy on the page and will defeat the purpose of simple page, so I leave this out
+* Highlighting Letters When Correct / Incorrect - This would be helpful especially when letters are quite long. I currently do not have the skills to implement this and not essential for the game so I leave this out
+* Counting Down Last 10 Seconds - This would also be useful as users may not be able to take their eyes off while they are typing. A timer is relatively close to the text display & input box so should be visible but giving a warning by sound would be a nice function to have. I currently do not have the skills and time but might look at this. (TBC)
 
 ## TECHNOLOGIES USED <a name="technologies-used-heading"></a>
 * [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
@@ -148,8 +148,9 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 * [Bootstrap4](https://getbootstrap.com/), css framework, for main frame of the website
 * [Font Awesome](https://fontawesome.com/) for icons
 * [jQuery](https://jquery.com/), JavaScript library, for more efficient coding
-* [REST Countries API](https://restcountries.eu/) for text of speed typing game and country information display 
+* [REST Countries API](https://restcountries.eu/) for a text of speed typing game and country information display 
 * [Google Maps API](https://cloud.google.com/maps-platform/) to show a location of selected countries
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) for testing and style checking
 * [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)
 * [Git](https://git-scm.com/) for version control
 * [GitHub](https://github.com/) for keeping the files, documents and deploy the website
@@ -169,88 +170,88 @@ On **“Let's Learn About The Countries”** page (countries.html), **Bright Nav
 ## TESTING <a name="testing-heading"></a>
 ### Html <a name="html-heading"></a>
 **--- Code Validation ---**<br>
-When I complete the core html code, I test it using **[W3C Markup Validation Service](https://validator.w3.org/)**, which is a validator by the World Wide Web Consortium that allows to check HTML and XHTML documents for well-formed markup, to check any warnings and errors
+When I complete the core HTML code, I test it using **[W3C Markup Validation Service](https://validator.w3.org/)**, which is a validator by the World Wide Web Consortium that allows checking HTML and XHTML documents for well-formed markup, to check any warnings and errors
 
 **`index.html`**: [2 warnings and 3 errors found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index.png)
 1. **Warning: Empty heading**<br>
-This causes due to not having any text in `<hN>` tag. As this heading is for "Time is Up!" message, which is generated by JavaScript at the end of the game, no text is required in it and according to [stackoverflow post](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation#:~:text=The%20%22empty%20heading%22%20warning%20means,any%20content%20associated%20with%20it.&text=You%20are%20instead%20using%20the,the%20semantics%20of%20the%20tag.) having no text in `<hN>` tag is still valid html and passes the validation. However, I decide to fix the issue so I put the message in `<h3>` tag and to use `show()` method on JavaScript instead of `html()` method, that actually work out better coding overall
+This causes due to not having any text in `<hN>` tag. As this heading is for the "Time is Up!" message, which is generated by JavaScript at the end of the game, no text is required in it and according to the [StackOverflow post](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation#:~:text=The%20%22empty%20heading%22%20warning%20means,any%20content%20associated%20with%20it.&text=You%20are%20instead%20using%20the,the%20semantics%20of%20the%20tag.) having no text in `<hN>` tag is still valid HTML and passes the validation. However, I decide to fix the issue so I put the message in `<h3>` tag and to use `show()` method on JavaScript instead of `html()` method, which actually works out better coding overall
 
 1. **Warning: Empty heading**<br>
-Very similar issue as above. Country name which is randomly generated from API goes into `<h2>` tag for the game. As I want to show "Ireland" as the first country, that is currently set up by JavaScript, I put it as a text anyway to remove the warning. The code on JavaScript still remains because a randomly selected country shows on `<h2>` despite of having Ireland as a text without the code on JavaScript
+Very similar issue as above. A country name that is randomly generated from API goes into `<h2>` tag for the game. As I want to show "Ireland" as the first country, that is currently set up by JavaScript, I put it as a text anyway to remove the warning. The code on JavaScript remains because a randomly selected country shows on `<h2>` despite of having Ireland as a text without the code on JavaScript
 
 1. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
 `ul` is not properly nested in `ol` according to [Nested HTML List](https://www.w3schools.com/html/html_lists_unordered.asp) on W3Schools. Put `ul` inside `<li> </li>` to solve the issue
 
 1. **Error: The `aria-describedby` attribute must point to an element in the same document.**<br>
-Refer this [MDN page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute) regarding the issue and fix it by putting **text-input** which is the id name of the element 
+Refer to this [MDN page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute) regarding the issue and fix it by putting **text-input** which is the id name of the element 
 
 1. **Error: The `aria-labelledby` attribute must point to an element in the same document.**<br>
-Refer this [MDN page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute) regarding the issue and fix it by putting **game-instructions** which is the id name of the element 
+Refer to this [MDN page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute) regarding the issue and fix it by putting **game-instructions** which is the id name of the element 
 
 **- Conclusion -**<br>
-Put the code on the validator after fixing these, test it and receive **[no warnings or errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index-report.pdf)**<br>
-*There is a message about **Images with textual alternative** which is a reminder about images and alt. Look at [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this webiste](https://webaim.org/techniques/alttext/) to understand this message. As this is not an error, no action is taken, though*
+Put the code on the validator after fixing these, test it, and receive **[no warnings or errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index-report.pdf)**<br>
+*There is a message about **Images with textual alternative** which is a reminder about images and alt. Refer to [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this website](https://webaim.org/techniques/alttext/) to understand this message. As this is not an error, no action is taken, though*
 
 **`countries.html`**: [1 warning and 3 errors found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-countries.png)
 1. **Warning: Empty heading**<br>
-Very similar issue as No 2 on `index.html` warning. Country name which is randomly generated from API goes into `<h3>` tag for the country information. As I want to show "Ireland" as the first country, that is currently set up by JavaScript, I put it as a text anyway to remove the warning. The code on JavaScript still remains to show the rest of the information of Ireland
+Very similar issue as No 2 on `index.html` warning. A country name that is randomly generated from API goes into `<h3>` tag for the country information. As I want to show "Ireland" as the first country, that is currently set up by JavaScript, I put it as a text anyway to remove the warning. The code on JavaScript remains to show the rest of the information about Ireland
 
 1. **Error: Bad value for attribute `src` on element `img`: Must be non-empty.**<br>
-In order to solve the issue, put url of the flag of [Ireland](https://restcountries.eu/data/irl.svg) in REST Countries API that should show at first like the country name
+In order to solve the issue, put the URL of the flag of [Ireland](https://restcountries.eu/data/irl.svg) in REST Countries API that should show at first as the country name
 
 1. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
-Same issue as No 3 on `index.html` and solve the error in the same way
+The same issue as No 3 on `index.html` and solve the error in the same way
 
 1. **Error: The `aria-labelledby` attribute must point to an element in the same document.**<br>
-Same issue as No 4 on `index.html` and solve the error in the same way
+The same issue as No 4 on `index.html` and solve the error in the same way
 
 **- Conclusion -**<br>
-Put the code on the validator after fixing these, test it and receive **[no warnings or errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-countries-report.pdf)**<br>
-*There is a message about **Images with textual alternative** which is a reminder about images and alt. Look at [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this webiste](https://webaim.org/techniques/alttext/) to understand this message. As this is not an error, no action is taken, though*
+Put the code on the validator after fixing these, test it, and receive **[no warnings or errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-countries-report.pdf)**<br>
+*There is a message about **Images with textual alternative** which is a reminder about images and alt. Look at [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this website](https://webaim.org/techniques/alttext/) to understand this message. As this is not an error, no action is taken, though*
 
 **--- Quality ---**<br>
-When I complete majority of html, I test quality of the website using **[Lighthouse](https://developers.google.com/web/tools/lighthouse)**, which is an open-source, automated one of the dev tools for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO.  
+When I complete the majority of HTML, I test the quality of the website using **[Lighthouse](https://developers.google.com/web/tools/lighthouse)**, which is an open-source, automated one of the dev tools for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO.  
 
 **`index.html` Mobile Size**<br>
 Before - [Performance: 85 / Accessibility: 97 / Best Practices: 93 / SEO: 83 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-before.png)<br>
-Issues on Performance and SEO are addressed and solved with suggestions by Lighthouse. The issues on Performance are fixed by reducing the size of logo and removing one of Bootstrap JavaScript, which is not necessary to be on index.html. The issue on SEO is fixed by adding `<meta name="description"/>` tag.<br>
+* Issues on Performance and SEO are addressed and solved with suggestions by Lighthouse. The issues on Performance are fixed by reducing the size of the logo and removing one of Bootstrap JavaScript, which is not necessary to be on index.html. The issue on SEO is fixed by adding `<meta name="description"/>` tag.<br>
 After - [Performance: 92 / Accessibility: 97 / Best Practices: 93 / SEO: 92 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-after.png)
 
-Note: Score of Perfomance varies. It may depend on internet speed?
+Note: Score of Performance varies. It may depend on internet speed?
 
 **`index.html` Desktop Size**<br>
 Before - [Performance: 95 / Accessibility: 88 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-before.png)<br>
-Issues on Accessibility are addressed and solved with suggestions by Lighthouse. The issues are fixed by adding `aria-label="Play game button"` attribute on two buttons that have no label. This is important for screen readers. Also, there is `<h3>`(Time is Up message) after `<h4>` which causes heading elements not being a sequentially-descending order so `<h3>` is changed to `<h4>`<br>
+* Issues on Accessibility are addressed and solved with suggestions by Lighthouse. The issues are fixed by adding `aria-label="Play game button"` attribute on two buttons that have no label. This is important for screen readers. Also, there is `<h3>`(Time is Up message) after `<h4>` which causes heading elements not being a sequentially-descending order so `<h3>` is changed to `<h4>`<br>
 After - [Performance: 95 / Accessibility: 96 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-after.png)
 
 **`countries.html` Mobile Size**<br>
 Before - [Performance: 72 / Accessibility: 91 / Best Practices: 100 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
-My note => need to be looked at when I have more time
+* My note => need to be looked at when I have more time
 
 **`countries.html` Desktop Size**<br>
 Before - [Performance: 94 / Accessibility: 91 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
-All ok and nothing is addressed
+* All ok and nothing is addressed
 
 ### Css <a name="css-heading"></a>
 **--- Code Validation ---**<br>
-When I complete the core css code, I test it using **[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)**, which is a validator by the World Wide Web Consortium that allows to check Cascading Style Sheets, to make sure that my css complies with the standards set by the World Wide Web Consortium
+When I complete the core CSS code, I test it using **[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)**, which is a validator by the World Wide Web Consortium that allows checking Cascading Style Sheets, to make sure that my CSS complies with the standards set by the World Wide Web Consortium
 
 **`styles.css`**: [0 error found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/no-errors.png) / [16 warnings found](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/warnings.png)
 
 
 ### JavaScript Speed Typing Game <a name="javascript-heading"></a>
 **--- Functions ---**<br>
-When I complete the core functions of JavaScript for Speed Typing game, I test it using **[Jasmine](https://jasmine.github.io/)** which is a framework of testing JavaScript code to see if they work. 
+When I complete the core functions of JavaScript for Speed Typing game, I test it using **[Jasmine](https://jasmine.github.io/)** which is a framework for testing JavaScript code to see if they work. 
 
 Below are the steps of the set up for the testing.
 
-1. Create a testing folder called **speed-typing-jasmine** on my desk top<br>
+1. Create a testing folder called **speed-typing-jasmine** on my desktop<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine1.png))
 
 1. Open the file with **[Visual Studio Code](https://code.visualstudio.com/)** which is my Integrated Development Environment (IDE)<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine2.png))
 
-1. Create **`index.html`** which is html document for testing, **script** and **spec** folders and **`speed-typing.js`** which is actual JavaScript in **script** folder and **`speed-typing-spec.js`** which is testing JavaScript in **spec** folder<br>
+1. Create **`index.html`** which is an HTML document for testing, **script** and **spec** folders and **`speed-typing.js`** which is actual JavaScript in the **script** folder, and **`speed-typing-spec.js`** which is testing JavaScript in the **spec** folder<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine3.png))
 
 1. Create a boilerplate on **`index.html`**<br>
@@ -259,14 +260,14 @@ Below are the steps of the set up for the testing.
 1. Add Jasmine **CDNs** on **`index.html`**. CDNs are from **[cdnsjs](https://cdnjs.com/libraries/jasmine)**. They must be added inside **<head>** and the <ins>order of CDN is very important</ins>. It must be **`jasmine.js`** --> **`jasmine-html.js`** --> **`boot.js`** --> **`jasmine.css`** in order to make testing work correctly<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine5.png))
 
-1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **<head>** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **<body>**). As the boilerplate create **<body>**, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** --> **`speed-typing-spec.js`** in order to load the files correctly<br>
+1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **`<head>`** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **`<body>`**). As the boilerplate create **`<body>`** tag, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** --> **`speed-typing-spec.js`** to load the files correctly<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine6.png))
 
-To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and make it pass writing just enough code to pass afterwards. The reason of this is because it could pass the test even code doesn't work and it is important to do tests from different angles.<br>
-I test **showCountries** function which takes a country name as argument from a list of countries and a function which contains **if else statement**.
+To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and makes it pass writing just enough code to pass afterward. The reason for this is because it could pass the test even code doesn't work and it is important to do tests from different angles.<br>
+I test **showCountries** function which takes a country name as an argument from a list of countries and a function which contains **if else statement**.
 
 **showCountries Function**
-1. Write description code of **clickButton** with **showCountries** function in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no showCountries function defined<br>
+1. Write a description code of **clickButton** with **showCountries** function in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no showCountries function defined<br>
 ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries2.png))
 
 1. Create **showCountries** function on **`speed-typing.js`** but still expecting to be <ins>failed</ins> as there is no country defined<br>
@@ -278,14 +279,14 @@ I test **showCountries** function which takes a country name as argument from a 
 1. This function should have **country** as a parameter and take it as an argument so add **expect(showCountries(country)).toBe(country);** on **`speed-typing-spec.js`**. Run the test expecting that "should show Ireland to be <ins>failed</ins>" but "should show countries to be <ins>passed</ins>"<br>
 ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries8.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries9.png))
 
-1. Remove "should show Ireland" as this function should be used taking country as an argument and show names of countries from the list<br>
+1. Remove "should show Ireland" as this function should be used taking the country as an argument and show names of countries from the list<br>
 ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries10.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries11.png))
 
 **- Conclusion -**<br>
 **showCountries** function works in the way expected
 
 **Function With If Else Statement**<br>
-This function should show correct medal depending on the score. Below is the category of each medal.
+This function should show a correct medal depending on the score. Below is the category of each medal.
 * Bronze: score <= 240
 * Silver: score >= 250 && score <= 290
 * Gold: score >= 300 && score <= 340
@@ -354,17 +355,17 @@ I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https
 * git remote add origin https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game.git
 * git push -u origin main
 ````
-7. From the second commit, the below process and commands are used. Whenever a section or even a group of work are completed, they are commited in git and pushed into GitHub, in order to make sure to keep the history of the work logged properly and not to lose the work by unexpected situations
+7. From the second commit, the below process and commands are used. Whenever a section or even a group of work are completed, they are committed in git and pushed into GitHub, in order to make sure to keep the history of the work logged properly and not to lose the work by unexpected situations
 
 ````
-* git status | To check the status of new / modifiled folders, files and documents
+* git status | To check the status of new / modified folders, files, and documents
 * git add . | To put all new and updated work on the stage in git
 * git commit -m "Example commit" | To commit the work on the stage in git before pushing it to GitHub
 * git push | To update the work in GitHub
 ````
 
 ## DEPLOYMENT <a name="deployment-heading"></a>
-My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS and JavaScript.
+My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
 To deploy the website, I follow the below steps from the login screen of [GitHub](https://github.com/login)
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br>
@@ -378,13 +379,11 @@ To deploy the website, I follow the below steps from the login screen of [GitHub
 1. Go to **GitHub Pages** section, select **main** as the branch and click **save**<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment4.png)</br></br>
 
-1. Once the website is successfully deployed, a link of the website appears
+1. Once the website is successfully deployed, a link to the website appears and website is now available on public (It may take some time that website appears on public)
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br>
 
 Note: 
-- Deployed before completing the website in order to test google maps API because restriction is set that API only works from this website so in order to test goole maps, deployment was required
-- It may take some time that your website becomes availabe on public
-- URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
+* URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
 (e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 
 ## CREDITS <a name="credits-heading"></a>
@@ -395,7 +394,7 @@ Note:
 * [Bootstrap Input](https://getbootstrap.com/docs/4.0/components/input-group/#custom-select) for country input
 
 **Note:**
-**These are credited on all the html files*
+**These are credited on all the HTML files*
 
 **--- CSS3 ---**
 * [Stackoverflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4) to remove border colour of hamburger menu
@@ -404,14 +403,14 @@ Note:
 * [w3schools](https://www.w3schools.com/howto/howto_css_placeholder.asp) for modifying placeholder
 
 **Note:**
-**These are credited on the css file*
+**These are credited on the CSS file*
 
 **--- JavaScript ---**
 * [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
-* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer this YouTube tutorial to get an idea of how to build Speed Typing game. Code written on my JavaScript are based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
+* [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer to this YouTube tutorial to get an idea of how to build a Speed Typing game. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
 ([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/traversy-media.pdf))
 
-* [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer this YouTube tutorial to get an idea of how to provide country information display. Code written on my JavaScript are based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
+* [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer to this YouTube tutorial to get an idea of how to provide country information display. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
 ([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/coding-journey.pdf))
 
 **Note:**

@@ -245,6 +245,8 @@ When I complete the core JavaScript code, I test it using **[JSHint](https://jsh
 
 **`main.js`**: [25 warning](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-warnings.png), [6 undefined variables](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-undefined.png) and [1 unused variable](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-unused.png)
 
+1. **25 Warnings**<br>
+Most of them are expressions being used in ES6 (e.g. arrow function and let / const, ) Fixed them by putting /*jshint esversion: 6 */ on main.js as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolonn on them. My understanding was not to use semicolon for curly braces, however it is required for statements by looking at [StackOverflow post](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces).
 
 **--- Functions ---**<br>
 When I complete the core functions of JavaScript for Speed Typing game, I test it using **[Jasmine](https://jasmine.github.io/)** which is a framework for testing JavaScript code to see if they work. 

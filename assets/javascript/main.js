@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // To Hide Alert
 $("#close-alert").click(function() {
   $(".alert").hide();
@@ -157,7 +159,7 @@ xhr.onreadystatechange = function() {
   } else {
     return "Error";
   }
-}
+};
 
 // To Get Countries From API
 function getCountries(getData) {
@@ -208,7 +210,7 @@ function initMap(lat, lng) {
       lat: (lat),
       lng: (lng)
     }
-  }
+  };
   const map = new google.maps.Map($("#maps")[0], options);
 
   let marker = new google.maps.Marker({

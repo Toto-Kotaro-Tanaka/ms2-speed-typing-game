@@ -347,6 +347,7 @@ It worked when I was testing it however when I implement the code into main.js w
 I compared all the code which worked and didn’t work and discovered that initMap(lat, lng) function in displayCountryInfo was causing an issue. (I discovered it by making it in active)
 I checked chrome dev tools to see what the issue was and saw that is not defined, though when there is no initMap function, it is defined and works. Therefore, to solve the issue, I first created another function to retrieve data from REST Countries just for getCountries and showCountries functions. This worked as far as I’m concerned however I felt this wasn’t the most efficient way of solving the issue so though about for a while and came up with an idea of using setTimeout() method to get the function of initMap delayed, although this would cause a delay of showing google maps on countreis.html so wanted to minimise the delay. I put the delaying time of 3000 ms and worked fine, tried 1000 ms  and worked as well and put 0 ms and still worked so I decided to leave it 0 ms to minimise the delaying time of showing google maps but still country name shows as a text
 
+
 ## VERSION CONTROL <a name="version-control-heading"></a>
 ### Git & GitHub <a name="git-github-heading"></a>
 I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;

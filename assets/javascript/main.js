@@ -222,19 +222,23 @@ function initMap() {
 }
 
 function showCountryOnGoogleMaps(lat, lng) {
-  options = {
-    zoom: 4,
-    center: {
-      lat: lat,
-      lng: lng
-    }
-  };
-  let map = new google.maps.Map($("#maps")[0], options);
+  const id = $(this).attr("id");
 
-  marker = new google.maps.Marker({
-    position: {
-      lat: lat,
-      lng: lng
-    }, map: map
-  });
+  if (id === "map") {
+    options = {
+      zoom: 4,
+      center: {
+        lat: lat,
+        lng: lng
+      }
+    };
+    let map = new google.maps.Map($("#maps")[0], options);
+
+    marker = new google.maps.Marker({
+      position: {
+        lat: lat,
+        lng: lng
+      }, map: map
+    });
+  }
 }

@@ -189,10 +189,10 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
 
   //Google Maps
-  lat = countryData.latlng[0];
-  lng = countryData.latlng[1];
+  let lat = countryData.latlng[0];
+  let lng = countryData.latlng[1];
   setTimeout(function() {
-    initMap(lat, lng);
+    showCountryOnGoogleMaps(lat, lng);
   }, 0);
 }
 // ---------- /End of Countries API ----------
@@ -203,20 +203,38 @@ function displayCountryInfo(countryByAlpha3Code) {
   });
 
 // ---------- Google Maps API ----------
-function initMap(lat, lng) {
+function initMap() {
   let options = {
     zoom: 4,
     center: {
-      lat: (lat),
-      lng: (lng)
+      lat: 53,
+      lng: -8
     }
   };
-  const map = new google.maps.Map($("#maps")[0], options);
+  let map = new google.maps.Map($("#maps")[0], options);
 
   let marker = new google.maps.Marker({
     position: {
-      lat: (lat),
-      lng: (lng)
+      lat: 53,
+      lng: -8
+    }, map: map
+  });
+}
+
+function showCountryOnGoogleMaps(lat, lng) {
+  options = {
+    zoom: 4,
+    center: {
+      lat: lat,
+      lng: lng
+    }
+  };
+  let map = new google.maps.Map($("#maps")[0], options);
+
+  marker = new google.maps.Marker({
+    position: {
+      lat: lat,
+      lng: lng
     }, map: map
   });
 }

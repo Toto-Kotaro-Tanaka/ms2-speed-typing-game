@@ -35,6 +35,7 @@ let gameScore = 0;
 let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
 $("#high-score").html(highScore);
+let showedCountries = [];
 
 //To Play The Game
 $("#play-btn").click(function() {
@@ -104,6 +105,7 @@ function showCountries(countries) {
 
   if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space and Comma) 
     $("#country-text").html(textCountryName);
+    showedCountries.push(textCountryName);
   } else {
     showCountries(countries);
   }
@@ -222,9 +224,9 @@ function initMap() {
 }
 
 function showCountryOnGoogleMaps(lat, lng) {
-  const id = $(this).attr("id");
+  const id = $("#map");
 
-  if (id === "map") {
+  if (id) {
     options = {
       zoom: 4,
       center: {

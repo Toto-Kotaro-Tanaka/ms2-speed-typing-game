@@ -414,9 +414,9 @@ To deploy the website, I follow the below steps once login [GitHub](https://gith
 * [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
 * [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer to this YouTube tutorial to get an idea of how to build a Speed Typing game. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
 ([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/traversy-media.pdf))
-
 * [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer to this YouTube tutorial to get an idea of how to provide country information display. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
 ([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/coding-journey.pdf))
+* [Net-informations.com](http://net-informations.com/jq/iq/cut.htm) to prevent pasting letters in input box
 
 > **Note:**<br>
 > All credited codes are also mentioned on html, css and JavaScript files

@@ -5,6 +5,12 @@ $("#close-alert").click(function() {
   $(".alert").hide();
 });
 
+// To Prevent Pasting Copied Word
+// Credit: Net-informations.com @ http://net-informations.com/jq/iq/cut.htm
+$('#text-input').bind('copy paste cut',function(e) {
+  e.preventDefault();
+});
+
 // ---------- Fancy Heading Display ----------
 // Credit: Tobias Ahlin Bjerrome @ https://tobiasahlin.com/moving-letters/#3
 var textWrapper = document.querySelector('.ml3');

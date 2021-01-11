@@ -84,10 +84,8 @@ Below are the additional functions that can improve the website however not mand
 | Highlighting Letters When Correct / Incorrect          |     2      |            2            |
 | Counting Down Last 10 Seconds                          |     2      |            1            |
 
-````
-**Note:**<br>
-*Keeping The Highest Score Even Game Disconnected* - At the time of planning, I had thought keeping a high score when the game disconnected was a very difficult thing to do, however, by reviewing lessons of Code Institute, I found a way of doing it so this is implemented in the game
-````
+> **Note:**<br>
+> *Keeping The Highest Score Even Game Disconnected* - At the time of planning, I had thought keeping a high score when the game disconnected was a very difficult thing to do, however, by reviewing lessons of Code Institute, I found a way of doing it so this is implemented in the game
 
 ### Scope Plane <a name="scope-plane-heading"></a>
 Features to be included in this project are;
@@ -101,10 +99,8 @@ Features to be included in this project are;
 * Country information with API
 * Caution message* in a modal when the size goes below 62rem / 992px as the game is playable on a laptop or desktop only
 
-````
-**Note:**<br>
-*Realise that caution message does not need to be in modal so set it up in alert, which is better than using a modal
-````
+> **Note:**<br>
+> *Realise that caution message does not need to be in modal so set it up in alert, which is better than using a modal
 
 ### Structure Plane <a name="structure-plane-heading"></a>
 The website consists of 2 pages and a modal
@@ -397,11 +393,9 @@ To deploy the website, I follow the below steps once login [GitHub](https://gith
 1. Once the website is successfully deployed, a link to the website appears and the website is now available on public (It may take some time that website actually appears on public)
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br>
 
-````
-**Note:**<br>
-Deployment using GitHub. URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
-(e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
-````
+> **Note:**<br>
+> Deployment using GitHub. URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
+> (e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 
 ## CREDITS <a name="credits-heading"></a>
 ### Code <a name="code-heading"></a>
@@ -424,10 +418,8 @@ Deployment using GitHub. URL is "https:// + **your GitHub username** + .github.i
 * [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer to this YouTube tutorial to get an idea of how to provide country information display. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
 ([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/coding-journey.pdf))
 
-````
-**Note:**<br>
-All credited codes are also mentioned on html, css and JavaScript files
-````
+> **Note:**<br>
+> All credited codes are also mentioned on html, css and JavaScript files
 
 ### Contents <a name="contents-heading"></a>
 * All the contents are written by me

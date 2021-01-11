@@ -195,6 +195,7 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#capital").html(countryData.capital);
   $("#population").html(countryData.population.toLocaleString("en-US"));
   $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
+  $("#wikipedia").attr({"href": `https://en.wikipedia.org/wiki/${countryData.name}`});
 
   //Google Maps
   let lat = countryData.latlng[0];

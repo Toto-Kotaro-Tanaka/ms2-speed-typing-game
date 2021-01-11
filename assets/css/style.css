@@ -438,6 +438,14 @@ hr {
   font-size: 1.2rem;
 }
 
+#Wikipedia {
+  text-decoration: none;
+}
+
+#wikipedia:hover {
+  color: #1e1e1e;
+}
+
 .fa-info-circle {
   font-size: 1.5rem;
   padding: 1.5rem .5rem;

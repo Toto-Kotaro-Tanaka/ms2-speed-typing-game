@@ -7,13 +7,13 @@ $("#close-alert").click(function() {
 
 // To Prevent Pasting Copied Word
 // Credit: Net-informations.com @ http://net-informations.com/jq/iq/cut.htm
-$('#text-input').bind('copy paste cut',function(e) {
-  e.preventDefault();
+$('#text-input').bind('copy paste cut',function(event) {
+  event.preventDefault();
 });
 
 // ---------- Fancy Heading Display ----------
 // Credit: Tobias Ahlin Bjerrome @ https://tobiasahlin.com/moving-letters/#3
-var textWrapper = document.querySelector('.ml3');
+const textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
@@ -42,6 +42,7 @@ let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
 $("#high-score").html(highScore);
 let showedCountries = [];
+let transferData;
 
 //To Play The Game
 $("#play-btn").click(function() {
@@ -106,7 +107,7 @@ function countdown() {
 // To Show Countries
 function showCountries(countries) {
   const randomIndex = Math.floor(Math.random() * countries.length);
-  let textCountryName = countries[randomIndex].name;
+  const textCountryName = countries[randomIndex].name;
   const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
 
   if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space and Comma) 
@@ -146,6 +147,10 @@ $("#reset-btn").click(function() {
 
 // Global Valuables
 let apiCountries;
+let dropDownCountries;
+let lat;
+let lng;
+let options;
 
 // To Change Country Info Details
 $("#list-of-countries").change(function(event) {
@@ -160,7 +165,7 @@ xhr.send();
 
 xhr.onreadystatechange = function() {
   if (this.readyState === 4 && this.status === 200) {
-    let data = JSON.parse(this.responseText);
+    const data = JSON.parse(this.responseText);
     initialise(data);
     getCountries(data);
     $("#country-text").html("Ireland");
@@ -178,11 +183,11 @@ function getCountries(getData) {
 // To Show A List Of Countries In Dropdown Menu
 function initialise(countriesData) {
   apiCountries = countriesData;
-  let options = "";
+  dropDownCountries = "";
   for (let i = 0; i < apiCountries.length; i++) {
-    options += `<option value="${apiCountries[i].alpha3Code}">${apiCountries[i].name}</option>`;
+    dropDownCountries += `<option value="${apiCountries[i].alpha3Code}">${apiCountries[i].name}</option>`;
   }
-  $("#list-of-countries").html(options);
+  $("#list-of-countries").html(dropDownCountries);
   displayCountryInfo("IRL");
 }
 
@@ -198,8 +203,8 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#wikipedia").attr({"href": `https://en.wikipedia.org/wiki/${countryData.name}`});
 
   //Google Maps
-  let lat = countryData.latlng[0];
-  let lng = countryData.latlng[1];
+  lat = countryData.latlng[0];
+  lng = countryData.latlng[1];
   setTimeout(function() {
     showCountryOnGoogleMaps(lat, lng);
   }, 0);
@@ -213,7 +218,7 @@ function displayCountryInfo(countryByAlpha3Code) {
 
 // ---------- Google Maps API ----------
 function initMap() {
-  let options = {
+  options = {
     zoom: 4,
     center: {
       lat: 53,
@@ -243,7 +248,7 @@ function showCountryOnGoogleMaps(lat, lng) {
     };
     let map = new google.maps.Map($("#maps")[0], options);
 
-    marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
       position: {
         lat: lat,
         lng: lng

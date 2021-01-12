@@ -251,13 +251,13 @@ When I complete the core JavaScript code, I test it using **[JSHint](https://jsh
 
 **`main.js`**: [25 Warning](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-warnings.png), [6 Undefined Variables](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-undefined.png) and [1 Unused Variable](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-unused.png)
 
-1. **25 Warnings**<br>
+* **25 Warnings**<br>
 Most of them are expressions being used in ES6 (e.g. arrow function and let / const, ) Fixed them by putting /*jshint esversion: 6 */ on main.js as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolonn on them. My understanding is not to use semicolon for curly braces, however it is required for statements by looking at [StackOverflow post](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces)
 
-1. **6 Undefined Variables**<br>
+* **6 Undefined Variables**<br>
 These are $, Anime, transferData, lat, lng and google. $ is jQuery symbol so it can be ignored. Anime TBC with mentor, transferData, lat and lng are solved by creating a global variable for them. Google TBC with mentor
 
-1. **1 Unused Variable**<br>
+* **1 Unused Variable**<br>
 This is something to do with google maps. TBC with my mentor
 
 **--- Functions ---**<br>
@@ -277,14 +277,14 @@ Below are the steps of the set up for the testing.
 1. Create a boilerplate on **`index.html`**<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine4.png))
 
-1. Add Jasmine **CDNs** on **`index.html`**. CDNs are from **[cdnsjs](https://cdnjs.com/libraries/jasmine)**. They must be added inside **<head>** and the <ins>order of CDN is very important</ins>. It must be **`jasmine.js`** --> **`jasmine-html.js`** --> **`boot.js`** --> **`jasmine.css`** in order to make testing work correctly<br>
+1. Add Jasmine **CDNs** on **`index.html`**. CDNs are from **[cdnsjs](https://cdnjs.com/libraries/jasmine)**. They must be added inside **`<head>`** and the <ins>order of CDN is very important</ins>. It must be **`jasmine.js`** --> **`jasmine-html.js`** --> **`boot.js`** --> **`jasmine.css`** in order to make testing work correctly<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine5.png))
 
-1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **`<head>`** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **`<body>`**). As the boilerplate create **`<body>`** tag, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** --> **`speed-typing-spec.js`** to load the files correctly<br>
+1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **`<head>`** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **`<body>`**). As the boilerplate create **`<body>`** tag, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** (Main JavaScript file) --> **`speed-typing-spec.js`** (Testing JavaScript file) to load the files correctly<br>
 ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine6.png))
 
 To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and makes it pass writing just enough code to pass afterward. The reason for this is because it could pass the test even code doesn't work and it is important to do tests from different angles.<br>
-I test **showCountries** function which takes a country name as an argument from a list of countries and a function which contains **if else statement**.
+I test 2 functions here. One is **showCountries** function which takes a country name as an argument from a list of countries and other one is a function which contains **if else statement**.
 
 **showCountries Function**
 1. Write a description code of **clickButton** with **showCountries** function in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no showCountries function defined<br>

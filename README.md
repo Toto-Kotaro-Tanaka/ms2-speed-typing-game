@@ -345,6 +345,11 @@ This function should show a correct medal depending on the score. Below is the c
 **- Conclusion -**<br>
 Function with **if else** statement works in the way expected
 
+**-- My Note --**
+* Manual testing of functions on the website
+* Testing on different browsers
+* Testing from UX point of view
+
 ## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a>
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.
 
@@ -384,7 +389,7 @@ I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https
 ````
 
 ## DEPLOYMENT <a name="deployment-heading"></a>
-My website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
+The website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
 To deploy the website, I follow the below steps once login [GitHub](https://github.com/login)
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br>
@@ -421,9 +426,9 @@ To deploy the website, I follow the below steps once login [GitHub](https://gith
 **--- JavaScript ---**
 * [Tobias Ahlin Bjerrome](https://tobiasahlin.com/moving-letters/#3) for fancy heading display
 * [Traversy Media](https://www.youtube.com/watch?v=Yw-SYSG-028) I refer to this YouTube tutorial to get an idea of how to build a Speed Typing game. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
-([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/traversy-media.pdf))
+([Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/traversy-media.pdf))
 * [Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o) I refer to this YouTube tutorial to get an idea of how to provide country information display. The code written on my JavaScript is based on this with my customisation. Below is the link to the original code of this tutorial. This is to prove that I did my customisation instead of just copying and pasting their code on my main.js<br>
-([Link of Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/coding-journey.pdf))
+([Original Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/credits/coding-journey.pdf))
 * [Net-informations.com](http://net-informations.com/jq/iq/cut.htm) to prevent pasting letters in input box
 
 > **Note:**<br>

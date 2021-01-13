@@ -27,6 +27,8 @@ It is a mobile responsive website however the speed typing game can be played on
   * ##### [Html](#html-heading)
   * ##### [Css](#css-heading)
   * ##### [JavaScript](#javascript-heading)
+  * ##### [Web Browser](#webbrowser-heading)
+  * ##### [UX](#ux-heading)
 * #### [PROJECT BARRIERS & SOLUTIONS](#barriers-solutions-heading)
 * #### [VERSION CONTROL](#version-control-heading)
 * #### [DEPLOYMENT](#deployment-heading)
@@ -37,7 +39,10 @@ It is a mobile responsive website however the speed typing game can be played on
 * #### [ACKNOWLEDGEMENTS](#acknowledgements-heading)
 
 ## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for-heading"></a>
-People who would like to practice typing by playing a game. Names of the countries in the world are being used for the texts so they might come across the countries that they might be interested in or never heard of during the game. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a flag, region, capital city, population, language(s), and a location on google maps.
+People who would like to practice typing by playing a game. Names of the countries in the world are being used for the texts so they might come across the countries that they might be interested in or never heard of during the game. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide basic information of each country, such as a flag, region, capital city, population, language(s), a location on google maps and link to Wikipedia* page if users want to know more details of the countries.
+
+> **Note:**<br>
+> *During the process of creating the website, an idea that Wikipedia, which will give users more details about the countries if they wish to know more, can be implemented using REST Countries API so this is implemented in the project, although it is not written on the initial project
 
 ## WHO IS THE OWNER? <a name="who-is-the-owner-heading"></a>
 I am the owner of the website. My goals for this website are to provide a speed typing game that users can practice typing with fun as well as to provide basic information of countries that they see in the game. The website is build considering “Users First”. As the typing game is only playable with a keyboard (that is usually a laptop computer or desktop computer), there is a clear alert for users on a mobile and tablet sizes to inform this. The alert can be hidden by users once they get the message so it does not interrupt user all the time. There are some text and buttons are hidden on the mobile and tablet sizes so that it prevents users accidentally start the game. Even though the game itself is not playable on the mobile and tablet sizes, users can still see what the game is like so the game instructions button and other elements of the game (e.g Timer, input, score and high score) remains on the page. There are very clear and enough buttons and links to go from "Speed Typing Game" page to "Let’s Learn About The Countries" page, and vice versa so users have no issue of accessing on both sections whenever they want to. Very simply written game instructions give users clear information of how to play the game and what is involved with it. The game instructions are one of the menus so it is accessible from both pages as well as there is an additional button, which is coloured in Bittersweet (#ff6565) to stand it out, on the speed typing game page.  The instructions show on a modal so once users read and understand it, they can close it by clicking a button and they can still remain on the same page where they access the instructions.
@@ -48,7 +53,7 @@ When the game is over, users get a medal depending on the scores and this also g
 ## UX 5 PLANES <a name="ux5-planes-heading"></a>
 ### Strategy Plane <a name="strategy-plane-heading"></a>
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
-A high score remains even after the game finishes and even the browser is closed so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combinations of texts appear on each game. Names of the countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a flag, region, capital city, population, language(s), and a location on google maps, as an additional function to the speed typing game. 
+A high score remains even after the game finishes and even the browser is closed so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combinations of texts appear on each game. Names of the countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to Wikipedia page (implemented this during the process) as an additional function to the speed typing game. 
 
 The main aims for this website are;
 
@@ -57,7 +62,7 @@ To give users more motivation, each correct point is set to 10 instead of 1 so t
 There are also 3 different medals at the end of the game. Depending on the score, they get a Gold medal for 230 points or higher, a Silver medal for 180 - 220 points, and a Bronze medal for 170 points or below. There is a special secret crown for those who achieve a very high score. This is not written on the instructions as it is a secret item, however, once you get a Gold medal, you get a message to achieve 250 points and see what happens.
 
 * To provide basic information of countries in the world. 
-In order to achieve this, there is a dropdown menu that users can select a country. **[REST Countries API](https://restcountries.eu/)** is linked with the website to show a flag, region, capital city, population, and language(s). Google Maps API is used for the location display which is also linked with REST Countries API.
+In order to achieve this, there is a dropdown menu that users can select a country. **[REST Countries API](https://restcountries.eu/)** is linked with the website to show a flag, region, capital city, population, and language(s). Google Maps API is used for the location display, Wikipedia (implemented this during the process) is used for more details of the countries and both are also linked with REST Countries API.
 
 All the functions on the tables below are minimum that must be implemented on the website to achieve user's and owner's goals.  
 
@@ -345,7 +350,8 @@ This function should show a correct medal depending on the score. Below is the c
 **- Conclusion -**<br>
 Function with **if else** statement works in the way expected
 
-**--- Web Browsers ---**<br>
+### Web Browser <a name="webbrowser-heading"></a>
+**--- Visibilities, Functions and Interactions ---**<br>
 The website is available on major web browsers, such as **Chrome**, **Safari**, **Firefox**, **Opera** and **Microsoft Edge**. To make sure all the functions work properly on those browsers, the below manual tests are carried out on all of them.
 
 1. Open the website on the browser to do a visual test. Look at all the pages including the modal (game instructions) to see if everything appears as expected<br>
@@ -367,10 +373,28 @@ The website is available on major web browsers, such as **Chrome**, **Safari**, 
 ([Opera Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/opera4.png) / [Opera Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/opera5.png))<br>
 ([Microsof Edge Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/edge4.png) / [Microsof Edge Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/edge5.png))<br>
 
-**-- My Note --**
-* Manual testing of functions on the website
-* Testing on different browsers
-* Testing from UX point of view
+**- Conclusion -**<br>
+The website works on all the major web browsers
+
+> **Note:**<br>
+> The quality of Firefox, Opera and Microsoft Edge images are not great because they are tested in the other computer and screenshots are taken there and transferred as smaller size of images. To have consistent size of images, images of Chrome and Safari are adjusted so their qualities are not great either but all still visible 
+
+### UX <a name="ux-heading"></a>
+**--- Evidence Of Achieving The Website From UX Point OF View ---**<br>
+There are some essential functions to achieve good user experiences on the website and this is to test and confirm that all the functions that give users good experiences, work properly and nothing is missing or broken
+
+* **`Header`**<br>
+The logo of the website has clear meaning and can be easily identified what the website is for. Menu is well displayed and there is an icon of a person to show the current location of the page. The game is available on a laptop or desktop size computer, once the screen size goes below 62rem / 992px, an alert comes up for the users so users are clearly informed that the game is not available without a keyboard. The alert can be closed by users once they get the message.
+
+* **`Heading`**<br>
+The display of fancy Headings (Welcome To Speed Typing Game! / Let's Learn About The Countries!), which appear very smoothly, gives users an impression of speed and it can be easily linked with the main pourpose of the website that is to practice speed typing. There is a short paragraph to explain what you can do on the page and there is a link to other page from here. On the speed typing page, there is a button for instructions with stand out colour, positioned above the game section so that it cannot be missed. This is not a complicated game so users could easily figure out how to play the game, however there are some important notes on the instructions (e.g. letter cases and space matter, points for each medal etc). Instructions are written clearly and short on a modal that does not leave the page
+
+* **`Speed Typing Game`**<br>
+Very simple display not to disturb users for typing, but all necessary elements such as a timer, text for typing, play button, scoreboard, medal, high scoreboard are included. Plenty of icons are used to make the website more for gaming.  When users click the play button, it automatically focuses the input box so that they do not need to click it. There is a very small but enough affection when the input box is selected so users will notice it. When the game starts, colour of the the play button is changed and deactivated. This is to prevent users clicking it again as it causes issues. Message for play button disappears so that users can focus on the main text, which is bigger and different to other fonts, only for typing. The score increments by 10 points as users get correct typing. This is to give users better feeling that they achieve more (e.g. 14 correct typings, 14 points vs 140 points) Once the game is over, there is a message of Time is Up to let the users know it is finished. The input box is disabled as well and this is to avoid users still typing and getting scores. There is a medal (with a message) comes up a second later when the game is finished, then there is a message of Try again with reset button come up after a second later. If all the messages appear after the game at the same time, it looks too many letters suddenly on the screen and uses cannot focus on what those messages are so some messages get delayed purposely. If users achieve the highest points, high score is automatically updatedIf. It remains after the game and even the web browser is closed so users can always target it to improve their speed typing skills better. On the table and mobile size that the game is not playable, the play button is hidden so that users will not be able to play but leave most of elements of the game, including the instructions, so that they can still get ideas of the game. There is a button to countries.html page so users can access to the information page immediately if there are any countries that they want to look at.
+
+* **`Country Info`**<br>
+Used blue back ground, which gives users image of the world. The colour is nicely contrasted with the main back ground colour. Country info display is kept simple for good readability and icons are used to keep the design of the website consistent. The section of county info and google maps are split into 4 : 8 to give maps enough size. If users wonder where the information comes from, there is an info icon beside the dropdown menu that they can control open and hide and there is a link, which opens in a different page, to REST Countries API. For those who want to know more about the countries, there is a link to Wikipedia page, which also opens in a different page so that users do not leave the page. There is a button to index.html so that can access to the page easily whenever uses feel wanting to play the game
+
 
 ## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a>
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.

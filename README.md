@@ -243,7 +243,7 @@ When I complete the core CSS code, I test it using **[W3C CSS Validation Service
 
 **`styles.css`**: [0 Error](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/no-errors.png) / [16 Warnings](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/warnings.png)
 
-* 16 warnings are related to WebKit, which is one of [web browser rendering engines](https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css). By looking at a post on [StackOverflow](https://stackoverflow.com/questions/52490004/what-are-all-of-these-w3c-css-validation-warnings-about) and a [thread in Code Institue Slack](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/webkit.png), no further actions are required so decide to leave them as they are
+* 16 warnings are related to WebKit, which is one of [web browser rendering engines](https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css). By looking at a[StackOverflow](https://stackoverflow.com/questions/52490004/what-are-all-of-these-w3c-css-validation-warnings-about) post and a [Code Institue Slack](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/webkit.png) thread, no further actions are required so decide to leave them as they are
 
 ### JavaScript <a name="javascript-heading"></a>
 **--- Code Validation ---**<br>
@@ -252,7 +252,7 @@ When I complete the core JavaScript code, I test it using **[JSHint](https://jsh
 **`main.js`**: [25 Warning](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-warnings.png), [6 Undefined Variables](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-undefined.png) and [1 Unused Variable](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-unused.png)
 
 * **25 Warnings**<br>
-Most of them are expressions being used in ES6 (e.g. arrow function and let / const, ) Fixed them by putting /*jshint esversion: 6 */ on main.js as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolonn on them. My understanding is not to use semicolon for curly braces, however it is required for statements by looking at [StackOverflow post](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces)
+Most of them are expressions being used in ES6 (e.g. arrow function and let / const, ) Fixed them by putting /*jshint esversion: 6 */ on main.js as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolonn on them. My understanding is not to use semicolon for curly braces, however it is required for statements according to [StackOverflow](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces)
 
 * **6 Undefined Variables**<br>
 These are $, Anime, transferData, lat, lng and google. $ is jQuery symbol so it can be ignored. Anime TBC with mentor, transferData, lat and lng are solved by creating a global variable for them. Google TBC with mentor
@@ -344,6 +344,28 @@ This function should show a correct medal depending on the score. Below is the c
 
 **- Conclusion -**<br>
 Function with **if else** statement works in the way expected
+
+**--- Web Browsers ---**<br>
+The website is available on major web browsers, such as **Chrome**, **Safari**, **Firefox**, **Opera** and **Microsoft Edge**. To make sure all the functions work properly on those browsers, the below manual tests are carried out on all of them.
+
+1. Open the website on the browser to do a visual test. Look at all the pages including the modal (game instructions) to see if everything appears as expected<br>
+([Chrome](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome1.png) / [Safari](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/safari1.png) / [Firefox](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/firefox1.png) / [Opera](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/opera1.png) /[Microsoft Edge](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome1.png))
+
+1. Click all the buttons and links to see if they link to the place supposed to go, open an external link in the separate page<br>
+
+1. Play the game to see if interactive messages during the game (timer, score, country text) and after the game work (time is up, medal, medal message, high score, reset-button and message)<br>
+([Chrome During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome2.png),[Chrome After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome3.png))<br>
+([Safari During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/safari2.png),[Safari After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/safari3.png))<br>
+([Firefox During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/firefox2.png),[Firefox After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/firefox3.png))<br>
+([Opera During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/opera2.png),[Opera After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/opera3.png))<br>
+([Microsof Edge During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/edge2.png),[Microsof Edge After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/edge3.png))<br>
+
+1. Change a country randomly to see if all the information comes up correctly, including a link to Wikipedia
+([Chrome Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome4.png),[Chrome Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome5.png))<br>
+([Safari Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome4.png),[Safari Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome5.png))<br>
+([Firefox Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome4.png),[Firefox Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome5.png))<br>
+([Opera Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome4.png),[Opera Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome5.png))<br>
+([Microsof Edge Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome4.png),[Microsof Edge Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome5.png))<br>
 
 **-- My Note --**
 * Manual testing of functions on the website

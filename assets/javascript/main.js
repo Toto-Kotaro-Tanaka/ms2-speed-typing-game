@@ -41,7 +41,7 @@ let gameScore = 0;
 let highScore = 0;
 highScore = localStorage.getItem("speedTypingHighScore");
 $("#high-score").html(highScore);
-let showedCountries = [];
+let usedCountries = [];
 let transferData;
 
 //To Play The Game
@@ -110,9 +110,9 @@ function showCountries(countries) {
   const textCountryName = countries[randomIndex].name;
   const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
 
-  if (textCountryName.match(letters)) { // To Show Countries With Only Alphabets (Including Space and Comma) 
+  if (textCountryName.match(letters) && !usedCountries.includes(textCountryName)) { // To Show Countries With Only Alphabets (Including Space and Comma) & Not To Repeat The Countries Already Used In The Game
     $("#country-text").html(textCountryName);
-    showedCountries.push(textCountryName);
+    usedCountries.push(textCountryName);
   } else {
     showCountries(countries);
   }

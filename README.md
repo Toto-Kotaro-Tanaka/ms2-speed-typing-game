@@ -56,7 +56,7 @@ When the game is over, users get a medal depending on the scores and this also g
 
 To provide information of the countries, display is kept very neat and tidy so that they can see basic information of the countries easily. If users would like to know more details of the countries, a link to Wikipedia, that automatically goes to the page of the country, is also available. (implemented this during the process)
 
-## UX 5 PLANES <a name="ux5-planes-heading"></a> ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/top.png =20)(#table-of-contents)
+## UX 5 PLANES <a name="ux5-planes-heading"></a> / [⏫](#table-of-contents)
 ### Strategy Plane <a name="strategy-plane-heading"></a>
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
 A high score remains even after the game finishes and even the browser is closed so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combinations of texts appear on each game. Names of the countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to Wikipedia page (implemented this during the process) as an additional function to the speed typing game. 
@@ -122,7 +122,7 @@ The website consists of 2 pages and a modal
 ### Skeleton Plane <a name="skeleton-plane-heading"></a>
 The desktop-first design, though Bootstrap4 is used and it is also a mobile responsive website. The Speed Typing game is only playable on a laptop or desktop but it is still visible on the mobile and tablet sizes. Country information is available on both desktop and mobile sizes. There are wireframes of the Main page (index.html) and Countries page (countries.html) for desktop and mobile sizes.
 
-* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png =200)
+* [Wireframes: Home](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png)
 * ~[Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
 * [Wireframes: Countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html-2.png)*
 

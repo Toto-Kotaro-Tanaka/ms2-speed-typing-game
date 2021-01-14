@@ -5,7 +5,7 @@ This is a website of a speed typing game with an additional function that users 
 
 It is a mobile responsive website however the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**.
 
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/mockup/mockup.pdf)
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/mockup/mockup.png)
 
 ## TABLE OF CONTENTS
 * #### [WHO'S THIS WEBSITE FOR?](#whos-this-website-for-heading)

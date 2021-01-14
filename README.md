@@ -5,7 +5,7 @@ This is a website of a speed typing game with an additional function that users 
 
 It is a mobile responsive website however the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**.
 
------ Mockup goes in here when the website is completed -----
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/mockup/mockup.pdf)
 
 ## TABLE OF CONTENTS
 * #### [WHO'S THIS WEBSITE FOR?](#whos-this-website-for-heading)
@@ -416,7 +416,7 @@ Once the game is over, there is a message of "Time is Up!" to let users know it 
 
 The scores for the medals are considered by some factors. First, look up goole to see what the average speed typing for ordinary people is. It says [40 words per minute](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing5.png) (1.5 seconds per word for 60 seconds) so set up around 350 points (1.7 seconds per word) as the gold medal considering it would slighly take longer time to type country names than words because country names are longer than words. (e.g “I will go to your house” have 6 worlds / 16 letters compare to Antigua and Barbuda is a country name, which has 17 letters). When the game is completed, I, who can reasonably type well, try the game numerous times and discover that scores are over estimated as my scores are always around 150 - 220 points. I ask a few people to try the game to get feedback for analysis. My colleague who uses a computer on a daily basis get [150 points](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing6.png) average and a friend of mine who also uses a computer often get scores between [130 - 200 points](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing7.png), which are very similar scores as mine. To practice speed typing game and achieve reasonable speed, you are required to get 150 - 220 so set up medal categories in those scores. A gold medal and special crown are achievable for any users once users have reasonable typing skills (and with luck as well) and for those who achieve special crown, it proves that users will not require speed typing practice anymore. <br>
 
-* To make sure the correct medals show up depending on the scores, test it by changing the increment value of score on [`main.js`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing8.png)and check the scores between medals.
+To make sure the correct medals show up depending on the scores, test it by changing the increment value of score on [`main.js`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing8.png)and check the scores between medals.
 * [50 points to expect Bronze](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing9.png)
 * [170 points to expect Bronze](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing10.png)
 * [180 points to expect Silver](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing11.png)
@@ -445,7 +445,7 @@ To check if the information of each country corresponds properly from API and Wi
 > **Note:**<br>
 > There are 2 minor issues found during randomly looking at the country info. 
 > * No information of **["Heard Island and McDonald Islands"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heard-island1.png)** as there are [no information in the AP](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heard-island2.png)
-> * Wikipedia link for **["Bonaire, Sint Eustatius and Saba"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/bonaire.png)** show [Caribbean Netherlands](https://en.wikipedia.org/wiki/Caribbean_Netherlands) even though Wikipedia of each country exists. As those 3 are a listed as a group in the API, this is the way Wikipedia recognises it.<br>
+> * Wikipedia link for **["Bonaire, Sint Eustatius and Saba"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/bonaire.png)** show [Caribbean Netherlands](https://en.wikipedia.org/wiki/Caribbean_Netherlands) even though Wikipedia of each country exists. As those 3 are a listed as a group in the API, this is the way Wikipedia recognises it.
 >As these are very minor issues and not worth mentioning on the website, no further action is taken and left as they are
  
 --My Note-- Suggestion by a user goes here

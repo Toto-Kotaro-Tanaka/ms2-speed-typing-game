@@ -184,7 +184,7 @@ On the **“Let's Learn About The Countries”** page (countries.html), **Bright
 * [W3schools](https://www.w3schools.com/)
 
 ### Tools <a name="tools-heading"></a>
-* [Adobe](https://www.adobe.com/ie/photoshop/online/resize-image.html) To resize images
+* [Adobe](https://www.adobe.com/ie/photoshop/online/resize-image.html) to resize images
 
 ## TESTING <a name="testing-heading"></a>
 ### Html <a name="html-heading"></a>
@@ -448,7 +448,11 @@ To check if the information of each country corresponds properly from API and Wi
 > * Wikipedia link for **["Bonaire, Sint Eustatius and Saba"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/bonaire.png)** show [Caribbean Netherlands](https://en.wikipedia.org/wiki/Caribbean_Netherlands) even though Wikipedia of each country exists. As those 3 are a listed as a group in the API, this is the way Wikipedia recognises it.
 >As these are very minor issues and not worth mentioning on the website, no further action is taken and left as they are
  
---My Note-- Suggestion by a user goes here
+**Feedback From A User**<br>
+When the speed typing game is provisionally completed, request in Code Institute Slack to play it to get some feedback about the game. One of the users mentions that he comes across the same countries 3 times during the game and suggested [to prevent it happening](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback1.png). My initial understand is that as there are 250 countries in the API, chances of getting the same country during the game is quite low but this is incorrect and as a matter of the fact, I come across the same countries during the game a few occasions so decide to implement this, which improves the website from UX point of view. To achieve this, create an empty array and put the randomly selected countries in it. Then, use `[include()]`(https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback2.png) method that if the randomly selected country is <ins>NOT</ins> included in the array, then show the country name, otherwise to run `showCountries()` function again. To test this, modify if statement in `[showCountries()]` function to select countries with [4 or less letters](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback3.png) so that there are only limited number of countries to be tested. Then, get a list of countries, which match the criteria, by using `[for loop and if statement]`(https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback4.png) from the API and show these on console on Chrome DevTools. There are [10 countries match the criteria](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback5.png), start the game showing the countries in the array on console. No countries are repeated and once those 10 countries are selected within the time, the system gives an error saying all the countries are selected and no more to be selected. [By looking at the countries in the array and receiving the error message](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback6.png), it is confirmed that no countries are repeated during the game and the setting is properly done
+
+**- Conclusion -**<br>
+The website meets all the necessary elements to achieve good user experiences
 
 ## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a>
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.

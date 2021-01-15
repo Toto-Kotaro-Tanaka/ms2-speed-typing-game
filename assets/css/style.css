@@ -535,7 +535,7 @@ footer {
 }
 
 /* -------------------- Media Query: Screen Size Bigger Than 62rem / 992px -------------------- */
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 69rem) {
 
   body {
     margin: 0 auto;

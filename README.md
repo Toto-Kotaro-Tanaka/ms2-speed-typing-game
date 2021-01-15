@@ -3,7 +3,7 @@
 # [SPEED TYPING GAME](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 This is a website of a speed typing game with an additional function that users can learn about information of the countries. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
 
-It is a mobile responsive website however the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**.
+It is a mobile responsive website however the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**.<br>
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/mockup/mockup.png)
 
@@ -469,24 +469,13 @@ The website meets all the necessary elements to achieve good user experiences
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 
 ## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a>
-Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.
+**--- Disabling Play Button ---**<br>
+Once the basic functions of the game are completed, test them by playing the game. During the game, notice that the play button is still active and by clicking it during the game, it causes some issues such as reducing the time in the timer and  even the time becomes 0, it continues to count with minus time and also replaces a text for typing. Looked for a solution and discover that buttons can be disabled so implement this once the game starts to prevent the issues. <br>
+([Issue of counting time](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/button-disabled.png))
 
-Draft: Even the time was up, I could still type and the score increased etc so I used attribute disabled for input and came up with a solution to have reset button so that until users click it, the game stays the same as how they finished and when they want to play it again, they click reset button
-
-Draft: Display: hide; didn't apply on some elements which had d-none. Therefore, I came up with a solution to put these elements in div and give the div d-none so that I could apply display: hide for the elements inside the div.
-
-Draft: Linking google maps with REST Countries API. I wasn't sure how to do it so looked for some solutions on google. However, I wasn't able to find any solutions so started trying to put code thinking from the logical point of view (looking at how REST countries API works for country display information) and somehow I managed to make it work. 
-
-Draft: I was working on how to show country name as a text for typing game from REST Countries API. I had a testing version only having necessary functions to show it.
-It worked when I was testing it however when I implement the code into main.js with other functions, it didn’t work properly.
-I compared all the code which worked and didn’t work and discovered that initMap(lat, lng) function in displayCountryInfo was causing an issue. (I discovered it by making it in active)
-I checked chrome dev tools to see what the issue was and saw that is not defined, though when there is no initMap function, it is defined and works. Therefore, to solve the issue, I first created another function to retrieve data from REST Countries just for getCountries and showCountries functions. This worked as far as I’m concerned however I felt this wasn’t the most efficient way of solving the issue so though about for a while and came up with an idea of using setTimeout() method to get the function of initMap delayed, although this would cause a delay of showing google maps on countreis.html so wanted to minimise the delay. I put the delaying time of 3000 ms and worked fine, tried 1000 ms  and worked as well and put 0 ms and still worked so I decided to leave it 0 ms to minimise the delaying time of showing google maps but still country name shows as a text
-
-Draft: Invalid lat and lng valuables. 
-
-Draft: google note defined issue on console log of index.html. Tried to put google map script first but caused another issue that there is not tag with map id. I wasn't able to solve the issue so contacted tutor support. The way it was suggested work but it made the function inactive. Talked to the mentor for solution in the meeting but wasn't able to fix the issue. Contacted tutor support again and the got suggestions either to create separate js files, that doesn't include google maps api but as some of js code are shared, I asked him which one is best practice (either to create two js files or leave the error on the log that doesn't cause any issues on the functions) and told to leave the error on console but keep one js file.
-
-Draft: Performance issue on mobile size of countries.html by lighthouse. 
+**--- Disabling Play Button ---**<br>
+This is similar issue as the play button. As long as the input box is active, scores increment by 10 points even after the game so use the same method to prevent the issue.<br>
+([Score 110 just after finished game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/inputbox-disabled1.png) / [Still incrementing score 140 even after game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/inputbox-disabled2.png))
 
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 

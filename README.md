@@ -473,9 +473,19 @@ The website meets all the necessary elements to achieve good user experiences
 Once the basic functions of the game are completed, test them by playing the game. During the game, notice that the play button is still active and by clicking it during the game, it causes some issues such as reducing the time in the timer and  even the time becomes 0, it continues to count with minus time and also replaces a text for typing. Looked for a solution and discover that buttons can be disabled so implement this once the game starts to prevent the issues. <br>
 ([Issue of counting time](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/button-disabled.png))
 
-**--- Disabling Play Button ---**<br>
+**--- Disabling Input Box ---**<br>
 This is similar issue as the play button. As long as the input box is active, scores increment by 10 points even after the game so use the same method to prevent the issue.<br>
 ([Score 110 just after finished game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/inputbox-disabled1.png) / [Still incrementing score 140 even after game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/inputbox-disabled2.png))
+
+**--- Hiding Elements By JavaScript ---**<br>
+To achieve good UX experiences for the website, there are some messages and buttons set to hide and show. The rest button and its message only appear after the game, so `class="d-none d-lg-block"` Bootstrap class is used to hide the elements on mobile / tablet size and css `display: none;` method to hide them on a laptop and desktop size. When setting this up to show after the game using JavaScript, it does not work because of `class="d-none d-lg-block"` class so solve the issue by putting these elements in a div and putting `class="d-none d-lg-block"` class on the div.<br>
+([Initial setting both elements have class="d-none d-lg-block"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/hide-element1.png) / [Putting elements in div with class="d-none d-lg-block"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/hide-element2.png))
+
+**--- Linking APIs ---**<br>
+Set up REST Countries API by looking at [Code Institute lesson](https://www.youtube.com/watch?v=mq9buYAnJ74&feature=youtu.be) and youtube tutorial([Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o)), set up Google Maps API by looking at [Code Institute lesson](https://www.youtube.com/watch?v=XYFyb3S4oRc&feature=youtu.be) but cannot link both together to show a selected country on Google Maps. Look for guidance on google, however, cannot find anything to achieve this so try to move code around thinking of the logic of how REST Countries API and Google Maps API work and manage to link them up together by putting `showCountryOnGoogleMaps(lat, lng)` function with two parameters to locate a selected country on Google Maps inside `displayCountryInfo` function to show country information of selected country.<br>
+([Function to show selected country on google maps](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/api.png))
+
+
 
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 

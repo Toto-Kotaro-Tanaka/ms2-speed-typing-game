@@ -593,6 +593,9 @@ To deploy the website, I follow the below steps once login [GitHub](https://gith
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 
 ## ACKNOWLEDGEMENTS <a name="acknowledgements-heading"></a>
-To be updated
+I would like to thank ;
+* My mentor, **Spencer Barriball**, who go through the project with me and give some valuable ideas to achieve the project
+* Code Institute Tutor **Tim** to help me out for the issue and also play the game and gives me a feedback to improve the website
+* Code Institute Tutor **Johann** to assist on the most difficult issue I have during the project
 
 <div align="right"><a href="#table-of-contents">🔝</a></div>

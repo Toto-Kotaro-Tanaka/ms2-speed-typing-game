@@ -454,7 +454,7 @@ When the speed typing game is provisionally completed, request in Code Institute
 **- Conclusion -**<br>
 The website meets all the necessary elements to achieve good user experiences
 
-## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a> [🔝](#table-of-contents)
+## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[🔝](#table-of-contents)
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.
 
 Draft: Even the time was up, I could still type and the score increased etc so I used attribute disabled for input and came up with a solution to have reset button so that until users click it, the game stays the same as how they finished and when they want to play it again, they click reset button

@@ -38,13 +38,13 @@ It is a mobile responsive website however the speed typing game can be played on
   * ##### [Media](#media-heading)
 * #### [ACKNOWLEDGEMENTS](#acknowledgements-heading)
 
-## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for-heading"></a>
+## WHO'S THIS WEBSITE FOR? <a name="whos-this-website-for-heading"></a> [🔝](#table-of-contents)
 People who would like to practice typing by playing a game. Names of the countries in the world are being used for the texts so they might come across the countries that they might be interested in or never heard of during the game. In case they would like to check what those countries are like, there is a **“Let's Learn About The Countries”** section to provide information of each country, such as a flag, region, capital city, population, language(s), a location on google maps and a link to Wikipedia* page if users would like to know more details of the countries.
 
 > **Note:**<br>
 > *During the process of creating the website, an idea that Wikipedia, which will give users more details about the countries if they wish to do so, can be implemented using REST Countries API so this is implemented in the project now, although it is not written on the initial project plan
 
-## WHO IS THE OWNER? <a name="who-is-the-owner-heading"></a>
+## WHO IS THE OWNER? <a name="who-is-the-owner-heading"></a> [🔝](#table-of-contents)
 I am the owner of the website. My goals for this website are to provide a speed typing game that users can practice typing with fun as well as to provide information of countries that they come accross in the game. The website is build considering **“Users First”**. As the typing game is only playable with a keyboard (that is usually a laptop computer or desktop computer), there is a clear alert for users on a mobile and tablet sizes to inform this. The alert can be hidden by users once they get the message so it does not interrupt users all the time. There are some text and buttons are hidden on the mobile and tablet sizes so that it prevents users accidentally start the game. Even though the game itself is not playable on the mobile and tablet sizes, users can still see what the game is like so the game instructions button and other elements of the game (e.g timer, input, score and high score) remain on the page. 
 
 There are very clear and enough buttons and links to go from "Speed Typing Game" page to "Let’s Learn About The Countries" page, and vice versa so users have no issue of accessing on both sections whenever they would like to do. Very simply written game instructions give users clear information of how to play the game and what is involved in the game. The game instructions page is one of the menus so it is accessible from both pages as well as there is an additional button, which is coloured in Bittersweet (#ff6565) to stand it out, on the speed typing game page.  The instructions show on a modal so users remain on the page and once they read and understand it, they can close the instructions and play the game immediately.
@@ -56,7 +56,7 @@ When the game is over, users get a medal depending on the scores and this also g
 
 To provide information of the countries, display is kept very neat and tidy so that they can see basic information of the countries easily. If users would like to know more details of the countries, a link to Wikipedia, that automatically goes to the page of the country, is also available. (implemented this during the process)
 
-## UX 5 PLANES <a name="ux5-planes-heading"></a> / [⏫](#table-of-contents)
+## UX 5 PLANES <a name="ux5-planes-heading"></a> [🔝](#table-of-contents)
 ### Strategy Plane <a name="strategy-plane-heading"></a>
 Users are people who would like to practice speed typing. By creating a website as a type of gaming website, they can practice while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. When you get 20 correct typings, it shows 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare in 1 week - 1 month time how they improved.
 A high score remains even after the game finishes and even the browser is closed so that it remains as a target and users can try to achieve more points and give them a motivation to continue the game more times. A name of countries is used as a text and it comes up randomly so that different combinations of texts appear on each game. Names of the countries come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a section of **“Let's Learn About The Countries”** on a different page that provides basic information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to Wikipedia page (implemented this during the process) as an additional function to the speed typing game. 
@@ -143,7 +143,7 @@ On the **“Let's Learn About The Countries”** page (countries.html), **Bright
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/fonts.png)
 
-## FEATURES <a name="features-heading"></a>
+## FEATURES <a name="features-heading"></a> [🔝](#table-of-contents)
 ### Existing Features <a name="existing-features-heading"></a>
 * Created with **HTML5**, **CSS3** (with Bootstrap4 framework), **JavaScript** (with jQuery library)
 * It consists of 2 individual pages, one is for "Speed Typing" game and one is for "Country Information" display
@@ -158,7 +158,7 @@ On the **“Let's Learn About The Countries”** page (countries.html), **Bright
 * Highlighting Letters When Correct / Incorrect - This would be helpful especially when letters are quite long. I currently do not have the skills to implement this and not essential for the game so I leave this out
 * Counting Down Last 10 Seconds - This would also be useful as users may not be able to take their eyes off while they are typing, although, a timer is relatively close to the text display & input box so should be visible. Giving a warning by sound would be a nice function to have. I currently do not have the skills and time. The game currenly has no sound at all so it might be a bit of disrupting if users hear a counting sound suddenly so decide to leave it out this time
 
-## TECHNOLOGIES USED <a name="technologies-used-heading"></a>
+## TECHNOLOGIES USED <a name="technologies-used-heading"></a> [🔝](#table-of-contents)
 * [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
 * [CSS3](https://en.wikipedia.org/wiki/CSS) for style
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for interaction
@@ -173,7 +173,7 @@ On the **“Let's Learn About The Countries”** page (countries.html), **Bright
 * [Git](https://git-scm.com/) for local version control, keeping the files and documents
 * [GitHub](https://github.com/) for online version control keeping the files, documents and deploy the website
 
-## RESOURCES <a name="resources-heading"></a>
+## RESOURCES <a name="resources-heading"></a> [🔝](#table-of-contents)
 ### General Resources <a name="general-resources-heading"></a>
 * Code Institute Course Materials
 * Code Institute Slack Community
@@ -186,7 +186,7 @@ On the **“Let's Learn About The Countries”** page (countries.html), **Bright
 ### Tools <a name="tools-heading"></a>
 * [Adobe](https://www.adobe.com/ie/photoshop/online/resize-image.html) to resize images
 
-## TESTING <a name="testing-heading"></a>
+## TESTING <a name="testing-heading"></a> [🔝](#table-of-contents)
 ### Html <a name="html-heading"></a>
 **--- Code Validation ---**<br>
 When I complete the core HTML code, I test it using **[W3C Markup Validation Service](https://validator.w3.org/)**, which is a validator by the World Wide Web Consortium that allows checking HTML and XHTML documents for well-formed markup, to check any warnings and errors.
@@ -454,7 +454,7 @@ When the speed typing game is provisionally completed, request in Code Institute
 **- Conclusion -**<br>
 The website meets all the necessary elements to achieve good user experiences
 
-## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a>
+## PROJECT BARRIERS & SOLUTIONS <a name="barriers-solutions-heading"></a> [🔝](#table-of-contents)
 Draft: When speed typing game started, the button was still active and you could click it and it made some issues regarding replacing words and reducing seconds. I gooled it the solution and found that there is attribute disabled.
 
 Draft: Even the time was up, I could still type and the score increased etc so I used attribute disabled for input and came up with a solution to have reset button so that until users click it, the game stays the same as how they finished and when they want to play it again, they click reset button
@@ -474,7 +474,7 @@ Draft: google note defined issue on console log of index.html. Tried to put goog
 
 Draft: Performance issue on mobile size of countries.html by lighthouse. 
 
-## VERSION CONTROL <a name="version-control-heading"></a>
+## VERSION CONTROL <a name="version-control-heading"></a> [🔝](#table-of-contents)
 I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository. The process of version control is;
 1. Create a **remote repository** in GitHub by clicking **"New repository"** on the main page
 2. Create a folder called **ms2-speed-typing-game** on my computer (e.g. Desktop)
@@ -498,7 +498,7 @@ I use **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https
 * git push | To update the repository in GitHub
 ````
 
-## DEPLOYMENT <a name="deployment-heading"></a>
+## DEPLOYMENT <a name="deployment-heading"></a> [🔝](#table-of-contents)
 The website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
 To deploy the website, I follow the below steps once login [GitHub](https://github.com/login)
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
@@ -520,7 +520,7 @@ To deploy the website, I follow the below steps once login [GitHub](https://gith
 > Deployment using GitHub. URL is "https:// + **your GitHub username** + .github.io/ + **your repository name** + /"<br>
 > (e.g. https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
 
-## CREDITS <a name="credits-heading"></a>
+## CREDITS <a name="credits-heading"></a> [🔝](#table-of-contents)
 ### Code <a name="code-heading"></a>
 **--- HTML5 ---**
 * [Bootstrap Navbar](https://getbootstrap.com/docs/4.5/components/navbar/) for navigation bar
@@ -549,5 +549,5 @@ To deploy the website, I follow the below steps once login [GitHub](https://gith
 **--- Logo ---**
 * Created by me using [canva](https://www.canva.com/)
 
-## ACKNOWLEDGEMENTS <a name="acknowledgements-heading"></a>
+## ACKNOWLEDGEMENTS <a name="acknowledgements-heading"></a> [🔝](#table-of-contents)
 To be updated

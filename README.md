@@ -97,7 +97,7 @@ Below are the additional functions that can improve the website, however, these 
 | Counting Down Last 10 Seconds                          |     2      |            1            |
 
 > **Note:**<br>
-> *"Keeping High Score Even Game Disconnected" - During the review of materials in Code Institute, realise that this is not a difficult thing to achieve so it is implemented in the game
+> *Keeping High Score Even Game Disconnected - During the review of materials in Code Institute, realise that this is not a difficult thing to achieve so it is implemented in the game
 
 ### Scope Plane <a name="scope-plane-heading"></a>
 Features to be included in this project are;
@@ -112,16 +112,16 @@ Features to be included in this project are;
 * Caution message* in a modal when the size goes below 62rem / 992px as the game is playable on a laptop or desktop only
 
 > **Note:**<br>
-> *Realise that caution message does not need to be in a modal so set it up as an alert, which is neater than using a modal
+> *Realise that caution message does not need to be a modal so set it up as an alert, which is neater than using a modal
 
 ### Structure Plane <a name="structure-plane-heading"></a>
 The website consists of 2 pages and a modal
 * **`index.html`** is **"Speed Typing"** game page with a logo, navbar, an alert (for table & mobile screen sizes), a welcome message, a game instructions button, a timer, a button to Country Info page, a letter display, an input box, a start button, a reset button, a scoreboard, a medal display, a high scoreboard
 * **`countries.html`** is **“Country Info”** page. The same header as the first page ~26 alphabets with a list of countries for country information~ and a simple display of country information with a dropdown menu. A location displays on Google Maps and more details about the countries on Wikipedia
-* **`Modal`** is used for **"Game Instructions"**, which have very clear instructions of the game and what includes in the game
+* **`Modal`** is used for **"Game Instructions"**, which have very simple and clear instructions of the game
 
 ### Skeleton Plane <a name="skeleton-plane-heading"></a>
-The **desktop-first** design, though Bootstrap4 is used and it is also a mobile responsive website. Speed Typing game is only playable on a laptop or desktop but it is still visible on the mobile and tablet sizes. Country information is available on both desktop and mobile sizes. There are wireframes of **"Speed Typing"** (`index.html`) page and **"Country Info"** (`countries.html`) page for desktop and mobile sizes.
+Although [Bootstrap4](https://getbootstrap.com/), which is CSS framework for mobile first design, is used, it is designed as **Laptop / Desktop-first** because the main purpose of the website is for the typing game that is playable only on a laptop or desktop with a keyboard. It is still a mobile responsive website and contensts are visible on the mobile and tablet sizes. Country information is available on both desktop and mobile sizes. There are wireframes of **"Speed Typing"** (`index.html`) page and **"Country Info"** (`countries.html`) page for desktop and mobile sizes.
 
 * [Wireframes: Speed Typing](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-index-html.png)
 * ~[Wireframes: Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
@@ -151,7 +151,7 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 * Created with **HTML5**, **CSS3** (with Bootstrap4 framework), **JavaScript** (with jQuery library)
 * It consists of 2 individual pages, one is for "Speed Typing" game and one is for "Country Info" display
 * Modal for game instructions
-* Text for typing and country information are from **[REST Countries API](https://restcountries.eu/)**
+* Text for typing and country information are from [REST Countries API](https://restcountries.eu/)
 * [Google Maps API](https://cloud.google.com/maps-platform/) for location display
 * [Wikipedia](https://www.wikipedia.org/) to show more details of selected countries
 
@@ -511,19 +511,19 @@ The most difficult issue in this project and spend days to come to a conclusion.
 ## VERSION CONTROL <a name="version-control-heading"></a>
 **[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository are used for the project. The process of the version control is;
 1. Create a **remote repository** in GitHub by clicking **"New repository"** on the main page<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control1.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control1.png)</br>
 
 1. Create a folder called **ms2-speed-typing-game** on my computer (e.g. Desktop)<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control2.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control2.png)</br>
 
 1. Open the folder with [Visual Studio Code](https://code.visualstudio.com/) which is my Integrated Development Environment (IDE)<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control3.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control3.png)</br>
 
 1. Create README.md file<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control4.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control4.png)</br>
 
 1. Create a **local repository** by using command line with ***git init*** command on a terminal<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control5.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control5.png)</br>
 
 1. First commit in git repository and first push to GitHub using the below commands on a terminal;
 ````
@@ -533,7 +533,6 @@ The most difficult issue in this project and spend days to come to a conclusion.
 * git remote add origin https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game.git
 * git push -u origin main
 ````
-
 1. From the second commit, the below process and commands are used. Whenever a section or even a group of work are completed, they are committed in git and pushed into GitHub, in order to make sure to keep the history of the work logged properly and not to lose the work in unexpected situations
 
 ````
@@ -548,16 +547,16 @@ The most difficult issue in this project and spend days to come to a conclusion.
 The website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
 To deploy the website, follow the below process once login GitHub.
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br>
 
 1. Open the **repository**<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment2.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment2.png)</br>
 
 1. Go to **Setting**<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment3.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment3.png)</br>
 
 1. Go to **GitHub Pages** section, select **main** as the branch and click **save**<br>
-![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment4.png)</br></br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment4.png)</br>
 
 1. Once the website is successfully deployed, a link to the website appears and the website is now available to the public (It may take some time the website actually appears in public)
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment5.png)</br>

@@ -1,9 +1,9 @@
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/logo/readme-logo.png)
 
 # [SPEED TYPING GAME](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)
-This is a website of a speed typing game with an additional function that users can learn about all the countries in the world. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in **[Code Institute](https://codeinstitute.net/)**, Ireland.  
+This is a website of a speed typing game with an additional function that users can learn about all the countries in the world. I create this for **Milestone Project 2 (Interactive Frontend Development), Full Stack Software Development** in [**Code Institute**](https://codeinstitute.net/), Ireland.  
 
-It is a mobile responsive website, however, the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available **[HERE](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/)**.<br>
+It is a mobile responsive website, however, the speed typing game can be played on a laptop or desktop only as a keyboard is required. The link to the website is available [**HERE**](https://toto-kotaro-tanaka.github.io/ms2-speed-typing-game/).<br>
 
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/mockup/mockup.png)
 
@@ -63,7 +63,7 @@ To provide information of the countries, the display is kept very neat and tidy 
 
 ## UX 5 PLANES <a name="ux5-planes-heading"></a>
 ### Strategy Plane <a name="strategy-plane-heading"></a>
-Users are people who would like to practice speed typing. By creating a gaming type of website, users can practice it while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. 20 correct typings is 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare it to the scores in 1 week - 1 month time to see how they improve. A high score remains after the game finishes and even the browser is closed so it remains as a target to beat during their practice. Country names are used as text and they comes up randomly so that different combinations of text appear on each game. Country names come from **[REST Countries API](https://restcountries.eu/)** and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a **"Country Info"** (`countries.html`) page that provides information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to the Wikipedia page ([implemented this during the process](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wikipedia.png)) as an additional function to the speed typing game. 
+Users are people who would like to practice speed typing. By creating a gaming type of website, users can practice it while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. 20 correct typings is 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare it to the scores in 1 week - 1 month time to see how they improve. A high score remains after the game finishes and even the browser is closed so it remains as a target to beat during their practice. Country names are used as text and they comes up randomly so that different combinations of text appear on each game. Country names come from [**REST Countries API**](https://restcountries.eu/) and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a **"Country Info"** (`countries.html`) page that provides information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to the Wikipedia page ([implemented this during the process](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wikipedia.png)) as an additional function to the speed typing game. 
 
 The main aims for this website are;
 
@@ -133,7 +133,7 @@ Although [Bootstrap4](https://getbootstrap.com/), which is CSS framework for mob
 ### Surface Plane <a name="surface-plane-heading"></a>
 **--- Colour ---**<br>
 On the **"Speed Typing"** (`index.html`) page, a page that looks similar to [Visual Studio Code](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/vs-code.png) is considered because the main purpose of the website is for typing and Visual Studio Code also has a user friendly typing enviroment element. **Eerie Black (#1e1e1e)** is used for the background colour and **Bright Navy Blue (#007acc)** is used for the logo and menu. The main text colour is **Light Grey (#d4d4d4)** so that it does not give users too much contrast between the text and background colours. 
-**Canary (#ffff98)** is used for a score to stands out the score and stronger colour than Canary, which is **Maximum Yellow (#fdf838)** for a high score. **Bittersweet (#ff6565)** is used for a timer and a game instructions button because they are very important information for the game and must be clearly displayed. 
+**Canary (#ffff98)** is used for a score to stands out the score and stronger colour than Canary, which is **Maximum Yellow (#fdf838)** for a high score. **Bittersweet (#ff6565)** is used for a timer, a game instructions button and an alert because they are very important information for the website and must be noticed clearly. 
 
 On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)** is used for the background for information and Google Maps display as it links to an image of the earth and is presented well. The main text colour is ~Eerie (#1e1e1e) so the page looks like the reversible version of index.html~ **Light Grey (#d4d4d4)** as Eerie and Bright Navy Blue do not match well.
 
@@ -154,6 +154,7 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 * Text for typing and country information are from [REST Countries API](https://restcountries.eu/)
 * [Google Maps API](https://cloud.google.com/maps-platform/) for location display
 * [Wikipedia](https://www.wikipedia.org/) to show more details of selected countries
+* All the [features planned on strategy plane](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/features.png) 
 
 ### Features Left To Implement <a name="features-left-heading"></a>
 * **To set different levels:** Think this could be implemented by setting a length of text (e.g. Easy for text length up to 10 characters), however, currently do not have enough time to do this and as it is not essential to achieve current user's goals, I leave this out
@@ -186,7 +187,7 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 * Code Institute Slack Community
 * Code Institute Tutor Assistance
 * [MDN](https://developer.mozilla.org/en-US/)
-* [Stackoverflow](https://stackoverflow.com/)
+* [Stack Overflow](https://stackoverflow.com/)
 * [Youtube](https://www.youtube.com/)
 * [W3schools](https://www.w3schools.com/)
 
@@ -198,34 +199,37 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 ## TESTING <a name="testing-heading"></a>
 ### Html <a name="html-heading"></a>
 **--- Code Validation ---**<br>
-When I complete the core HTML code, I test it using **[W3C Markup Validation Service](https://validator.w3.org/)**, which is a validator by the World Wide Web Consortium that allows checking HTML and XHTML documents for well-formed markup, to check any warnings and errors.
+A code validation test is carried out when the core HTML code is completed by using [**W3C Markup Validation Service**](https://validator.w3.org/), which is a validator by the World Wide Web Consortium that allows checking HTML and XHTML documents for well-formed markup, to check any warnings and errors.
 
-**`index.html`**: [2 Warnings and 3 Errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index.png)
+**`index.html`:** [2 Warnings and 3 Errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index.png)
 1. **Warning: Empty heading**<br>
-This causes due to not having any text in `<h3>` tag. As this heading is for the "Time is Up!" message, which is generated by JavaScript at the end of the game, no text is required in it and according to the [StackOverflow post](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation#:~:text=The%20%22empty%20heading%22%20warning%20means,any%20content%20associated%20with%20it.&text=You%20are%20instead%20using%20the,the%20semantics%20of%20the%20tag.), having no text in `<hN>` tag is still valid HTML and passes the validation. However, I decide to fix the issue so I put the message in `<h3>` tag and to use `show()` method on JavaScript instead of `html()` method, which works out better coding as a result
+This is caused by not having any text in `<h3>` tag. As this heading is for the "Time is Up!" message, which is generated by JavaScript at the end of the game, no text is required in it and according to the [Stack Overflow](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation#:~:text=The%20%22empty%20heading%22%20warning%20means,any%20content%20associated%20with%20it.&text=You%20are%20instead%20using%20the,the%20semantics%20of%20the%20tag.) post as having no text in `<hN>` tag is still valid HTML and passes the validation. However, decide to fix the issue so put the message in `<h3>` tag and to use `show()` method on JavaScript instead of `html()` method, which works out better coding as a result
 
 1. **Warning: Empty heading**<br>
-Very similar issue as the warning 1. A country name that is randomly generated from API goes into `<h2>` tag for the game. I want to show "Ireland" as the first country, that is currently set up by JavaScript, I put it as a text anyway to remove the warning. The code on JavaScript still remains the same because a randomly selected country shows on `<h2>` despite of having Ireland as a text without the code on JavaScript
+Very similar issue as the first warning. A country name that is randomly generated from API goes into `<h2>` tag for the game. "Ireland" should show as the first country and it is set up by JavaScript. Put "Ireland" as a text in `<h2>` anyway to remove the warning. The code on JavaScript still remains the same because a randomly selected country shows on `<h2>` without having the code on JavaScript
 
 1. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
-`ul` is not properly nested in `ol` according to [Nested HTML List](https://www.w3schools.com/html/html_lists_unordered.asp) on W3Schools. Put `ul` inside `<li> </li>` to solve the issue
+`ul` is not properly nested in `ol` according to Nested HTML List on [W3Schools](https://www.w3schools.com/html/html_lists_unordered.asp). Put `ul` inside `<li> </li>` to solve the issue
+
+> **Note:**<br>
+> FYI - since the test, [swap `ul` and `ol`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-ulol.png) on html files
 
 1. **Error: The `aria-describedby` attribute must point to an element in the same document.**<br>
-Refer to [MDN page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute) regarding the issue and fix it by putting **text-input** which is the id name of the element 
+Refer to the [MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute) page regarding the issue and fix it by putting **text-input** which is the id name of the element 
 
 1. **Error: The `aria-labelledby` attribute must point to an element in the same document.**<br>
-Refer to [MDN page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute) regarding the issue and fix it by putting **game-instructions** which is the id name of the element 
+Refer to the [MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute) page regarding the issue and fix it by putting **game-instructions** which is the id name of the element 
 
 **- Conclusion -**<br>
-Put the code on the validator after fixing these, test it, and receive **[no warnings or errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index-report.pdf)**<br>
-*There is a message about **Images with textual alternative** which is a reminder about images and alt. Refer to [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this website](https://webaim.org/techniques/alttext/) to understand this message. As this is not an error, no further action is taken.*
+Put the code in the validator after fixing these and receive [**no warnings or errors**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-index-report.pdf)<br>
+There is a message about **Images with textual alternative** which is a reminder about images and alt. Refer to [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this website](https://webaim.org/techniques/alttext/) to understand the message. As this is not an error, no further action is taken
 
 **`countries.html`**: [1 Warning and 3 Errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-countries.png)
 1. **Warning: Empty heading**<br>
 The same type of issue as No 2 on `index.html` (not the same issue as this occurs in the different section) and solve the error in the same way
 
 1. **Error: Bad value for attribute `src` on element `img`: Must be non-empty.**<br>
-In order to solve the issue, put the URL of the flag of [Ireland in REST Countries API](https://restcountries.eu/data/irl.svg) that should show first when the page is loaded
+In order to solve the issue, put the [URL of the flag of Ireland in REST Countries API](https://restcountries.eu/data/irl.svg) that should show first when the page is loaded
 
 1. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
 The same issue as No 3 on `index.html` and solve the error in the same way
@@ -234,49 +238,55 @@ The same issue as No 3 on `index.html` and solve the error in the same way
 The same issue as No 4 on `index.html` and solve the error in the same way
 
 **- Conclusion -**<br>
-Put the code on the validator after fixing these, test it, and receive **[no warnings or errors](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-countries-report.pdf)**<br>
-*There is a message about **Images with textual alternative** which is a reminder about images and alt. Look at [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this website](https://webaim.org/techniques/alttext/) to understand this message. As this is not an error, no further action is taken.*
+Put the code in the validator after fixing these and receive [**no warnings or errors**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/w3c-countries-report.pdf)<br>
+There is a message about **Images with textual alternative** which is a reminder about images and alt. Refer to [this post](https://www.sitepoint.com/community/t/methods-for-displaying-gallery-images-with-titles/354087) and also [this website](https://webaim.org/techniques/alttext/) to understand the message. As this is not an error, no further action is taken
 
 **--- Quality ---**<br>
-When I complete the majority of HTML, I test the quality of the website using **[Lighthouse](https://developers.google.com/web/tools/lighthouse)**, which is an open-source, one of the automated dev tools for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO. Anything 89 or below are looked at to improve the quality of the website.  
+A quality check test is carried out when the core HTML code is completed by using [**Lighthouse**](https://developers.google.com/web/tools/lighthouse), which is an open-source, one of the automated dev tools for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO. Anything 89 or below are looked at to improve the quality of the website.  
 
 **`index.html` Mobile Size**<br>
-Before - [Performance: 85 / Accessibility: 97 / Best Practices: 93 / SEO: 83 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-before.png)<br>
-After - [Performance: 92 / Accessibility: 97 / Best Practices: 93 / SEO: 92 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-after.png)<br>
-* Issues on Performance and SEO are addressed and solved with suggestions by Lighthouse. The issues on Performance are fixed by reducing the size of the logo and removing one of Bootstrap JavaScript, which is not necessary to be on index.html. The issue on SEO is fixed by adding `<meta name="description"/>` tag.
+Before - [Performance: 85 / Accessibility: 97 / Best Practices: 93 / SEO: 83](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-before.png)<br>
+After - [Performance: 92 / Accessibility: 97 / Best Practices: 93 / SEO: 92](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-mobile-after.png)<br>
+* Issues on Performance and SEO are addressed and solved with suggestions by Lighthouse. The issues on Performance are fixed by reducing the size of the logo and removing one of Bootstrap JavaScript, which is not necessary to be on `index.html`. The issue on SEO is fixed by adding `<meta name="description"/>` tag.
 
 > **Note:**<br>
 > Score of Performance varies. It may depend on internet speed(?)
 
 **`index.html` Desktop Size**<br>
-Before - [Performance: 95 / Accessibility: 88 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-before.png)<br>
-After - [Performance: 95 / Accessibility: 96 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-after.png)<br>
+Before - [Performance: 95 / Accessibility: 88 / Best Practices: 93 / SEO: 90](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-before.png)<br>
+After - [Performance: 95 / Accessibility: 96 / Best Practices: 93 / SEO: 90](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-index-desktop-after.png)<br>
 * Issues on Accessibility are addressed and solved with suggestions by Lighthouse. The issues are fixed by adding `aria-label="Play game button"` attribute on two buttons that have no label. This is important for screen readers. Also, there is `<h3>`(Time is Up message) after `<h4>` which causes heading elements not being a sequentially-descending order so `<h3>` is changed to `<h4>`
 
 **`countries.html` Mobile Size**<br>
-Before - [Performance: 72 / Accessibility: 91 / Best Practices: 100 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
+Before - [Performance: 72 / Accessibility: 91 / Best Practices: 100 / SEO: 90](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
 * The main reason of low Performance is caused by **Eliminate render-blocking resources** that jQuery and Bootstrap files are rendered but not being used sufficiently. This is confirmed by the [coverage](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-render.png) on Chrome DevTools. Talk to my mentor about the issue and he suggests to use minified jQuery code on jquery.js file and use it instead of linking to jQuery CDN. This does not improve the [Performance](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-after.png). I have a final meeting with my mentor so will discuss this with him once again but if it is not resolved, I'd need to leave the issue as it is, as all the functions are working fine and the issue is only the performance on mobile size 
 
 **`countries.html` Desktop Size**<br>
 Before - [Performance: 94 / Accessibility: 91 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-desktop-before.png)<br>
 * All ok and no further actions required
 
+**- Conclusion -**<br>
+To be updated
+
 ### Css <a name="css-heading"></a>
 **--- Code Validation ---**<br>
-When I complete the core CSS code, I test it using **[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)**, which is a validator by the World Wide Web Consortium that allows checking Cascading Style Sheets, to make sure that CSS complies with the standards set by the World Wide Web Consortium
+A code validation test is carried out when the core CSS code is completed by using [**W3C CSS Validation Service**](https://jigsaw.w3.org/css-validator/), which is a validator by the World Wide Web Consortium that allows checking Cascading Style Sheets, to make sure that CSS complies with the standards set by the World Wide Web Consortium
 
 **`styles.css`**: [0 Error](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/no-errors.png) / [16 Warnings](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/warnings.png)
 
-* 16 warnings are related to WebKit, which is one of [web browser rendering engines](https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css). By looking at a[StackOverflow](https://stackoverflow.com/questions/52490004/what-are-all-of-these-w3c-css-validation-warnings-about) post and a [Code Institue Slack](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/webkit.png) thread, no further actions are required so decide to leave them as they are
+* 16 warnings are related to WebKit, which is one of [web browser rendering engines](https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css). By looking at the [Stack Overflow](https://stackoverflow.com/questions/52490004/what-are-all-of-these-w3c-css-validation-warnings-about) post and a [Code Institue Slack](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/css-testing/webkit.png) thread, no further actions are required so decide to leave them as they are
+
+**- Conclusion -**<br>
+CSS code meets the standard by the World Wide Web Consortium as no errors found
 
 ### JavaScript <a name="javascript-heading"></a>
 **--- Code Validation ---**<br>
-When I complete the core JavaScript code, I test it using **[JSHint](https://jshint.com/)**, which is a static code analysis tool used in software development for checking if JavaScript source code complies with coding rules
+A code validation test is carried out when the core JavaScript code is completed by using [**JSHint**](https://jshint.com/), which is a static code analysis tool used in software development for checking if JavaScript source code complies with coding rules
 
 **`main.js`**: [25 Warning](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-warnings.png), [6 Undefined Variables](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-undefined.png) and [1 Unused Variable](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jshint-unused.png)
 
 * **25 Warnings**<br>
-Most of them are expressions being used in ES6 (e.g. arrow function and let / const, ) Fixed them by putting /*jshint esversion: 6 */ on main.js as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolonn on them. My understanding is not to use semicolon for curly braces, however, it is required for statements according to [StackOverflow](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces)
+Most of them are expressions being used in ES6 (e.g. arrow function and let / const, ) Fixed them by putting `/*jshint esversion: 6 */` on `main.js` as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolon on them. My understanding is not to use semicolon for curly braces, however, it is required for statements according to the [Stack Overflow](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces) post
 
 * **6 Undefined Variables**<br>
 These are $, Anime, transferData, lat, lng and google. $ is jQuery symbol so it can be ignored. Anime TBC with mentor, transferData, lat and lng are solved by creating a global variable for them. Google TBC with mentor
@@ -284,50 +294,48 @@ These are $, Anime, transferData, lat, lng and google. $ is jQuery symbol so it 
 * **1 Unused Variable**<br>
 This is something to do with google maps. TBC with my mentor
 
+**- Conclusion -**<br>
+To be updated
+
 **--- Functions ---**<br>
-When I complete the core functions of JavaScript for Speed Typing game, I test it using **[Jasmine](https://jasmine.github.io/)** which is a framework for testing JavaScript code to see if they work. 
+Test for some functions are carried out when the core JavaScript code is completed by using [**Jasmine**](https://jasmine.github.io/) which is a framework for testing JavaScript code to see if they work. 
 
 Below are the steps of the set up for the testing.
 
 1. Create a testing folder called **speed-typing-jasmine** on my desktop<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine1.png))
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine1.png)
 
-1. Open the file with **[Visual Studio Code](https://code.visualstudio.com/)** which is my Integrated Development Environment (IDE)<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine2.png))
+1. Open the file with [**Visual Studio Code**](https://code.visualstudio.com/) which is my Integrated Development Environment (IDE)<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine2.png)
 
-1. Create **`index.html`** which is an HTML document for testing, **script** and **spec** folders and **`speed-typing.js`** which is actual JavaScript in the **script** folder, and **`speed-typing-spec.js`** which is testing JavaScript in the **spec** folder<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine3.png))
+1. Create `index.html`, which is an HTML document for testing, **script** and **spec** folders in **speed-typing-jasmine** folder. Then, create `speed-typing.js`, which is main JavaScript script in **script** folder, and `speed-typing-spec.js` which is testing JavaScript script in **spec** folder<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine3.png)
 
-1. Create a boilerplate on **`index.html`**<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine4.png))
+1. Create a boilerplate on `index.html`<br>
+![Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine4.png)
 
-1. Add Jasmine **CDNs** on **`index.html`**. CDNs are from **[cdnsjs](https://cdnjs.com/libraries/jasmine)**. They must be added inside **`<head>`** and the <ins>order of CDN is very important</ins>. It must be **`jasmine.js`** --> **`jasmine-html.js`** --> **`boot.js`** --> **`jasmine.css`** in order to make testing work correctly<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine5.png))
+1. Add Jasmine **CDNs** on `index.html`. CDNs are from [**cdnsjs**](https://cdnjs.com/libraries/jasmine). They must be added inside `<head>` and the <ins>order of CDN is very important</ins>. It must be `jasmine.js` --> `jasmine-html.js` --> `boot.js`** --> `jasmine.css` in order to make testing work correctly<br>
+![Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine5.png)
 
-1. Add script of **`speed-typing.js`** and **`speed-typing-spec.js`** on **`index.html`**. They <ins>can be inside</ins> **`<head>`** unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of **`<body>`**). As the boilerplate create **`<body>`** tag, I put them in there. The <ins>order of JavaScript script is very important</ins> and it must be **`speed-typing.js`** (Main JavaScript file) --> **`speed-typing-spec.js`** (Testing JavaScript file) to load the files correctly<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine6.png))
+1. Add script of `speed-typing.js` and `speed-typing-spec.js` on `index.html`. They <ins>can be inside `<head>`</ins> unlike usual JavaScript scripts (usually, JavaScript scripts are located at the bottom of `<body>`). As the boilerplate creates `<body>` tag, put them in there. The <ins>order of JavaScript script is very important</ins> and it must be `speed-typing.js` (main JavaScript) --> `speed-typing-spec.js` (testing JavaScript) to load the files correctly<br>
+![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/jasmine6.png)
 
-To test the functions, I use **"Red Green Refactor"** method which purposely fails it first and makes it pass writing just enough code to pass afterward. The reason for this is because it could pass the test even code doesn't work and it is important to do tests from different angles.<br>
-I test 2 functions here. One is **showCountries** function which takes a country name as an argument from a list of countries and another one is a function which contains **if else statement**.
+To test the functions with Jasmine, **"Red Green Refactor"** method, which purposely fails it first and makes it pass writing just enough code to pass afterward, is used. The reason for this is because it could pass the test even code does not work so it is important to do the test from different angles.<br>
+I test 2 functions here. One is `showCountries()` function which takes a country name as an argument from a list of countries and another one is a function which contains **if else statement**.
 
 **showCountries Function**
-1. Write a description code of **clickButton** with **showCountries** function in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no showCountries function defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries2.png))
+1. Write a description code of [**clickButton** with **showCountries** function in it on `speed-typing-spec.js`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries1.png) and run it expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries2.png) as there is no `showCountries()` function defined
 
-1. Create **showCountries** function on **`speed-typing.js`** but still expecting to be <ins>failed</ins> as there is no country defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries4.png))
+1. Create [`showCountries()`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries3.png) function on `speed-typing.js` but still expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries4.png) as there is no **country** defined
 
-1. Create a valuable called **let country = "Ireland"** and returning a value of "country" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries6.png))
+1. Create a valuable called [**let country = "Ireland"**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries5.png) and returning a value of "country" expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries6.png)
 
-1. This function should have **country** as a parameter and take it as an argument so add **expect(showCountries(country)).toBe(country);** on **`speed-typing-spec.js`**. Run the test expecting that "should show Ireland to be <ins>failed</ins>" but "should show countries to be <ins>passed</ins>"<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries8.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries9.png))
+1. This function should have **country** as a parameter and take it as an argument so add [`expect(showCountries(country)).toBe(country);` on `speed-typing-spec.js`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries7.png). Run the test expecting that `should show Ireland` to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries9.png) but `should show countries` to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries9.png)
 
-1. Remove "should show Ireland" as this function should be used taking the country as an argument and show names of countries from the list<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries10.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries11.png))
+1. Remove [`should show Ireland`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries10.png) as `showCountries()` function should be used taking the **country** as an argument and show names of countries from the list and expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/show-countries11.png)
 
 **- Conclusion -**<br>
-**showCountries** function works in the way expected
+`showCountries()` function works as expected
 
 **Function With If Else Statement**<br>
 This function should show a correct medal depending on the score. Below is the category of each medal.
@@ -336,49 +344,39 @@ This function should show a correct medal depending on the score. Below is the c
 * Gold: score >= 300 && score <= 340
 * Special Crown: score >= 350
 
-1. Write description code of **scoreCategory** with **getMedal** function with **Bronze Medal** category which has a value of 240 in it on **`speed-typing-spec.js`** and run it expecting to be <ins>failed</ins> as there is no getMedal function defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal2.png))
+1. Write description code of [**scoreCategory** with `getMedal()` function with **Bronze Medal** category](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal1.png), which has a value of 240 in it on `speed-typing-spec.js` and run it expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal2.png) as there is no `getMedal()` function defined
 
-1. Create **getMedal** function on **`speed-typing.js`** but still expecting to be <ins>failed</ins> as there is no score defined<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal3.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal4.png))
+1. Create [`getMedal()`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal3.png) function on `speed-typing.js` but still expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal4.png) as there is no **score** defined
 
-1. Set a parameter of "score" to take an argument, expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal5.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal6.png))
+1. Set a [parameter of **score**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal5.png) to take an argument, expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal6.png)
 
-1. Change the value to 250 expecting to be <ins>failed</ins>. This is just to see if the value is effecting correctly<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal7.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal8.png))
+1. Change the value to [250](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal7.png) expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal8.png). This is just to see if the value is effecting correctly
 
-1. Add **Silver Medal** category which has a value of 250 on **`speed-typing-spec.js`** expecting to be <ins>failed</ins> as there is no **if statement** defined for this yet<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal9.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal10.png))
+1. Add [**Silver Medal**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal9.png) category which has a value of 250 on `speed-typing-spec.js` expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal10.png) as there is no `if statement` defined for this yet
 
-1. Add **else if** statement of (score >= 250 && score <= 290) on **`speed-typing.js`** returning a value of "Silver" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal11.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal12.png))
+1. Add [**else if**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal11.png) statement of (score >= 250 && score <= 290) on `speed-typing.js` returning a value of "Silver" expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal12.png)
 
-1. Add **Gold Medal** category which has a value of 300 on **`speed-typing-spec.js`** and add **else if** statement of (score >=300 && score <= 340) on **`speed-typing.js`** returning a value of "Gold" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal13.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal14.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal15.png))
+1. Add [**Gold Medal**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal13.png) category which has a value of 300 on `speed-typing-spec.js` and add [**else if**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal14.png) statement of (score >=300 && score <= 340) on `speed-typing.js` returning a value of "Gold" expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal15.png)
 
-1. Add **Special Crown** category which has a value of 350 on **`speed-typing-spec.js`**, and add **else** statement on **`speed-typing.js`** returning a value of "Crown" expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal16.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal17.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal18.png))
+1. Add [**Special Crown**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal16.png) category which has a value of 350 on `speed-typing-spec.js`, and add [**else**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal17.png) statementon `speed-typing.js` returning a value of "Crown" expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal18.png)
 
-1. Add a value in **String** on **`speed-typing-spec.js`** expecting to be <ins>failed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal19.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal20.png))
+1. Add a value in [**String**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal19.png) on `speed-typing-spec.js` expecting to be [<ins>failed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal20.png)
 
-1. Add additional **if else** statement on **`speed-typing.js`** and define only if the type of score is **number**, then go to next **if else** statement, expecting to be <ins>passed</ins><br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal21.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal22.png))
+1. Add additional [**if else**](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal21.png) statement on `speed-typing.js` and define only if the type of score is **number**, then go to next **if else** statement, expecting to be [<ins>passed</ins>](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/javascript-testing/get-medal22.png)
 
 **- Conclusion -**<br>
-Function with **if else** statement works in the way expected
+Function with **if else** statement works as expected
 
 ### Web Browser <a name="webbrowser-heading"></a>
 **--- Visibilities, Functions and Interactions ---**<br>
-The website is available on major web browsers, such as **Chrome**, **Safari**, **Firefox**, **Opera** and **Microsoft Edge**. To make sure all the functions work properly on those browsers, the below manual testings are carried out on all of them.
+The website is available on major web browsers, such as **Chrome**, **Safari**, **Firefox**, **Opera** and **Microsoft Edge**. To make sure all the functions work and visual contents are shown properly on those browsers, the below manual testings are carried out on all of them.
 
 1. Open the website on the browser to do a visual test. Look at all the pages including the modal (game instructions) to see if everything appears as expected<br>
 ([Chrome](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome1.png) / [Safari](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/safari1.png) / [Firefox](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/firefox1.png) / [Opera](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/opera1.png) / [Microsoft Edge](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/edge1.png))
 
 1. Click all the buttons and links to see if they link to the place supposed to go, open an external link in the separate page<br>
 
-1. Play the game to see if interactive messages during the game (timer, score, country text) and after the game work (time is up, medal, medal message, high score, reset button and message)<br>
+1. Play the game to see if interactive messages during the game (timer, score, country text) and after the game work properly (time is up, medal, medal message, high score, reset button and message)<br>
 ([Chrome During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome2.png) / [Chrome After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/chrome3.png))<br>
 ([Safari During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/safari2.png) / [Safari After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/safari3.png))<br>
 ([Firefox During The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/firefox2.png) / [Firefox After The Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/web-browsers-testing/firefox3.png))<br>
@@ -396,69 +394,60 @@ The website is available on major web browsers, such as **Chrome**, **Safari**, 
 The website works on all the major web browsers
 
 > **Note:**<br>
-> The quality of Firefox, Opera and Microsoft Edge images are not great because they are tested in the other computer and screenshots are taken there and transferred as a smaller size of images. To have a consistent size of images, images of Chrome and Safari are adjusted so their qualities are not great either but all still visible 
+> The quality of Firefox, Opera and Microsoft Edge images are not great because they are tested in another computer and screenshots are taken there and transferred as a smaller size of images to my main computer. To have a consistent size of images, images of Chrome and Safari are adjusted so their qualities are not great either but all still visible 
 
 ### UX <a name="ux-heading"></a>
 **--- Evidence Of Achieving The Website From UX Point Of View ---**<br>
 There are some essential elements to achieve good user experiences on the website and this is to test and confirm that all the elements required for good user experiences are there.
 
 **`Header`**<br>
-The logo of the website has a clear meaning and can be easily identified what the website is for. The menu is well displayed and there is an icon of a person to show the current location of the page. The game is playable on a laptop or desktop size computer only, so once the screen size goes below 62rem / 992px, an alert comes up for the users so users are clearly informed that the game is not playable without a keyboard. The alert can be closed by users once they get the message.<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/header1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/header2.png))
+The logo of the website has a clear meaning and can be easily identified what the website is for. The menu is well displayed and there is an icon of a person to show the current location of the page. The game is playable on a laptop or desktop size only, so once the screen size goes below 62rem / 992px, an alert comes up for the users so users are clearly informed that the game is not playable without a keyboard. The alert can be closed by users once they get the message. ([Menu](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/header1.png) / [Alert](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/header2.png))
 
 **`Heading`**<br>
-The display of fancy Headings (Welcome To Speed Typing Game! / Let's Learn About The Countries!), which appear very smoothly, gives users an impression of speed and it can be easily linked with the main purpose of the website that is to practice speed typing. There is a short paragraph to explain what you can do on the page and there is a link to another page in the paragraph. On the speed typing page, there is an instructions button with stand out colour, positioned above the game section so that it cannot be missed. This is not a complicated game so users could easily figure out how to play the game, however, there are some important notes on the instructions (e.g. letter cases and space matter, points for each medal etc). Instructions are written clearly with minimum points, and on a modal so that users can stay on the game page<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heading1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heading2.png))
+The display of fancy Headings (Welcome To Speed Typing Game! / Let's Learn About The Countries!), which appear very smoothly, gives users an impression of *"speed"* and it can be easily linked with the main purpose of the website that is to practice speed typing. There is a short paragraph to explain what you can do on the page and there is a link to another page in the paragraph. On the speed typing page, there is an game instructions button with standing out colour, positioned above the game section so that it cannot be missed. This is not a complicated game so users could easily figure out how to play the game, however, there are some important notes on the instructions (e.g. letter cases and space matter, points for each medal etc). Instructions are written clearly with minimum words, and on a modal so that users can stay on the game page. ([Heading](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heading1.png) / [Game Instructions](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heading2.png))
 
 **`Speed Typing - index.html`**<br>
-Very simple display not to disturb users for typing, but all necessary elements such as a timer, text for typing, play button, scoreboard, medal, high scoreboard are included. Plenty of icons are used to make the website more for gaming.  When users click the play button, it automatically focuses the input box so that they do not need to click it. This is written on the instructions as well as there is a very small but enough action (box shadowing) when the input box is selected so users notice it. <br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing1.png))
+Very simple display not to disturb users for typing, but all necessary elements such as a timer, text for typing, play button, scoreboard, medal, high scoreboard are included. Plenty of icons are used to make the website more for gaming.  When users click the play button, it automatically focuses the input box so that they do not need to click it. This is written on the instructions as well as there is a very small but enough action (box shadowing) when the input box is selected so users notice it. ([Game Display](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing1.png))
 
-When the game starts, colour of the the play button is changed and deactivated. This is to prevent users from clicking it again as it causes issues. The message for the play button disappears so that users can focus on the main text, which is bigger and different from other fonts, only for typing. The score increments by 10 points as users get correct typing. This is to give users a better feeling that they achieve more (e.g. 20 correct typings, 20 points vs 200 points)<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing2.png))
+When the game starts, colour of the the play button is changed and deactivated. This is to prevent users from clicking it again as it causes issues. The message for the play button disappears so that users can focus on the main text, which is bigger and different from other fonts, only for typing. The score increments by 10 points as users get correct typing. This is to give users a better feeling that they achieve more (e.g. 20 correct typings, 20 points vs 200 points) ([Playing Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing2.png))
 
-Once the game is over, there is a message of "Time is Up!" to let users know it is finished. The input box is disabled as well to avoid users still typing words and getting scores. There is a medal (with a message) that comes up a second later when the game is finished, then there is a message of "Try again!" with the reset button that comes up after a second later. The reason for this is if all the messages appear after the game at the same time, it looks too many letters suddenly on the screen, and uses would not know what messages are new so some messages get delayed purposely. If users achieve the highest points, the high score is automatically updated. It remains after the game and even the web browser is closed so users can always go back to play the game targeting the high score. There is a button to countries.html page so users can access the information page immediately if there are any countries that they want to look at.<br>
- ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing3.png))
+Once the game is over, there is a message of "Time is Up!" to let users know it is finished. The input box is disabled to avoid users still typing words and getting scores. There is a medal (with a message) that comes up a second later when the game is finished, then there is a message of "Try Again!" to encourage users with the reset button that comes up after a second later. The reason for this is if all the messages appear after the game at the same time, it looks too many letters suddenly on the screen, and uses would not know what messages are new so some messages get delayed purposely. If users achieve the highest points, the high score is automatically updated. It remains after the game and even the web browser is closed so users can always go back to play the game targeting the high score. There is a button to "Country Info"(`countries.html`) page so users can access the page immediately if there are any countries that they would like to look at. ([After Game](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing3.png))
 
- On the mobile and tablet size that the game is not playable, the play button is hidden so that users will not be able to play the game but users can see the most of elements of the game, including the instructions so that they can still get ideas of the game.<br> 
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing4.png))
+ On the mobile and tablet size that the game is not playable, the play button is hidden so that users will not be able to play the game but users can see the most of elements of the game, including the instructions so that they can still get ideas of the game. ([Mobile Display](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing4.png))
 
-The scores for the medals are considered by some factors. First, look up google to see what the average speed typing for ordinary people is. It says [40 words per minute](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing5.png) (1.5 seconds per word for 60 seconds) so set up around 350 points (1.7 seconds per word) as the gold medal considering it would slightly take a longer time to type country names than words because country names are longer than words. (e.g “I will go to your house” have 6 worlds / 16 letters compare to Antigua and Barbuda is a country name, which has 17 letters). When the game is completed, I, who can reasonably type well, try the game numerous times and discover that scores are overestimated as my scores are always around 150 - 220 points. I ask a few people to try the game to get feedback for analysis. My colleague who uses a computer on a daily basis gets [150 points](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing6.png) average and a friend of mine who also uses a computer often gets scores between [130 - 200 points](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing7.png), which are very similar scores as mine. To practice speed typing game and achieve reasonable speed, you are required to get 150 - 220 so set up medal categories in those scores. A gold medal and special crown are achievable for any users once users have reasonable typing skills (and with luck as well) and for those who achieve special crown, it proves that users will not require speed typing practice anymore.<br>
+The scores for the medals are considered by some factors. First, look up google to see what the average speed typing for ordinary people is. It says [40 words per minute](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing5.png) (1.5 seconds per word for 60 seconds) so set up around 350 points (1.7 seconds per word) for a gold medal considering it would slightly take a longer time to type country names than words because country names are simply longer than words. (e.g “I will go to your house” have 6 worlds / 16 letters compare to "Antigua and Barbuda" is a country name, which has 17 letters). When the game is completed, I, who can reasonably type well, try the game numerous times and discover that scores are overestimated as my scores are always around 150 - 220 points. Ask a few other people to try the game to get feedback for analysis. My colleague who uses a computer on a daily basis gets [150 points](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing6.png) average and a friend of mine who also uses a computer often gets scores between [130 - 200 points](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing7.png), which are very similar scores as mine. To practice speed typing game and achieve reasonable speed, you are required to get 150 - 220 so set up medal categories in those scores. A gold medal and special crown are achievable for any users once users have reasonable typing skills (and with luck as well) and for those who achieve special crown, it proves that they will not require speed typing practice anymore.<br>
 
-To make sure the correct medals show up depending on the scores, test it by changing the increment value of score on [`main.js`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing8.png) and check the scores between medals.
-* [50 points to expect Bronze](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing9.png)
-* [170 points to expect Bronze](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing10.png)
-* [180 points to expect Silver](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing11.png)
-* [220 points to expect Silver](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing12.png)
-* [230 points to expect Gold](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing13.png)
-* [240 points to expect Gold](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing14.png)
-* [250 points to expect Crown](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing15.png)
-* [500 points to expect Crown](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing16.png)
+To make sure the correct medals show up depending on the scores, test it by changing the increment value of score on [`main.js`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing8.png) and check the scores especially between medals.
+* [50 points expecting Bronze](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing9.png)
+* [170 points expecting Bronze](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing10.png)
+* [180 points expecting Silver](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing11.png)
+* [220 points expecting Silver](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing12.png)
+* [230 points expecting Gold](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing13.png)
+* [240 points expecting Gold](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing14.png)
+* [250 points expecting Crown](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing15.png)
+* [500 points expecting Crown](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing16.png)
 
-The function to keep the high score is also tested with this. After 220 points, put 250 points to see if the high score remains the same when 230 points are achieved. Also, there is a message to indicate there is something more once you get a gold medal so the secret crown is noticeable in the game.<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing17.png))
+The function to keep the high score is also tested with this. After 220 points, put 250 points to see if the high score remains the same when 230 points are achieved. Also, there is a message to indicate there is something more once you get a gold medal so the secret crown is noticeable in the game. ([High Score](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing17.png))
 
-In REST Countries API, there are some countries that have special letters other than the alphabet (e.g. Åland Islands, Côte d'Ivoire etc). Those countries cannot be used as text for typing so it is made sure to exclude them by setting **`if statement`**. This is checked by putting `console.log()` function in `showCountries` function and check on console of Chrome DevTools and confirm that any countries with special letters do not appear as text.<br>
-([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing18.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing19.png) / [Screenshot 3](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing20.png))
+In REST Countries API, there are some countries that have special letters other than the alphabet (e.g. Åland Islands, Côte d'Ivoire etc). Those countries cannot be used as text for typing so it is made sure to exclude them by setting `if statement`. This is checked by putting `console.log()` function in `showCountries` function and check on a console of Chrome DevTools and confirm that any countries with special letters do not appear as text. ([Setting console.log()](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing18.png) / [Non-alp excluded 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing19.png) / [Non-alp excluded 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/speed-typing20.png))
 
 **`Country Info - countries.html`**<br>
-Blue background, which gives users an image of the world, is used. The colour is nicely contrasted with the main background colour as well. Country info display is kept simple for good readability and icons are used to keep the design of the website consistent. The section of county info and google maps are split into 4 : 8 to give maps enough size. If users wonder where the information comes from, there is an info icon beside the dropdown menu that they can control open and hide and there is a link, which opens in a different page, to REST Countries API. For those who want to know more about the countries, there is a link to the Wikipedia page, which also opens on a different page so that users do not leave the page. There is a button to index.html so that can access the page easily whenever uses feel wanting to play the game<br>
-([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/country-info1.png))
+Blue background, which gives users an image of the world, is used. The colour is nicely contrasted with the main background colour as well. Country information display is kept simple for good readability and icons are used to keep the design of the website consistent. The section of County information and Google Maps are split into 4 : 8 to give maps enough size. If users wonder where the information comes from, there is an info icon beside the dropdown menu that they can control open and hide and there is a link, which opens in a different page, to REST Countries API. For those who want to know more about the countries, there is a link to the Wikipedia page, which also opens on a different page so that users do not leave the page. There is a button to "Speed Typing" (`index.html`) page so users can access the page easily whenever they would like to play the game. ([Screenshot](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/country-info1.png))
 
-To check if the information of each country corresponds properly from API and Wikipedia links work, 5 different types of countries are picked up for testing. Select below countries and check against Wikipedia that is opened from the link on this page<br>
-* A county with a single word: Angola ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/angola1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/angola2.png))
-* A county with special letters: Curaçao ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/curacao1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/curacao2.png))
-* A country with multiple words: Lao People's Democratic Republic ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/lao1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/lao2.png))
-* A country with brackets: Korea (Republic of) ([Screenshot 1](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/korea-republic-of1.png) / [Screenshot 2](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/korea-republic-of2.png))
+To check if the information of each country corresponds properly from the API and the Wikipedia links work, 4 different types of countries are picked up for testing. Select below countries and check against Wikipedia that is opened from the link on this page<br>
+* A county with a single word: Angola ([Map](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/angola1.png) / [Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/angola2.png))
+* A county with special letters: Curaçao ([Map](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/curacao1.png) / [Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/curacao2.png))
+* A country with multiple words: Lao People's Democratic Republic ([Map](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/lao1.png) / [Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/lao2.png))
+* A country with brackets: Korea (Republic of) ([Map](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/korea-republic-of1.png) / [Wikipedia](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/korea-republic-of2.png))
 
 > **Note:**<br>
 > There are 2 minor issues found during randomly looking at the country info. 
-> * No information of **["Heard Island and McDonald Islands"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heard-island1.png)** as there are [no information in the AP](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heard-island2.png)
-> * Wikipedia link for **["Bonaire, Sint Eustatius and Saba"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/bonaire.png)** show [Caribbean Netherlands](https://en.wikipedia.org/wiki/Caribbean_Netherlands) even though Wikipedia of each country exists. As those 3 are listed as a group in the API, this is the way Wikipedia recognises it.
+> * No information of ["Heard Island and McDonald Islands"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heard-island1.png) as there are [no information in the AP](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/heard-island2.png)
+> * Wikipedia link for ["Bonaire, Sint Eustatius and Saba"](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/bonaire.png) show [Caribbean Netherlands](https://en.wikipedia.org/wiki/Caribbean_Netherlands) even though Wikipedia of each country exists. As those 3 are listed as a group in the API, this is the way Wikipedia recognises it.<br>
 >As these are very minor issues and not worth mentioning on the website, no further action is taken and left as they are
  
 **`Feedback From A User`**<br>
-When the speed typing game is provisionally completed, request in Code Institute Slack to play it to get some feedback about the game. One of the users mentions that he comes across the same countries 3 times during the game and suggested [to prevent it from happening](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback1.png). My initial understanding is that as there are 250 countries in the API, chances of getting the same country during the game are quite low but this is incorrect and as a matter of the fact, I come across the same countries during the game on a few occasions so decide to implement this, which improves the website from UX point of view. To achieve this, create an empty array and put the randomly selected countries in it. Then, use [`include()`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback2.png) method that if the randomly selected country is <ins>NOT</ins> included in the array, then show the country name, otherwise to run `showCountries()` function again. To test this, modify if statement in `[showCountries()]` function to select countries with [4 or fewer letters](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback3.png) so that there are only a limited number of countries to be tested. Then, get a list of countries, which match the criteria, by using [`for loop and if statement`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback4.png) from the API and show these on console on Chrome DevTools. There are [10 countries that match the criteria](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback5.png), start the game by showing the countries in the array on a console. No countries are repeated and once those 10 countries are selected within the time, the system gives an error saying all the countries are selected and no more to be selected. [By looking at the countries in the array and receiving the error message](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback6.png), it is confirmed that no countries are repeated during the game and the setting is properly done
+When the speed typing game is provisionally completed, request in Code Institute Slack to play it to get some feedback about the game. One of the users mentions that he comes across the same countries 3 times during the game and suggested [to prevent it from happening](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback1.png). My initial understanding is that as there are 250 countries in the API, chances of getting the same country during the game are quite low but this is an incorrect estimate and as a matter of the fact, I come across the same countries during the game on a few occasions so decide to implement this, which improves the website from UX point of view. To achieve this, create an empty array and put the randomly selected countries in it. Then, use [`include()`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback2.png) method that if the randomly selected country is <ins>NOT</ins> included in the array, then show the country name, otherwise to run `showCountries()` function again. To test this, modify if statement in `showCountries()` function to select countries with [4 or fewer letters](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback3.png) so that there are only a limited number of countries to be tested. Then, get a list of countries, which match the criteria, by using [`for loop and if statement`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback4.png) from the API and show these on a console on Chrome DevTools. There are [10 countries](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback5.png) that match the criteria, start the game by showing the countries in the array on a console. No countries are repeated and once those 10 countries are selected within the time, the system gives an error saying all the countries are selected and no more to be selected. [By looking at the countries in the array and receiving the error message](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux-testing/feedback6.png), it is confirmed that the setting is properly done and no countries are repeated during the game. 
 
 **- Conclusion -**<br>
 The website meets all the necessary elements to achieve good user experiences
@@ -509,23 +498,23 @@ The most difficult issue in this project and spend days to come to a conclusion.
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 
 ## VERSION CONTROL <a name="version-control-heading"></a>
-**[Git](https://git-scm.com/)** as a local repository and **[GitHub](https://github.com/)** as a remote repository are used for the project. The process of the version control is;
+[**Git**](https://git-scm.com/) as a local repository and [**GitHub**](https://github.com/) as a remote repository are used for the project. The process of the version control is;
 1. Create a **remote repository** in GitHub by clicking **"New repository"** on the main page<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control1.png)</br>
 
-1. Create a folder called **ms2-speed-typing-game** on my computer (e.g. Desktop)<br>
+2. Create a folder called **ms2-speed-typing-game** on my computer (e.g. Desktop)<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control2.png)</br>
 
-1. Open the folder with [Visual Studio Code](https://code.visualstudio.com/) which is my Integrated Development Environment (IDE)<br>
+3. Open the folder with [Visual Studio Code](https://code.visualstudio.com/) which is my Integrated Development Environment (IDE)<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control3.png)</br>
 
-1. Create README.md file<br>
+4. Create README.md file<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control4.png)</br>
 
-1. Create a **local repository** by using command line with ***git init*** command on a terminal<br>
+5. Create a **local repository** by using command line with ***git init*** command on a terminal<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/version-control/version-control5.png)</br>
 
-1. First commit in git repository and first push to GitHub using the below commands on a terminal;
+6. First commit in git repository and first push to GitHub using the below commands on a terminal;
 ````
 * git add README.md
 * git commit -m "Initial commit"
@@ -533,7 +522,7 @@ The most difficult issue in this project and spend days to come to a conclusion.
 * git remote add origin https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game.git
 * git push -u origin main
 ````
-1. From the second commit, the below process and commands are used. Whenever a section or even a group of work are completed, they are committed in git and pushed into GitHub, in order to make sure to keep the history of the work logged properly and not to lose the work in unexpected situations
+7. From the second commit, the below process and commands are used. Whenever a section or even a group of work are completed, they are committed in git and pushed into GitHub, in order to make sure to keep the history of the work logged properly and not to lose the work in unexpected situations
 
 ````
 * git status | To check the status of new / modified folders, files, and documents
@@ -544,7 +533,7 @@ The most difficult issue in this project and spend days to come to a conclusion.
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 
 ## DEPLOYMENT <a name="deployment-heading"></a>
-The website is deployed in [GitHub](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
+The website is deployed in [**GitHub**](https://github.com/) as it can host open-source projects of HTML, CSS, and JavaScript.
 To deploy the website, follow the below process once login GitHub.
 1. Go to **repositories** that can be accessed from **1** or **1 - 1**<br>
 ![image](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/deployment/deployment1.png)</br>
@@ -575,8 +564,8 @@ To deploy the website, follow the below process once login GitHub.
 * [Bootstrap Input](https://getbootstrap.com/docs/4.0/components/input-group/#custom-select) for country input
 
 **--- CSS3 ---**
-* [Stackoverflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4) to remove border colour of hamburger menu
-* [Stackoverflow](https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color) to change the colour of hamburger menu
+* [Stack Overflow](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4) to remove border colour of hamburger menu
+* [Stack Overflow](https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color) to change the colour of hamburger menu
 * [codepen](https://codepen.io/techshiva/pen/JVbKLM) for buzz out button
 * [w3schools](https://www.w3schools.com/howto/howto_css_placeholder.asp) for modifying placeholder
 

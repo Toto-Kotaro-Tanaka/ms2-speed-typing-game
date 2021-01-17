@@ -105,7 +105,7 @@ nav img {
   color: #d4d4d4;
 }
 
-/* Credit: Stackoverflow @ https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4 and @ https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
+/* Credit: Stack Overflow @ https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4 and @ https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -349,9 +349,9 @@ hr {
 }
 
 #text-input:focus {
-  outline: none !important;
   border: .2rem solid #007acc;
   box-shadow: 0 0 .7rem #007acc;
+  outline: none !important;
 }
 
 /* Credit: w3schools @ https://www.w3schools.com/howto/howto_css_placeholder.asp */

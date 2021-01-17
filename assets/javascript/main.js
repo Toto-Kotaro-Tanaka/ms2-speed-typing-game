@@ -5,7 +5,7 @@ $("#close-alert").click(function() {
   $(".alert").hide();
 });
 
-// To Prevent Pasting Copied Word
+// To Prevent Users From Pasting Copied Word In Input Box
 // Credit: Net-informations.com @ http://net-informations.com/jq/iq/cut.htm
 $('#text-input').bind('copy paste cut',function(event) {
   event.preventDefault();
@@ -33,7 +33,7 @@ anime.timeline({loop: false})
 // ---------- /End of Fancy Heading Display ----------
 
 // ---------- Speed Typing Game ----------
-// Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Referred this tutorial but customised by me
+// Credit: Traversy Media @ https://www.youtube.com/watch?v=Yw-SYSG-028 *Refer to this tutorial but customised by me
 
 // Global Valuables
 let time = 60;
@@ -48,7 +48,7 @@ let transferData;
 $("#play-btn").click(function() {
   $("input").focus();
   $("#play-message").hide();
-  $("#play-btn").css("color", "#ff6565").attr("disabled", "true"); // To Prevent Users Hitting It Again As It Causes Problems
+  $("#play-btn").css("color", "#ff6565").attr("disabled", "true"); // To prevent users from hitting it again as it causes problems
   countdown();
   showCountries(transferData);
   $("#text-input").on("input", startMatch);
@@ -63,7 +63,7 @@ function countdown() {
 
     if (time === 0) {
       clearInterval(timer);
-      $("input").attr("disabled", "true"); // To Prevent Users Typing Words In It As It Would Still Count Scores
+      $("input").attr("disabled", "true"); // To prevent users from typing words in it as it still increment scores
       $("#time-up").show();
 
       if (gameScore > highScore) {
@@ -90,14 +90,14 @@ function countdown() {
       }, 1500);
 
       setTimeout(function() {
-        if (gameScore <= 240) {
-          $("#country-text").css("color", "#007acc").html("Try Again!");
-          $("#reset-btn").show();
-          $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');    
-        } else {
+        if (gameScore >= 250) {
           $("#country-text").css("color", "#e84610").html('Congratulation! <i class="fas fa-glass-cheers"></i>');
           $("#reset-btn").show();
           $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');    
+        } else {
+          $("#country-text").css("color", "#007acc").html("Try Again!");
+          $("#reset-btn").show();
+          $("#reset-message").html('Click the <span class="bold">Reset <i class="far fa-registered"></i></span> button to play it again');
         }
       }, 2500);
     }
@@ -110,7 +110,7 @@ function showCountries(countries) {
   const textCountryName = countries[randomIndex].name;
   const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
 
-  if (textCountryName.match(letters) && !usedCountries.includes(textCountryName)) { // To Show Countries With Only Alphabets (Including Space and Comma) & Not To Repeat The Countries Already Used In The Game
+  if (textCountryName.match(letters) && !usedCountries.includes(textCountryName)) { // To show countries with only alphabets (including space and comma) & not to repeat the countries already used in the game
     $("#country-text").html(textCountryName);
     usedCountries.push(textCountryName);
   } else {
@@ -118,7 +118,7 @@ function showCountries(countries) {
   }
 }
 
-// To Check Current Word (Country) And Input Word Match
+// To Check Current Word (Country) & Input Word Match
 function matchWords() {
   if ($("#text-input").val() === $("#country-text").html()) {
     return true;
@@ -137,13 +137,14 @@ function startMatch() {
   }
 }
 
+// To Reset The Game
 $("#reset-btn").click(function() {
   location.reload();
 });
 // ---------- /End of Speed Typing Game ----------
 
 // ---------- REST Countries API @ https://restcountries.eu/ ----------
-// Credit: Coding Journey @ https://www.youtube.com/watch?v=THZyM2z8s-o *Referred this tutorial but customised by me
+// Credit: Coding Journey @ https://www.youtube.com/watch?v=THZyM2z8s-o *Refer to this tutorial but customised by me
 
 // Global Valuables
 let apiCountries;
@@ -151,11 +152,6 @@ let dropDownCountries;
 let lat;
 let lng;
 let options;
-
-// To Change Country Info Details
-$("#list-of-countries").change(function(event) {
-  displayCountryInfo(event.target.value);
-});
 
 // To Receive Countries Data From API  
 const xhr = new XMLHttpRequest();
@@ -174,7 +170,12 @@ xhr.onreadystatechange = function() {
   }
 };
 
-// To Get Countries From API
+// To Change Country Info Details
+$("#list-of-countries").change(function(event) {
+  displayCountryInfo(event.target.value);
+});
+
+// To Get Countries Data From API
 function getCountries(getData) {
   transferData = getData;
   showCountries(transferData);
@@ -202,7 +203,7 @@ function displayCountryInfo(countryByAlpha3Code) {
   $("#language").html(`${countryData.languages.filter(l => l.name).map(l => l.name).join(", ")}`);
   $("#wikipedia").attr({"href": `https://en.wikipedia.org/wiki/${countryData.name}`});
 
-  //Google Maps
+  //To Show Location On Google Maps
   lat = countryData.latlng[0];
   lng = countryData.latlng[1];
   setTimeout(function() {

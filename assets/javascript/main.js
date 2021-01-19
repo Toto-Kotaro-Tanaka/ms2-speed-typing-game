@@ -108,7 +108,7 @@ function countdown() {
 function showCountries(countries) {
   const randomIndex = Math.floor(Math.random() * countries.length);
   const textCountryName = countries[randomIndex].name;
-  const letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+  const letters = /^[a-zA-Z-,]+(\s?[a-zA-Z-, ])*$/;
 
   if (textCountryName.match(letters) && !usedCountries.includes(textCountryName)) { // To show countries with only alphabets (including space and comma) & not to repeat the countries already used in the game
     $("#country-text").html(textCountryName);
@@ -228,7 +228,7 @@ function initMap() {
   };
   let map = new google.maps.Map($("#maps")[0], options);
 
-  let marker = new google.maps.Marker({
+  new google.maps.Marker({
     position: {
       lat: 53,
       lng: -8
@@ -249,7 +249,7 @@ function showCountryOnGoogleMaps(lat, lng) {
     };
     let map = new google.maps.Map($("#maps")[0], options);
 
-    let marker = new google.maps.Marker({
+    new google.maps.Marker({
       position: {
         lat: lat,
         lng: lng

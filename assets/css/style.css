@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -112,7 +120,8 @@ nav img {
 .navbar-toggler-icon:focus {
   outline: none;
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -249,7 +258,8 @@ hr {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
@@ -282,7 +292,8 @@ hr {
 .btn-instructions:active:focus, .btn-countries:active:focus, .btn-speed-typing:active:focus {
   background-color: #ff6565 !important;
   border: none !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .btn-countries {
@@ -350,11 +361,36 @@ hr {
 
 #text-input:focus {
   border: .2rem solid #007acc;
-  box-shadow: 0 0 .7rem #007acc;
+  -webkit-box-shadow: 0 0 .7rem #007acc;
+          box-shadow: 0 0 .7rem #007acc;
   outline: none !important;
 }
 
 /* Credit: w3schools @ https://www.w3schools.com/howto/howto_css_placeholder.asp */
+::-webkit-input-placeholder {
+  color: #1e1e1e !important;
+  font-size: 1rem;
+  font-weight: 100 !important;
+  opacity: .3 !important;
+}
+::-moz-placeholder {
+  color: #1e1e1e !important;
+  font-size: 1rem;
+  font-weight: 100 !important;
+  opacity: .3 !important;
+}
+:-ms-input-placeholder {
+  color: #1e1e1e !important;
+  font-size: 1rem;
+  font-weight: 100 !important;
+  opacity: .3 !important;
+}
+::-ms-input-placeholder {
+  color: #1e1e1e !important;
+  font-size: 1rem;
+  font-weight: 100 !important;
+  opacity: .3 !important;
+}
 ::placeholder {
   color: #1e1e1e !important;
   font-size: 1rem;
@@ -596,6 +632,22 @@ footer {
     padding: .5rem;
   }
 
+  ::-webkit-input-placeholder {
+    font-size: 1.1rem;
+  }
+
+  ::-moz-placeholder {
+    font-size: 1.1rem;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 1.1rem;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 1.1rem;
+  }
+
   ::placeholder {
     font-size: 1.1rem;
   }
@@ -607,7 +659,8 @@ footer {
 
   #countries {
     border-radius: 1rem;
-    box-shadow: 0 0 .7rem #007acc;
+    -webkit-box-shadow: 0 0 .7rem #007acc;
+            box-shadow: 0 0 .7rem #007acc;
     height: auto;
   }
   

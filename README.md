@@ -193,6 +193,7 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 * [Balsamiq](https://balsamiq.com/) for wireframes
 * [Adobe](https://www.adobe.com/ie/photoshop/online/resize-image.html) for resizing images
 * [Multi Device Website Mockup Generator](http://techsini.com/multi-mockup/index.php) for mockup
+* [Autoprefixer] for parsing CSS and add vendor prefixes
 
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 
@@ -259,14 +260,15 @@ After - [Performance: 95 / Accessibility: 96 / Best Practices: 93 / SEO: 90](htt
 
 **`countries.html` Mobile Size**<br>
 Before - [Performance: 72 / Accessibility: 91 / Best Practices: 100 / SEO: 90](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-before.png)<br>
-* The main reason of low Performance is caused by **Eliminate render-blocking resources** that jQuery and Bootstrap files are rendered but not being used sufficiently. This is confirmed by the [coverage](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-render.png) on Chrome DevTools. Talk to my mentor about the issue and he suggests to use minified jQuery code on jquery.js file and use it instead of linking to jQuery CDN. This does not improve the [Performance](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-after.png). I have a final meeting with my mentor so will discuss this with him once again but if it is not resolved, I'd need to leave the issue as it is, as all the functions are working fine and the issue is only the performance on mobile size 
+After - [Performance: 67 / Accessibility: 91 / Best Practices: 100 / SEO: 90](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-after.png)<br>
+* The main reason of low Performance is caused by **Eliminate render-blocking resources** that jQuery and Bootstrap files are rendered but not being used sufficiently. This is confirmed by the [coverage](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-render.png) on Chrome DevTools. Talk to my mentor about the issue and he suggests to use minified jQuery code on jquery.js file and use it instead of linking to jQuery CDN. This does not improve the [Performance](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-mobile-after.png). Discuss the issue in the final meeting with mentor. His suggestion is to leave as it is because this is not an error to cause issues on the website and the main purpose of the website is for speed typing game that targets laptop and desktop users more. Check the performance of the page on an actual mobile phone by trying to change the countries on the dropdown menu. Information and maps are displayed fairly quickly so there is no obvious and significant delay of the performance by the manual check.
 
 **`countries.html` Desktop Size**<br>
 Before - [Performance: 94 / Accessibility: 91 / Best Practices: 93 / SEO: 90 ](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/html-testing/lighthouse-countries-desktop-before.png)<br>
 * All ok and no further actions required
 
 **- Conclusion -**<br>
-To be updated
+All the scores, except mobile size on `countries.html`, are 90 or higher so majority part of the website meets the quality by Lighthouse. The performance of mobile size on `countries.html` is below 90 but everything is working fine on the page and there is no obvious or significant delay of the performance
 
 ### Css <a name="css-heading"></a>
 **--- Code Validation ---**<br>
@@ -289,13 +291,13 @@ When the core JavaScript code is completed, a code validation test is carried ou
 Most of them are expressions being used in ES6. (e.g. arrow function and let / const etc) Fixed them by putting `/*jshint esversion: 6 */` on `main.js` as suggested. There are 2 that semicolon is missing so solve the issues by putting semicolon on them. My understanding is not to use semicolon for curly braces, however, it is required for statements according to the [Stack Overflow](https://stackoverflow.com/questions/2717949/when-should-i-use-a-semicolon-after-curly-braces) post
 
 * **6 Undefined Variables**<br>
-These are $, Anime, transferData, lat, lng and google. $ is jQuery symbol so it can be ignored. Anime TBC with mentor, transferData, lat and lng are solved by creating a global variable for them. Google TBC with mentor
+These are *$*, *Anime*, *transferData*, *lat*, *lng* and *google*. *$* is jQuery symbol so it can be ignored. *transferData*, *lat* and *lng* are solved by creating a global variable for them. *Anime* and *Google* are declared in their CDN.
 
 * **1 Unused Variable**<br>
-This is something to do with google maps. TBC with my mentor
+*new google.maps.Marker* is declared as *marker* but it does not need to be, so solve the issue by removing *let marker*. There is a new unused variable on JSHint since the first test. It is *initMap* that is actually used on Google Maps API script.
 
 **- Conclusion -**<br>
-To be updated
+No errors or undefined, unused variables so JavaScript code complies with coding rules by JSHint
 
 **--- Functions ---**<br>
 When the core JavaScript code is completed, test for some functions are carried out by using [Jasmine](https://jasmine.github.io/) which is a framework for testing JavaScript code to see if they are properly functioned. 
@@ -452,10 +454,10 @@ When the speed typing game is provisionally completed, request in Code Institute
 The website meets all the necessary elements to achieve good user experiences
 
 ### Unsolved Issues <a name="unsolved-heading"></a>
-My Note: error on console
+There are two unsolved issues in the project. One is the performance of mobile size on `countries.html` by Lighthouse. Other one is Uncaught Reference Error on `index.html`. [(Refer to the next section)]((https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/unsolved-issues/uncaught-reference.png)) Try my best to solve those issues by looking up google, talking to mentor and tutors, however, unable to solve the issues so have to leave them as they are. They are not causing any issues of the functions or usability of the website.
 
 > **Note For Testing Section:**<br>
-> My Note: Test HTML, CSS, JavaScript by validators, Test performance by Lighthouse before submitting the project and confirm the if they are still the same
+> Since the first code validation test for HTML, CSS, JavaScript, there are some changes on the files so test them again by the validators before the submission and confirm there are no errors. Test the quality of the website by Lighthouse before the submissions and confirm that the scores are the same / similar as the first test
 
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 

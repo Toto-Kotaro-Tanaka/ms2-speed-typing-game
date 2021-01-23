@@ -185,9 +185,11 @@ function getCountries(getData) {
 function initialise(countriesData) {
   apiCountries = countriesData;
   dropDownCountries = "";
+
   for (let i = 0; i < apiCountries.length; i++) {
     dropDownCountries += `<option value="${apiCountries[i].alpha3Code}">${apiCountries[i].name}</option>`;
   }
+
   $("#list-of-countries").html(dropDownCountries);
   displayCountryInfo("IRL");
 }
@@ -210,7 +212,7 @@ function displayCountryInfo(countryByAlpha3Code) {
     showCountryOnGoogleMaps(lat, lng);
   }, 0);
 }
-// ---------- /End of Countries API ----------
+// ---------- /End of REST Countries API ----------
 
 // To Show & Hide Country Info API Link
   $(".fa-info-circle").click(function(){
@@ -257,3 +259,4 @@ function showCountryOnGoogleMaps(lat, lng) {
     });
   }
 }
+// ---------- /End of Google Maps API ----------

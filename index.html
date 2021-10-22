@@ -1,132 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="A speed typing game that also includes information of all the countries in the world">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A speed typing game that also includes information of all the countries in the world">
 
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
-  <!-- Fontawesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
-  <!-- JQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <!-- Fancy Heading Display CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <!-- Styles CSS -->
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Fancy Heading Display CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <title>Speed Typing Game</title>
+    <title>Speed Typing Game</title>
 </head>
 
 <body>
-  <header>
-    <div class="alert alert-danger d-lg-none" role="alert">
-      <h5>Note <i class="fas fa-exclamation-circle"></i></h5>
-      <i id="close-alert" class="fas fa-times"></i>
-      <p>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it</p>
-    </div>
-    <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Website Logo"/></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <div class="alert alert-danger d-lg-none" role="alert">
+            <h5>Note <i class="fas fa-exclamation-circle"></i></h5>
+            <i id="close-alert" class="fas fa-times"></i>
+            <p>Speed Typing game is available on <span class="bold">Laptop / Desktop</span> ONLY as a key board is required to play it</p>
+        </div>
+        <!-- Credit: Bootstrap Navbar @ https://getbootstrap.com/docs/4.5/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Website Logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active menu-home">
-            <a class="nav-link" href="index.html">Speed Typing <i class="fas fa-street-view current"></i><span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item menu-instructions">
-            <a class="nav-link" data-toggle="modal" data-target="#game-instructions">Game Instructions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="countries.html">Country Info</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active menu-home">
+                        <a class="nav-link" href="index.html">Speed Typing <i class="fas fa-street-view current"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item menu-instructions">
+                        <a class="nav-link" data-toggle="modal" data-target="#game-instructions">Game Instructions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="countries.html">Country Info</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /End of Credit -->
+    </header>
+
+    <section>
+        <h1 class="ml3">Welcome to Speed Typing game!</h1>
+        <p>This game gives you an opportunity to practice speed typing! The words are names of the countries so in case you get interested in some of them, go to <a class="bold" href="countries.html">"Country Info"</a> page and learn about them <i class="fas fa-globe"></i></p>
+        <hr>
+        <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover" data-toggle="modal" data-target="#game-instructions">Game Instructions</button>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="timer" class="col-lg col-lg-3.5">
+                    <h4><i class="fas fa-stopwatch"></i> Time: <span id="time" class="bold">60</span> sec.</h4>
+                    <h4 id="time-up">Time is Up!</h4>
+                    <div id="learn-countries" class="d-none d-lg-block">
+                        <p>To learn about the “Countries”, click the button <i class="far fa-arrow-alt-circle-down"></i></p>
+                        <a class="btn btn-primary btn-countries buzz-out-on-hover" href="countries.html">Country Info</a>
+                    </div>
+                </div>
+                <div id="text-input-section" class="col-lg col-lg-5">
+                    <p>Type the word as fast as you can!</p>
+                    <h2 id="country-text">Ireland</h2>
+                    <input type="text" id="text-input" class="form-control" placeholder="Type The Word HERE" aria-label="text-input" aria-describedby="text-input">
+                    <button id="play-btn" class="d-none d-lg-block" aria-label="Play game button"><i class="far fa-play-circle"></i></button>
+                    <p id="play-message">To play the game, simply click the <span class="bold">Play <i class="far fa-play-circle"></i></span> button <span class="d-lg-none bold">on Laptop or Desktop</span></p>
+                    <div id="reset" class="d-none d-lg-block">
+                        <button id="reset-btn" aria-label="Reset the game"><i class="far fa-registered"></i></button>
+                        <p id="reset-message"></p>
+                    </div>
+                </div>
+                <div id="score" class="col-lg col-lg-3.5">
+                    <h4><i class="fas fa-trophy"></i> Score: <span id="game-score" class="bold">0</span> pt.</h4>
+                    <h4 id="medal-message" class="d-none d-lg-block">You've got: <span id="medal" class="bold">Nothing Yet <i class="far fa-smile-wink"></i></span><br><span id="message"></span></h4>
+                    <h4><i class="fas fa-thumbtack"></i> High Score: <span id="high-score" class="bold "></span> pt.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Toto Tanaka 2021
+            <p>
+    </footer>
+
+    <!-- Credit: Bootstrap Modal @ https://getbootstrap.com/docs/4.0/components/modal/ -->
+    <div class="modal fade" id="game-instructions" tabindex="-1" role="dialog" aria-labelledby="game-instructions" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="game-instructions-title">Game Instructions</h5>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><span class="bold">60</span> seconds per game</li>
+                        <li>Country names pop up randomly & type them in input box. Note <span class="bold">letter case</span> and <span class="bold">space</span> matter</li>
+                        <li><span class="bold">10</span> points per correct typing</li>
+                        <li>You get a medal at the end of each game;
+                            <ol>
+                                <li>Gold Medal <i class="fas fa-medal"></i> - Over <span class="bold">230</span> points</li>
+                                <li>Silver Medal <i class="fas fa-medal"></i> - Between <span class="bold">180</span> and <span class="bold">220</span> points</li>
+                                <li>Bronze Medal <i class="fas fa-medal"></i> - Below <span class="bold">170</span> points</li>
+                            </ol>
+                        </li>
+                        <li>To play game, click <span class="bold">Play <i class="far fa-play-circle"></i></span> button below input box. Input box will be focused automatically so no need to click it</li>
+                    </ul>
+                    <p class="modal-important">*** IMPORTANT *** <br>Speed Typing game is available on <span class="bold">Laptop or Desktop</span> ONLY as a key board is required</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-instructions btn-modal buzz-out-on-hover btn-ready" data-dismiss="modal">I'm ready!</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- /End of Credit -->
-  </header>
 
-  <section>
-    <h1 class="ml3">Welcome to Speed Typing game!</h1>
-    <p>This game gives you an opportunity to practice speed typing! The words are names of the countries so in case you get interested in some of them, go to <a class="bold" href="countries.html">"Country Info"</a> page and learn about them <i class="fas fa-globe"></i></p>
-    <hr>
-    <button type="button" class="btn btn-primary btn-instructions buzz-out-on-hover" data-toggle="modal" data-target="#game-instructions">Game Instructions</button>
-    <div class="container-fluid">
-      <div class="row">
-        <div id="timer" class="col-lg col-lg-3.5">
-          <h4><i class="fas fa-stopwatch"></i> Time: <span id="time" class="bold">60</span> sec.</h4>
-          <h4 id="time-up">Time is Up!</h4>
-          <div id="learn-countries" class="d-none d-lg-block">
-            <p>To learn about the “Countries”, click the button <i class="far fa-arrow-alt-circle-down"></i></p>
-            <a class="btn btn-primary btn-countries buzz-out-on-hover" href="countries.html">Country Info</a>
-          </div>
-        </div>
-        <div id="text-input-section" class="col-lg col-lg-5">
-          <p>Type the word as fast as you can!</p>
-          <h2 id="country-text">Ireland</h2>
-          <input type="text" id="text-input" class="form-control" placeholder="Type The Word HERE" aria-label="text-input" aria-describedby="text-input">
-          <button id="play-btn" class="d-none d-lg-block" aria-label="Play game button"><i class="far fa-play-circle"></i></button>
-          <p id="play-message">To play the game, simply click the <span class="bold">Play <i class="far fa-play-circle"></i></span> button <span class="d-lg-none bold">on Laptop or Desktop</span></p>
-          <div id="reset" class="d-none d-lg-block">
-            <button id="reset-btn" aria-label="Reset the game"><i class="far fa-registered"></i></button>
-            <p id="reset-message"></p>
-          </div>
-        </div>
-        <div id="score" class="col-lg col-lg-3.5">
-          <h4><i class="fas fa-trophy"></i> Score: <span id="game-score" class="bold">0</span> pt.</h4>
-          <h4 id="medal-message" class="d-none d-lg-block">You've got: <span id="medal" class="bold">Nothing Yet <i class="far fa-smile-wink"></i></span><br><span id="message"></span></h4>
-          <h4><i class="fas fa-thumbtack"></i> High Score: <span id="high-score" class="bold "></span> pt.</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; Toto Tanaka 2021<p>
-  </footer>
-
-  <!-- Credit: Bootstrap Modal @ https://getbootstrap.com/docs/4.0/components/modal/ -->
-  <div class="modal fade" id="game-instructions" tabindex="-1" role="dialog" aria-labelledby="game-instructions" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 id="game-instructions-title">Game Instructions</h5>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li><span class="bold">60</span> seconds per game</li>
-            <li>Country names pop up randomly & type them in input box. Note <span class="bold">letter case</span> and <span class="bold">space</span> matter</li>
-            <li><span class="bold">10</span> points per correct typing</li>
-            <li>You get a medal at the end of each game;
-              <ol>
-                <li>Gold Medal <i class="fas fa-medal"></i> - Over <span class="bold">230</span> points</li>
-                <li>Silver Medal <i class="fas fa-medal"></i> - Between <span class="bold">180</span> and <span class="bold">220</span> points</li>
-                <li>Bronze Medal <i class="fas fa-medal"></i> - Below <span class="bold">170</span> points</li>
-              </ol>
-            </li>
-            <li>To play game, click <span class="bold">Play <i class="far fa-play-circle"></i></span> button below input box. Input box will be focused automatically so no need to click it</li>
-          </ul>
-          <p class="modal-important">*** IMPORTANT *** <br>Speed Typing game is available on <span class="bold">Laptop or Desktop</span> ONLY as a key board is required</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-instructions btn-modal buzz-out-on-hover btn-ready" data-dismiss="modal">I'm ready!</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /End of Credit -->
-
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <!-- Main JavaScript -->
-  <script src="assets/javascript/main.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Main JavaScript -->
+    <script src="assets/javascript/main.js"></script>
 </body>
+
 </html>

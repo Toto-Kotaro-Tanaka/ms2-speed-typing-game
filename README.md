@@ -45,8 +45,7 @@ It is a mobile responsive website, however, the speed typing game can be played 
 
 People who would like to practice typing by playing a game. Country names in the world are being used as text for typing so they might come across the countries that they are interested in or never heard of in the game. In case they would like to check what those countries are like, there is a **"Country Info"** (`countries.html`) page to provide information of each country, such as a flag, region, capital city, population, language(s), a location on google maps and a link to the Wikipedia\* page, if users would like to know more details about the countries.
 
-> **Note:**<br>
-> \*During the process of creating the website, an idea of adding the link of Wikipedia with [REST Countries API](https://restcountries.eu/), which gives users more details about the countries, comes up as better user experiences. This is implemented in the project now, although it is not written on the initial project plan
+> **Note:**<br> > \*During the process of creating the website, an idea of adding the link of Wikipedia with [REST Countries API](https://restcountries.com/), which gives users more details about the countries, comes up as better user experiences. This is implemented in the project now, although it is not written on the initial project plan
 
 <div align="right"><a href="#table-of-contents">🔝</a></div>
 
@@ -68,7 +67,7 @@ To provide information of the countries, the display is kept very neat and tidy 
 
 ### Strategy Plane <a name="strategy-plane-heading"></a>
 
-Users are people who would like to practice speed typing. By creating a gaming type of website, users can practice it while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. 20 correct typing is 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare it to the scores in 1 week - 1 month time to see how they improve. A high score remains after the game finishes and even the browser is closed so it remains as a target to beat during their practice. Country names are used as text and they come up randomly so that different combinations of text appear on each game. Country names come from [REST Countries API](https://restcountries.eu/) and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a **"Country Info"** (`countries.html`) page that provides information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to the Wikipedia page ([implemented this during the process](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wikipedia.png)) as an additional function to the speed typing game.
+Users are people who would like to practice speed typing. By creating a gaming type of website, users can practice it while they are having fun. By setting a time (60 seconds per game), scores, which increments by 10 points rather than 1 point so that they feel they achieve better (e.g. 20 correct typing is 200 points instead of 20 points), and a medal depending on the score, users know what their current typing skill is and can compare it to the scores in 1 week - 1 month time to see how they improve. A high score remains after the game finishes and even the browser is closed so it remains as a target to beat during their practice. Country names are used as text and they come up randomly so that different combinations of text appear on each game. Country names come from [REST Countries API](https://restcountries.com/) and there are 250 countries listed in the API, as of 3 Jan 2021. Users may know some countries quite well, some only little and some not at all. In case users come across the countries that they are interested in, there is a **"Country Info"** (`countries.html`) page that provides information of each country, such as a flag, region, capital city, population, language(s), a location on google maps, and link to the Wikipedia page ([implemented this during the process](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wikipedia.png)) as an additional function to the speed typing game.
 
 The main aims for this website are;
 
@@ -91,8 +90,7 @@ All the functions on the tables below are minimum that must be implemented on th
 | Fancy Welcome Message            |     3      |            4            |
 | Responsiveness                   |     3      |            4            |
 
-> **Note:**<br>
-> \*Countries API with Google Maps - At the planning stage, understand it is not difficult to implement but realise it is, so amend Viability / Feasibility to 3<br>
+> **Note:**<br> > \*Countries API with Google Maps - At the planning stage, understand it is not difficult to implement but realise it is, so amend Viability / Feasibility to 3<br>
 
 Below are the additional functions that can improve the website, however, these are not mandatory to achieve the current user's and owner's goals. Some are not implemented due to a lack of my current skills & knowledge and some due to a lack of time.
 
@@ -104,8 +102,7 @@ Below are the additional functions that can improve the website, however, these 
 | Highlighting Letters When Correct / Incorrect |     2      |            2            |
 | Counting Down Last 10 Seconds                 |     2      |            1            |
 
-> **Note:**<br>
-> \*Keeping High Score Even Game Disconnected - During the review of materials in Code Institute, realise that this is not a difficult thing to achieve so it is implemented in the game
+> **Note:**<br> > \*Keeping High Score Even Game Disconnected - During the review of materials in Code Institute, realise that this is not a difficult thing to achieve so it is implemented in the game
 
 ### Scope Plane <a name="scope-plane-heading"></a>
 
@@ -121,8 +118,7 @@ Features to be included in this project are;
 -   Country information with API
 -   Caution message\* on a modal when the size goes below 62rem / 992px as the game is playable on a laptop or desktop only
 
-> **Note:**<br>
-> \*Realise that caution message does not need to be a modal so set it up as an alert, which is neater than using a modal
+> **Note:**<br> > \*Realise that caution message does not need to be a modal so set it up as an alert, which is neater than using a modal
 
 ### Structure Plane <a name="structure-plane-heading"></a>
 
@@ -140,8 +136,7 @@ Although [Bootstrap4](https://getbootstrap.com/), which is CSS framework for mob
 -   ~[Wireframes: Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html.png)~
 -   [Wireframes: Country Info](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/ux/wireframe-countries-html-2.png)\*
 
-> **Note:**<br>
-> \*This is the revised version after looking for some better ideas showing the country info
+> **Note:**<br> > \*This is the revised version after looking for some better ideas showing the country info
 
 ### Surface Plane <a name="surface-plane-heading"></a>
 
@@ -166,7 +161,7 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 -   Created with **HTML5**, **CSS3** (with Bootstrap4 framework) and **JavaScript** (with jQuery library)
 -   It consists of 2 individual pages, one is for "Speed Typing" game and one is for "Country Info" display
 -   Modal for game instructions
--   Text for typing and country information are from [REST Countries API](https://restcountries.eu/)
+-   Text for typing and country information are from [REST Countries API](https://restcountries.com/)
 -   [Google Maps API](https://cloud.google.com/maps-platform/) for location display
 -   [Wikipedia](https://www.wikipedia.org/) to show more details of selected countries
 -   All the [features planned on scope plane](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/features/features.png)
@@ -189,7 +184,7 @@ On the **"Country Info"** (`countries.html`) page, **Bright Navy Blue (#007acc)*
 -   [Bootstrap4](https://getbootstrap.com/) (css framework) for main frame of the website
 -   [Font Awesome](https://fontawesome.com/) for icons
 -   [jQuery](https://jquery.com/) (JavaScript library) for more efficient coding
--   [REST Countries API](https://restcountries.eu/) for text of speed typing game and country information display
+-   [REST Countries API](https://restcountries.com/) for text of speed typing game and country information display
 -   [Google Maps API](https://cloud.google.com/maps-platform/) for displaying a location of selected countries
 -   [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) for testing, style checking and debugging
 -   [Visual Studio Code](https://code.visualstudio.com/) as Integrated Development Environment (IDE)
@@ -256,7 +251,7 @@ There is a message about **Images with textual alternative** which is a reminder
    The same type of issue as No 2 on `index.html` (not the same issue as this occurs in the different section) and solve the error in the same way
 
 2. **Error: Bad value for attribute `src` on element `img`: Must be non-empty.**<br>
-   In order to solve the issue, put the [URL of the flag of Ireland in REST Countries API](https://restcountries.eu/data/irl.svg) that should show first when the page is loaded
+   In order to solve the issue, put the [URL of the flag of Ireland in REST Countries API](https://restcountries.com/) that should show first when the page is loaded
 
 3. **Error: Element `ul` not allowed as child of element `ol` in this context. (Suppressing further errors from this subtree.)**<br>
    The same issue as No 3 on `index.html` and solve the error in the same way
@@ -516,7 +511,7 @@ This is a similar issue as the play button. As long as the [input box is active]
 To achieve good UX experiences for the website, there are some messages and buttons set to be hidden and shown. The reset button and its message only appear after the game, so `class="d-none d-lg-block"` Bootstrap class is used to [hide the elements on mobile / tablet size](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/hide-element1.png) and css `display: none;` method to hide them on a laptop and desktop size. When setting this up to show after the game using JavaScript, it does not work because of `class="d-none d-lg-block"` class so solve the issue by putting these elements in a div and [putting `class="d-none d-lg-block"`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/hide-element2.png) class on the div.
 
 **--- Linking APIs ---**<br>
-Set up [REST Countries API](https://restcountries.eu/) by looking at [Code Institute lesson](https://www.youtube.com/watch?v=mq9buYAnJ74&feature=youtu.be) and YouTube tutorial([Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o)), set up [Google Maps API](https://cloud.google.com/maps-platform/) by looking at [Code Institute lesson](https://www.youtube.com/watch?v=XYFyb3S4oRc&feature=youtu.be) but cannot link both of them together to show a selected country on Google Maps. Look for guidance on google, however, cannot find anything to achieve this so try to move code around thinking of the logic of how REST Countries API and Google Maps API work and manage to link them up together by putting [`showCountryOnGoogleMaps(lat, lng)`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/api.png) function with two parameters to locate a selected country on Google Maps inside `displayCountryInfo` function to show country information of the selected country.
+Set up [REST Countries API](https://restcountries.com/) by looking at [Code Institute lesson](https://www.youtube.com/watch?v=mq9buYAnJ74&feature=youtu.be) and YouTube tutorial([Coding Journey](https://www.youtube.com/watch?v=THZyM2z8s-o)), set up [Google Maps API](https://cloud.google.com/maps-platform/) by looking at [Code Institute lesson](https://www.youtube.com/watch?v=XYFyb3S4oRc&feature=youtu.be) but cannot link both of them together to show a selected country on Google Maps. Look for guidance on google, however, cannot find anything to achieve this so try to move code around thinking of the logic of how REST Countries API and Google Maps API work and manage to link them up together by putting [`showCountryOnGoogleMaps(lat, lng)`](https://github.com/Toto-Kotaro-Tanaka/ms2-speed-typing-game/blob/main/assets/readme/barriers-solutions/api.png) function with two parameters to locate a selected country on Google Maps inside `displayCountryInfo` function to show country information of the selected country.
 
 > **Note:**<br>
 > Initially, initMap() is used for this. Then, discover an issue using intiMap() so a new function, `showCountryOnGoogleMaps()`, is created and used for this. Refer to “Invalid Value” in this section
